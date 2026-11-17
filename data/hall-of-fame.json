@@ -1,0 +1,66 @@
+[
+  {
+    "month": "2026-10",
+    "totalDeaths": 659,
+    "total": [
+      {
+        "name": "Chaponly",
+        "vocation": "Elder Druid",
+        "count": 20,
+        "lastLevel": 383
+      },
+      {
+        "name": "Garrukks",
+        "vocation": "Elder Druid",
+        "count": 11,
+        "lastLevel": 150
+      },
+      {
+        "name": "Wharlord",
+        "vocation": "Royal Paladin",
+        "count": 10,
+        "lastLevel": 810
+      }
+    ],
+    "pvp": [
+      {
+        "name": "Bandelk Chelbus",
+        "vocation": "Elder Druid",
+        "count": 9,
+        "lastLevel": 150
+      },
+      {
+        "name": "Garrukks",
+        "vocation": "Elder Druid",
+        "count": 9,
+        "lastLevel": 150
+      },
+      {
+        "name": "Don Jotaeme",
+        "vocation": "Elder Druid",
+        "count": 7,
+        "lastLevel": 425
+      }
+    ],
+    "pve": [
+      {
+        "name": "Chaponly",
+        "vocation": "Elder Druid",
+        "count": 20,
+        "lastLevel": 383
+      },
+      {
+        "name": "Nando Alwayz",
+        "vocation": "Elder Druid",
+        "count": 8,
+        "lastLevel": 555
+      },
+      {
+        "name": "Metralha Ninja",
+        "vocation": "Elder Druid",
+        "count": 7,
+        "lastLevel": 328
+      }
+    ]
+  }
+]

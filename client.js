@@ -31,7 +31,23 @@ const el = {
   top100Pagination: document.getElementById('top100-pagination'),
   pagination: document.getElementById('pagination'),
   rankingCreatures: document.getElementById('ranking-creatures'),
+  hallContainer: document.getElementById('hall-container'),
 };
+
+function getCurrentMonthKey() {
+  return new Date().toISOString().slice(0, 7);
+}
+
+function formatMonthLabel(monthKey) {
+  if (!monthKey || !monthKey.includes('-')) return monthKey || '—';
+  const [year, month] = monthKey.split('-');
+  const names = [
+    'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+    'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro',
+  ];
+  const idx = Number(month) - 1;
+  return `${names[idx] || month}/${year}`;
+}
 
 function formatDateTime(iso) {
   if (!iso) return '—';
@@ -165,14 +181,24 @@ function applyFilters() {
 async function loadData() {
   try {
     const bust = Date.now();
-    const [deathsRes, metaRes] = await Promise.all([
+    const [deathsRes, metaRes, hallRes] = await Promise.all([
       fetch(`/data/deaths.json?t=${bust}`),
       fetch(`/data/meta.json?t=${bust}`),
+      fetch(`/data/hall-of-fame.json?t=${bust}`),
     ]);
+
+    const currentMonth = getCurrentMonthKey();
 
     if (deathsRes.ok) {
       const parsed = await deathsRes.json();
-      rawDeaths = Array.isArray(parsed) ? parsed : [];
+      const list = Array.isArray(parsed) ? parsed : [];
+      rawDeaths = list.filter((d) => (d.time || '').slice(0, 7) === currentMonth);
+    }
+
+    let hallList = [];
+    if (hallRes.ok) {
+      const parsedHall = await hallRes.json();
+      if (Array.isArray(parsedHall)) hallList = parsedHall;
     }
 
     if (metaRes.ok) {
@@ -192,6 +218,7 @@ async function loadData() {
     const stats = computeStats(rawDeaths);
     renderStats(stats);
     applyFilters();
+    renderHallOfFame(hallList);
   } catch (err) {
     console.error('Erro ao carregar dados:', err);
   } finally {
@@ -366,9 +393,64 @@ function renderTop100Pagination(totalPages) {
 
 function updateTop100View() {
   const modeLabels = { total: 'Total', pvp: 'PvP', pve: 'PvE' };
-  el.top100Title.textContent = `Top 100 — Mortes (${modeLabels[topMode] || 'Total'})`;
+  const monthLabel = formatMonthLabel(getCurrentMonthKey());
+  el.top100Title.textContent = `Top 100 — ${monthLabel} (${modeLabels[topMode] || 'Total'})`;
   top100List = computeTopVictims(rawDeaths, topMode);
   renderTop100Table();
+}
+
+function renderHallCategory(title, items) {
+  const listHtml =
+    items && items.length > 0
+      ? items
+          .map((item, idx) => {
+            const pos = idx + 1;
+            const charUrl = `https://www.tibia.com/community/?name=${encodeURIComponent(item.name)}`;
+            return `
+              <li class="hall-item">
+                <span>
+                  <span class="rank-badge rank-${pos}">#${pos}</span>
+                  <a class="char-link" href="${charUrl}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.name)}</a>
+                </span>
+                <span class="death-count-pill">${item.count}</span>
+              </li>
+            `;
+          })
+          .join('')
+      : '<li class="hall-item"><span style="color:var(--tibia-brown-muted)">Sem registros</span></li>';
+
+  return `
+    <div class="hall-category">
+      <div class="hall-category-title">${title}</div>
+      <ol class="hall-list">${listHtml}</ol>
+    </div>
+  `;
+}
+
+function renderHallOfFame(hallList) {
+  if (!hallList || hallList.length === 0) {
+    el.hallContainer.innerHTML =
+      '<p class="empty-cell">O Hall da Fama guarda os Top 3 ao final de cada mês.</p>';
+    return;
+  }
+
+  el.hallContainer.innerHTML = hallList
+    .map(
+      (entry) => `
+      <div class="hall-month-card">
+        <div class="hall-month-header">
+          <span>${escapeHtml(formatMonthLabel(entry.month))}</span>
+          <span class="hall-month-total">${entry.totalDeaths || 0} mortes no mês</span>
+        </div>
+        <div class="hall-columns">
+          ${renderHallCategory('Top 3 Total', entry.total)}
+          ${renderHallCategory('Top 3 PvP', entry.pvp)}
+          ${renderHallCategory('Top 3 PvE', entry.pve)}
+        </div>
+      </div>
+    `
+    )
+    .join('');
 }
 
 function renderRankings(stats) {

@@ -6,9 +6,43 @@ const TIBIADATA_BASE = 'https://api.tibiadata.com/v4';
 const DATA_DIR = path.join(process.cwd(), 'data');
 const DEATHS_FILE = path.join(DATA_DIR, 'deaths.json');
 const META_FILE = path.join(DATA_DIR, 'meta.json');
+const HALL_FILE = path.join(DATA_DIR, 'hall-of-fame.json');
 
 const CONCURRENCY = 8;
 const REQUEST_DELAY_MS = 60;
+
+function isDeathPvP(d) {
+  if (d.type === 'pvp') return true;
+  if (d.type === 'pve') return false;
+  return Array.isArray(d.killers) && d.killers.some((k) => /^[A-Z]/.test(k) && !k.startsWith('The '));
+}
+
+function getTop3(deaths, mode) {
+  const list =
+    mode === 'pvp'
+      ? deaths.filter(isDeathPvP)
+      : mode === 'pve'
+        ? deaths.filter((d) => !isDeathPvP(d))
+        : deaths;
+
+  const byPlayer = new Map();
+  for (const d of list) {
+    const entry = byPlayer.get(d.character) || {
+      name: d.character,
+      vocation: d.vocation || 'Unknown',
+      count: 0,
+      lastLevel: d.level,
+      lastDeath: d.time,
+    };
+    entry.count++;
+    byPlayer.set(d.character, entry);
+  }
+
+  return Array.from(byPlayer.values())
+    .sort((a, b) => b.count - a.count || new Date(b.lastDeath).getTime() - new Date(a.lastDeath).getTime())
+    .slice(0, 3)
+    .map(({ name, vocation, count, lastLevel }) => ({ name, vocation, count, lastLevel }));
+}
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -141,14 +175,57 @@ async function main() {
     (a, b) => new Date(b.time).getTime() - new Date(a.time).getTime()
   );
 
-  const now = new Date().toISOString();
-  if (isFull) meta.lastFullSync = now;
-  else meta.lastOnlineSync = now;
+  const now = new Date();
+  const currentMonth = now.toISOString().slice(0, 7);
 
-  await fs.writeFile(DEATHS_FILE, JSON.stringify(sorted, null, 2), 'utf-8');
+  let hall = [];
+  try {
+    const rawHall = await fs.readFile(HALL_FILE, 'utf-8');
+    const parsedHall = JSON.parse(rawHall);
+    if (Array.isArray(parsedHall)) hall = parsedHall;
+  } catch {}
+
+  const archivedMonths = new Set(hall.map((h) => h.month));
+  const byMonth = new Map();
+  const currentMonthDeaths = [];
+
+  for (const d of sorted) {
+    const month = (d.time || '').slice(0, 7);
+    if (!month) continue;
+    if (month === currentMonth) {
+      currentMonthDeaths.push(d);
+    } else if (month < currentMonth) {
+      if (!byMonth.has(month)) byMonth.set(month, []);
+      byMonth.get(month).push(d);
+    }
+  }
+
+  for (const [month, monthDeaths] of byMonth.entries()) {
+    if (!archivedMonths.has(month)) {
+      hall.push({
+        month,
+        totalDeaths: monthDeaths.length,
+        total: getTop3(monthDeaths, 'total'),
+        pvp: getTop3(monthDeaths, 'pvp'),
+        pve: getTop3(monthDeaths, 'pve'),
+      });
+      archivedMonths.add(month);
+    }
+  }
+
+  hall.sort((a, b) => b.month.localeCompare(a.month));
+
+  const nowIso = now.toISOString();
+  if (isFull) meta.lastFullSync = nowIso;
+  else meta.lastOnlineSync = nowIso;
+
+  await fs.writeFile(DEATHS_FILE, JSON.stringify(currentMonthDeaths, null, 2), 'utf-8');
+  await fs.writeFile(HALL_FILE, JSON.stringify(hall, null, 2), 'utf-8');
   await fs.writeFile(META_FILE, JSON.stringify(meta, null, 2), 'utf-8');
 
-  console.log(`[Sync] Concluído: ${newDeaths} novas mortes (total: ${sorted.length}).`);
+  console.log(
+    `[Sync] Concluído: ${newDeaths} novas mortes (mês ${currentMonth}: ${currentMonthDeaths.length}, meses no Hall da Fama: ${hall.length}).`
+  );
 }
 
 main().catch((err) => {
