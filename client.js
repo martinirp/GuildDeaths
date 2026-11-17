@@ -154,7 +154,14 @@ async function loadData() {
       const meta = await metaRes.json();
       const worldText = meta.world || '';
       const membersText = meta.membersCount ? `${meta.membersCount} membros` : '';
-      el.guildMeta.textContent = [worldText, membersText].filter(Boolean).join(' • ');
+      const lastSync =
+        meta.lastFullSync && meta.lastOnlineSync
+          ? new Date(meta.lastFullSync) > new Date(meta.lastOnlineSync)
+            ? meta.lastFullSync
+            : meta.lastOnlineSync
+          : meta.lastFullSync || meta.lastOnlineSync;
+      const syncText = lastSync ? `Última atualização: ${formatDateTime(lastSync)}` : '';
+      el.guildMeta.textContent = [worldText, membersText, syncText].filter(Boolean).join(' • ');
     }
 
     const stats = computeStats(rawDeaths);
