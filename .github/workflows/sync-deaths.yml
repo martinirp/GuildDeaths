@@ -1,0 +1,48 @@
+name: Sync Guild Deaths
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "Sincronizar todos os membros da guild (--full)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run sync
+        run: |
+          MINUTE=$(date -u +%M)
+          if [ "${{ github.event.inputs.full }}" = "true" ] || [ "$MINUTE" = "00" ]; then
+            node scripts/sync.js --full
+          else
+            node scripts/sync.js
+          fi
+
+      - name: Commit updated deaths
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/deaths.json data/meta.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update guild deaths"
+            git push
+          else
+            echo "Nenhuma morte nova."
+          fi
+

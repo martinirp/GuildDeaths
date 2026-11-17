@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tibia - Insanity Top 100</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="tibia-page">
+    <header class="tibia-guild-header">
+      <div class="guild-header-box">
+        <div class="caption-bar guild-caption">
+          <span>Guilds</span>
+        </div>
+        <div class="guild-hero">
+          <div class="guild-crest" aria-hidden="true">⚔</div>
+          <div class="guild-title-block">
+            <h1>Insanity</h1>
+            <p class="guild-tagline">Top 100 Mortes</p>
+            <p class="subtitle" id="guild-meta"></p>
+          </div>
+          <div class="guild-crest" aria-hidden="true">🛡</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="tibia-shell">
+      <aside class="tibia-sidebar">
+        <div class="sidebar-box">
+          <div class="sidebar-header">Navegação</div>
+          <nav class="sidebar-menu">
+            <button class="tab sidebar-link active" data-tab="top100">
+              <span class="arrow">»</span> Top 100 Mortes
+            </button>
+            <button class="tab sidebar-link" data-tab="deaths">
+              <span class="arrow">»</span> Histórico de Mortes
+            </button>
+            <button class="tab sidebar-link" data-tab="creatures">
+              <span class="arrow">»</span> Mais Letais
+            </button>
+          </nav>
+        </div>
+
+        <div class="sidebar-box">
+          <div class="sidebar-header">Resumo</div>
+          <div class="sidebar-stats">
+            <div class="sidebar-stat-row">
+              <span>Total de Mortes:</span>
+              <strong id="stat-total">0</strong>
+            </div>
+            <div class="sidebar-stat-row">
+              <span>Últimas 24h:</span>
+              <strong id="stat-24h">0</strong>
+            </div>
+            <div class="sidebar-stat-row">
+              <span>Últimos 7 dias:</span>
+              <strong id="stat-7d">0</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-box">
+          <div class="sidebar-header">Líderes</div>
+          <div class="sidebar-highlights">
+            <div class="highlight-item">
+              <span class="highlight-label">Top 1 Mortes:</span>
+              <strong id="stat-top-victim">—</strong>
+              <small id="stat-top-victim-count">—</small>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">Algoz #1:</span>
+              <strong id="stat-top-creature">—</strong>
+              <small id="stat-top-creature-count">—</small>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="tibia-content-frame">
+        <main id="tab-top100" class="tab-panel active">
+          <div class="tibia-box">
+            <div class="caption-bar caption-with-arrows">
+              <span>Top 100 — Mortes da Guild Insanity</span>
+              <div class="caption-pager">
+                <button type="button" id="top100-prev" class="caption-arrow-btn" title="Anterior">◀</button>
+                <span id="top100-range" class="caption-range">1–25</span>
+                <button type="button" id="top100-next" class="caption-arrow-btn" title="Próximo">▶</button>
+              </div>
+            </div>
+            <div class="box-inner">
+              <div class="pagination pagination-top" id="top100-pagination-top"></div>
+              <div class="table-container">
+                <table class="tibia-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 70px;">Pos.</th>
+                      <th>Personagem</th>
+                      <th>Vocação</th>
+                      <th style="width: 85px;">Level</th>
+                      <th>Última Morte</th>
+                      <th style="width: 90px; text-align: center;">Mortes</th>
+                    </tr>
+                  </thead>
+                  <tbody id="top100-tbody">
+                    <tr>
+                      <td colspan="6" class="empty-cell">Carregando...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pagination" id="top100-pagination"></div>
+            </div>
+          </div>
+        </main>
+
+        <main id="tab-deaths" class="tab-panel">
+          <div class="tibia-box">
+            <div class="caption-bar">
+              <span>Histórico de Mortes</span>
+            </div>
+            <div class="box-inner">
+              <div class="filters">
+                <input
+                  type="text"
+                  id="filter-search"
+                  class="tibia-input"
+                  placeholder="Personagem ou causa..."
+                />
+                <select id="filter-vocation" class="tibia-select">
+                  <option value="all">Todas as Vocações</option>
+                  <option value="knight">Knight / Elite Knight</option>
+                  <option value="paladin">Paladin / Royal Paladin</option>
+                  <option value="sorcerer">Sorcerer / Master Sorcerer</option>
+                  <option value="druid">Druid / Elder Druid</option>
+                  <option value="monk">Monk / Exalted Monk</option>
+                </select>
+                <select id="filter-sort" class="tibia-select">
+                  <option value="recent">Mais recentes</option>
+                  <option value="level_desc">Maior Level</option>
+                  <option value="level_asc">Menor Level</option>
+                </select>
+              </div>
+
+              <div class="table-container">
+                <table class="tibia-table">
+                  <thead>
+                    <tr>
+                      <th>Data / Hora</th>
+                      <th>Personagem</th>
+                      <th>Level</th>
+                      <th>Vocação</th>
+                      <th>Causa da Morte</th>
+                    </tr>
+                  </thead>
+                  <tbody id="deaths-tbody">
+                    <tr>
+                      <td colspan="5" class="empty-cell">Carregando...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="pagination" id="pagination"></div>
+            </div>
+          </div>
+        </main>
+
+        <main id="tab-creatures" class="tab-panel">
+          <div class="tibia-box">
+            <div class="caption-bar">
+              <span>Mais Letais</span>
+            </div>
+            <div class="box-inner">
+              <ol id="ranking-creatures" class="ranking-list"></ol>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
