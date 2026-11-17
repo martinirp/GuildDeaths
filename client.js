@@ -179,6 +179,104 @@ function applyFilters() {
   renderDeathsTable();
 }
 
+let guildInfo = { world: 'Quelibra', membersCount: 0 };
+
+function updateMetaBanner(isoTime) {
+  const worldText = guildInfo.world || '';
+  const membersText = guildInfo.membersCount ? `${guildInfo.membersCount} membros` : '';
+  const syncText = isoTime ? `Última atualização: ${formatDateTime(isoTime)}` : '';
+  el.guildMeta.textContent = [worldText, membersText, syncText].filter(Boolean).join(' • ');
+}
+
+async function syncLiveOnlineDeaths() {
+  try {
+    const guildRes = await fetch('https://api.tibiadata.com/v4/guild/Insanity');
+    if (!guildRes.ok) return;
+    const guildData = await guildRes.json();
+    const members = guildData?.guild?.members;
+    if (!Array.isArray(members)) return;
+
+    guildInfo.world = guildData.guild.world || guildInfo.world;
+    guildInfo.membersCount = members.length;
+
+    const onlineMembers = members.filter(
+      (m) => String(m.status).toLowerCase() === 'online'
+    );
+
+    const currentMonth = getCurrentMonthKey();
+    const deathsMap = new Map(
+      rawDeaths.map((d) => [d.id || `${d.character.toLowerCase()}|${d.time}`, d])
+    );
+
+    let cursor = 0;
+    const concurrency = 6;
+    async function worker() {
+      while (true) {
+        const idx = cursor++;
+        if (idx >= onlineMembers.length) break;
+        const member = onlineMembers[idx];
+        try {
+          const res = await fetch(
+            `https://api.tibiadata.com/v4/character/${encodeURIComponent(member.name)}`
+          );
+          if (!res.ok) continue;
+          const data = await res.json();
+          const charDeaths = data?.character?.deaths;
+          if (!Array.isArray(charDeaths)) continue;
+
+          for (const death of charDeaths) {
+            if (!death || !death.time) continue;
+            if ((death.time || '').slice(0, 7) !== currentMonth) continue;
+
+            const id = `${member.name.toLowerCase()}|${death.time}`;
+            if (deathsMap.has(id)) continue;
+
+            const isPvP =
+              (Array.isArray(death.killers) && death.killers.some((k) => k.player || k.summon)) ||
+              (Array.isArray(death.assists) && death.assists.some((a) => a.player || a.summon));
+            const killers = Array.isArray(death.killers)
+              ? death.killers.map((k) => k.name).filter(Boolean)
+              : [];
+
+            deathsMap.set(id, {
+              id,
+              type: isPvP ? 'pvp' : 'pve',
+              character: member.name,
+              vocation: member.vocation || 'Unknown',
+              rank: member.rank || '',
+              level: death.level,
+              time: death.time,
+              killers,
+              reason: death.reason || `Died at Level ${death.level} by ${killers.join(', ')}.`,
+            });
+          }
+        } catch {}
+      }
+    }
+
+    await Promise.all(
+      Array.from({ length: Math.min(concurrency, Math.max(1, onlineMembers.length)) }, () => worker())
+    );
+
+    rawDeaths = Array.from(deathsMap.values()).sort(
+      (a, b) => new Date(b.time).getTime() - new Date(a.time).getTime()
+    );
+
+    updateMetaBanner(new Date().toISOString());
+    const stats = computeStats(rawDeaths);
+    renderStats(stats);
+    applyFilters();
+  } catch (err) {
+    console.error('Erro na atualização ao vivo:', err);
+  }
+}
+
+async function scheduleLiveSync() {
+  await syncLiveOnlineDeaths();
+  clearTimeout(pollTimer);
+  pollTimer = setTimeout(scheduleLiveSync, 60000);
+}
+
 async function loadData() {
   try {
     const bust = Date.now();
@@ -204,27 +302,27 @@ async function loadData() {
 
     if (metaRes.ok) {
       const meta = await metaRes.json();
-      const worldText = meta.world || '';
-      const membersText = meta.membersCount ? `${meta.membersCount} membros` : '';
+      guildInfo.world = meta.world || guildInfo.world;
+      guildInfo.membersCount = meta.membersCount || guildInfo.membersCount;
       const lastSync =
         meta.lastFullSync && meta.lastOnlineSync
           ? new Date(meta.lastFullSync) > new Date(meta.lastOnlineSync)
             ? meta.lastFullSync
             : meta.lastOnlineSync
           : meta.lastFullSync || meta.lastOnlineSync;
-      const syncText = lastSync ? `Última atualização: ${formatDateTime(lastSync)}` : '';
-      el.guildMeta.textContent = [worldText, membersText, syncText].filter(Boolean).join(' • ');
+      updateMetaBanner(lastSync);
     }
 
     const stats = computeStats(rawDeaths);
     renderStats(stats);
     applyFilters();
     renderHallOfFame(hallList);
+
+    await scheduleLiveSync();
   } catch (err) {
     console.error('Erro ao carregar dados:', err);
-  } finally {
     clearTimeout(pollTimer);
-    pollTimer = setTimeout(loadData, 60000);
+    pollTimer = setTimeout(scheduleLiveSync, 60000);
   }
 }
 
