@@ -1,5 +1,47 @@
 [
   {
+    "id": "royal akibo|2026-11-17T14:10:09Z",
+    "type": "pve",
+    "character": "Royal Akibo",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 862,
+    "time": "2026-11-17T14:10:09Z",
+    "killers": [
+      "freakish lost soul"
+    ],
+    "reason": "Died at Level 862 by freakish lost soul.",
+    "recordedAt": "2026-11-17T14:16:56.152Z"
+  },
+  {
+    "id": "luca the white|2026-11-17T13:55:02Z",
+    "type": "pve",
+    "character": "Luca the White",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 572,
+    "time": "2026-11-17T13:55:02Z",
+    "killers": [
+      "Scarlett Etzel"
+    ],
+    "reason": "Died at Level 572 by Scarlett Etzel.",
+    "recordedAt": "2026-11-17T14:16:55.520Z"
+  },
+  {
+    "id": "fau boca seca|2026-11-17T12:22:47Z",
+    "type": "pve",
+    "character": "Fau Boca Seca",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1097,
+    "time": "2026-11-17T12:22:47Z",
+    "killers": [
+      "many faces"
+    ],
+    "reason": "Died at Level 1097 by many faces.",
+    "recordedAt": "2026-11-17T14:16:54.778Z"
+  },
+  {
     "id": "pititao|2026-11-17T04:32:44Z",
     "character": "Pititao",
     "vocation": "Royal Paladin",
@@ -73,7 +115,8 @@
       "Ruuua Seiis"
     ],
     "reason": "Crushed at Level 897 by Todopoder, No Alfiler defender, Raafazerah Quelibra Bombinha, Boombeck, Rica Rox, Oblivionbo, Rabix Aloni, Tordo Nevinnyon, Goa Bebeca, Wiviiziinha and Ruuua Seiis.",
-    "recordedAt": "2026-11-17T04:56:02.960Z"
+    "recordedAt": "2026-11-17T04:56:02.960Z",
+    "type": "pvp"
   },
   {
     "id": "iron loord|2026-11-17T02:15:02Z",
@@ -86,7 +129,8 @@
       "sineater inferniarch"
     ],
     "reason": "Died at Level 898 by sineater inferniarch.",
-    "recordedAt": "2026-11-17T04:56:02.960Z"
+    "recordedAt": "2026-11-17T04:56:02.960Z",
+    "type": "pve"
   },
   {
     "id": "manuzerah foradesi|2026-11-17T01:36:23Z",
@@ -178,7 +222,8 @@
       "radicular totem"
     ],
     "reason": "Died at Level 880 by radicular totem.",
-    "recordedAt": "2026-11-17T04:56:34.220Z"
+    "recordedAt": "2026-11-17T04:56:34.220Z",
+    "type": "pve"
   },
   {
     "id": "manuzerah foradesi|2026-11-16T23:07:34Z",
@@ -204,7 +249,8 @@
       "squid warden"
     ],
     "reason": "Died at Level 889 by squid warden.",
-    "recordedAt": "2026-11-17T04:05:23.763Z"
+    "recordedAt": "2026-11-17T04:05:23.763Z",
+    "type": "pve"
   },
   {
     "id": "di gwen|2026-11-16T22:16:45Z",
@@ -258,7 +304,8 @@
       "The Moonsnow Magnolia"
     ],
     "reason": "Killed at Level 764 by Killa Skillz and The Moonsnow Magnolia.",
-    "recordedAt": "2026-11-17T04:56:06.636Z"
+    "recordedAt": "2026-11-17T04:56:06.636Z",
+    "type": "pvp"
   },
   {
     "id": "do baar|2026-11-16T21:21:14Z",
@@ -363,7 +410,8 @@
       "Ekforsale"
     ],
     "reason": "Killed at Level 1976 by Ekforsale.",
-    "recordedAt": "2026-11-17T04:55:52.132Z"
+    "recordedAt": "2026-11-17T04:55:52.132Z",
+    "type": "pvp"
   },
   {
     "id": "javagod|2026-11-16T18:28:36Z",
@@ -403,7 +451,8 @@
       "agony"
     ],
     "reason": "Killed at Level 1098 by Fau Boca Seca and agony.",
-    "recordedAt": "2026-11-17T04:55:55.014Z"
+    "recordedAt": "2026-11-17T04:55:55.014Z",
+    "type": "pvp"
   },
   {
     "id": "konnan of life|2026-11-16T16:45:07Z",
@@ -416,7 +465,8 @@
       "mould phantom"
     ],
     "reason": "Died at Level 474 by mould phantom.",
-    "recordedAt": "2026-11-17T04:56:08.085Z"
+    "recordedAt": "2026-11-17T04:56:08.085Z",
+    "type": "pve"
   },
   {
     "id": "lady'silverinha|2026-11-16T16:02:39Z",
@@ -442,7 +492,8 @@
       "rotten golem"
     ],
     "reason": "Died at Level 1149 by rotten golem.",
-    "recordedAt": "2026-11-17T04:56:35.268Z"
+    "recordedAt": "2026-11-17T04:56:35.268Z",
+    "type": "pve"
   },
   {
     "id": "fau boca seca|2026-11-16T15:05:01Z",
@@ -455,7 +506,8 @@
       "rotten golem"
     ],
     "reason": "Died at Level 1099 by rotten golem.",
-    "recordedAt": "2026-11-17T04:55:55.014Z"
+    "recordedAt": "2026-11-17T04:55:55.014Z",
+    "type": "pve"
   },
   {
     "id": "pin pin|2026-11-16T13:12:47Z",
@@ -507,7 +559,8 @@
       "demon"
     ],
     "reason": "Died at Level 1090 by demon.",
-    "recordedAt": "2026-11-17T04:56:01.504Z"
+    "recordedAt": "2026-11-17T04:56:01.504Z",
+    "type": "pve"
   },
   {
     "id": "tata nightmare|2026-11-16T04:16:28Z",
@@ -597,7 +650,8 @@
       "Cardinot On"
     ],
     "reason": "Slain at Level 687 by No Alfiler defender, Bakaj Lando, Yagami Poderoso, Rica Rox, Ignobanco, Sanasio, Otal do Fantasma, Phcek Mordomo and Cardinot On. Assisted by Thucky Nucky, Mullekotty, Jeff da Massa, Bowery King, Frozono, Tamon Dalan and Sir Dougz.",
-    "recordedAt": "2026-11-17T04:56:13.459Z"
+    "recordedAt": "2026-11-17T04:56:13.459Z",
+    "type": "pvp"
   },
   {
     "id": "ocueistore bombinha|2026-11-16T02:55:21Z",
@@ -1084,7 +1138,8 @@
       "icecold book"
     ],
     "reason": "Killed at Level 1874 by Oblivionbo and icecold book.",
-    "recordedAt": "2026-11-17T04:55:34.022Z"
+    "recordedAt": "2026-11-17T04:55:34.022Z",
+    "type": "pvp"
   },
   {
     "id": "romopollis respblock|2026-11-15T20:06:14Z",
@@ -1137,7 +1192,8 @@
       "rhindeer"
     ],
     "reason": "Died at Level 1463 by rhindeer.",
-    "recordedAt": "2026-11-17T04:56:14.837Z"
+    "recordedAt": "2026-11-17T04:56:14.837Z",
+    "type": "pve"
   },
   {
     "id": "rpe fredbombaum|2026-11-15T17:52:35Z",
@@ -1189,7 +1245,8 @@
       "rhindeer"
     ],
     "reason": "Died at Level 879 by rhindeer.",
-    "recordedAt": "2026-11-17T04:56:34.220Z"
+    "recordedAt": "2026-11-17T04:56:34.220Z",
+    "type": "pve"
   },
   {
     "id": "fau boca seca|2026-11-15T15:30:13Z",
@@ -1202,7 +1259,8 @@
       "rotten golem"
     ],
     "reason": "Died at Level 1101 by rotten golem.",
-    "recordedAt": "2026-11-17T04:55:55.014Z"
+    "recordedAt": "2026-11-17T04:55:55.014Z",
+    "type": "pve"
   },
   {
     "id": "karioka lokko|2026-11-15T15:30:05Z",
@@ -1215,7 +1273,8 @@
       "mould phantom"
     ],
     "reason": "Died at Level 1479 by mould phantom.",
-    "recordedAt": "2026-11-17T04:56:05.650Z"
+    "recordedAt": "2026-11-17T04:56:05.650Z",
+    "type": "pve"
   },
   {
     "id": "biserker|2026-11-15T15:12:58Z",
@@ -1228,7 +1287,8 @@
       "primal pack beast"
     ],
     "reason": "Died at Level 447 by primal pack beast.",
-    "recordedAt": "2026-11-17T04:55:39.880Z"
+    "recordedAt": "2026-11-17T04:55:39.880Z",
+    "type": "pve"
   },
   {
     "id": "tonin de club|2026-11-15T14:38:52Z",
@@ -1269,7 +1329,8 @@
       "brachiodemon"
     ],
     "reason": "Killed at Level 1150 by Shev'Sorcerer and brachiodemon.",
-    "recordedAt": "2026-11-17T04:56:35.268Z"
+    "recordedAt": "2026-11-17T04:56:35.268Z",
+    "type": "pvp"
   },
   {
     "id": "nando alwayz|2026-11-15T13:10:24Z",
@@ -1415,7 +1476,8 @@
       "cliff strider"
     ],
     "reason": "Died at Level 1262 by cliff strider.",
-    "recordedAt": "2026-11-17T04:56:02.704Z"
+    "recordedAt": "2026-11-17T04:56:02.704Z",
+    "type": "pve"
   },
   {
     "id": "ezarel galante|2026-11-15T01:19:44Z",
@@ -1685,7 +1747,8 @@
       "oozing corpus"
     ],
     "reason": "Killed at Level 1480 by Pune Edbombinhatres and oozing corpus. Assisted by Jeeh Darkness, Kurt Full, Cedilha and Hillam Tankanada.",
-    "recordedAt": "2026-11-17T04:56:05.650Z"
+    "recordedAt": "2026-11-17T04:56:05.650Z",
+    "type": "pvp"
   },
   {
     "id": "don jotaeme|2026-11-14T12:58:53Z",
@@ -1711,7 +1774,8 @@
       "mycobiontic beetle"
     ],
     "reason": "Died at Level 1173 by mycobiontic beetle. Assisted by Ferganixd, Jotao Bombao and Hillam Tankanada.",
-    "recordedAt": "2026-11-17T04:55:41.839Z"
+    "recordedAt": "2026-11-17T04:55:41.839Z",
+    "type": "pvp"
   },
   {
     "id": "sakor mire|2026-11-14T10:42:58Z",
@@ -1921,7 +1985,8 @@
       "icecold book"
     ],
     "reason": "Died at Level 445 by icecold book.",
-    "recordedAt": "2026-11-17T04:55:39.880Z"
+    "recordedAt": "2026-11-17T04:55:39.880Z",
+    "type": "pve"
   },
   {
     "id": "metralha ninja|2026-11-13T15:10:16Z",
@@ -1947,7 +2012,8 @@
       "boar man"
     ],
     "reason": "Died at Level 842 by boar man.",
-    "recordedAt": "2026-11-17T04:56:09.401Z"
+    "recordedAt": "2026-11-17T04:56:09.401Z",
+    "type": "pve"
   },
   {
     "id": "naurd|2026-11-13T14:13:35Z",
@@ -2013,7 +2079,8 @@
       "The Gravedigger"
     ],
     "reason": "Died at Level 1150 by The Gravedigger.",
-    "recordedAt": "2026-11-17T04:56:35.268Z"
+    "recordedAt": "2026-11-17T04:56:35.268Z",
+    "type": "pve"
   },
   {
     "id": "bromi|2026-11-13T09:14:13Z",
@@ -2247,7 +2314,8 @@
       "rotten man-maggot"
     ],
     "reason": "Died at Level 1105 by rotten man-maggot.",
-    "recordedAt": "2026-11-17T04:56:25.194Z"
+    "recordedAt": "2026-11-17T04:56:25.194Z",
+    "type": "pve"
   },
   {
     "id": "piirrallhosz|2026-11-12T20:58:12Z",
@@ -2260,7 +2328,8 @@
       "falcon paladin"
     ],
     "reason": "Died at Level 827 by falcon paladin.",
-    "recordedAt": "2026-11-17T04:56:27.788Z"
+    "recordedAt": "2026-11-17T04:56:27.788Z",
+    "type": "pve"
   },
   {
     "id": "buballu|2026-11-12T19:36:51Z",
@@ -2274,7 +2343,8 @@
       "Bakragore"
     ],
     "reason": "Killed at Level 1206 by Buballu and Bakragore.",
-    "recordedAt": "2026-11-17T04:55:42.109Z"
+    "recordedAt": "2026-11-17T04:55:42.109Z",
+    "type": "pvp"
   },
   {
     "id": "lady'silverinha|2026-11-12T18:54:56Z",
@@ -2300,7 +2370,8 @@
       "darklight matter"
     ],
     "reason": "Died at Level 1208 by darklight matter.",
-    "recordedAt": "2026-11-17T04:55:42.109Z"
+    "recordedAt": "2026-11-17T04:55:42.109Z",
+    "type": "pve"
   },
   {
     "id": "neto on|2026-11-12T18:28:42Z",
@@ -2362,7 +2433,8 @@
       "Leleco do Piseiro"
     ],
     "reason": "Crushed at Level 683 by Cronic Fechadocom Dejair, Gbe Essi Klusejro, Hierrowns, Kiing Andreziinho, Lycanmare, Zukkofy, Bubu Ue, Hyoriinmaruu, Loro Kamado, Foras Tero, Raigor Stonyhoof and Leleco do Piseiro.",
-    "recordedAt": "2026-11-17T04:56:49.067Z"
+    "recordedAt": "2026-11-17T04:56:49.067Z",
+    "type": "pvp"
   },
   {
     "id": "champain|2026-11-12T18:18:45Z",
@@ -2454,7 +2526,8 @@
       "falcon paladin"
     ],
     "reason": "Died at Level 762 by falcon paladin.",
-    "recordedAt": "2026-11-17T04:56:06.636Z"
+    "recordedAt": "2026-11-17T04:56:06.636Z",
+    "type": "pve"
   },
   {
     "id": "chaponly|2026-11-12T14:38:13Z",
@@ -2812,7 +2885,8 @@
       "hulking prehemoth"
     ],
     "reason": "Killed at Level 687 by Rica Rox and hulking prehemoth.",
-    "recordedAt": "2026-11-17T04:56:13.459Z"
+    "recordedAt": "2026-11-17T04:56:13.459Z",
+    "type": "pvp"
   },
   {
     "id": "konnan of life|2026-11-12T02:00:05Z",
@@ -2825,7 +2899,8 @@
       "sabretooth"
     ],
     "reason": "Died at Level 471 by sabretooth.",
-    "recordedAt": "2026-11-17T04:56:08.085Z"
+    "recordedAt": "2026-11-17T04:56:08.085Z",
+    "type": "pve"
   },
   {
     "id": "sio maybe|2026-11-12T01:12:04Z",
@@ -2851,7 +2926,8 @@
       "falcon knight"
     ],
     "reason": "Died at Level 261 by falcon knight.",
-    "recordedAt": "2026-11-17T04:56:47.166Z"
+    "recordedAt": "2026-11-17T04:56:47.166Z",
+    "type": "pve"
   },
   {
     "id": "legendary maluketez|2026-11-12T00:30:35Z",
@@ -2864,7 +2940,8 @@
       "decaying totem"
     ],
     "reason": "Died at Level 2169 by decaying totem.",
-    "recordedAt": "2026-11-17T04:56:10.045Z"
+    "recordedAt": "2026-11-17T04:56:10.045Z",
+    "type": "pve"
   },
   {
     "id": "mago geladeira|2026-11-12T00:17:16Z",
@@ -2956,7 +3033,8 @@
       "Ari Lightstrider"
     ],
     "reason": "Killed at Level 1761 by Ari Lightstrider.",
-    "recordedAt": "2026-11-17T04:55:34.069Z"
+    "recordedAt": "2026-11-17T04:55:34.069Z",
+    "type": "pvp"
   },
   {
     "id": "krzzychu|2026-11-11T17:24:32Z",
@@ -2982,7 +3060,8 @@
       "falcon paladin"
     ],
     "reason": "Died at Level 827 by falcon paladin.",
-    "recordedAt": "2026-11-17T04:56:27.788Z"
+    "recordedAt": "2026-11-17T04:56:27.788Z",
+    "type": "pve"
   },
   {
     "id": "betinho hell|2026-11-11T14:40:26Z",
@@ -3008,7 +3087,8 @@
       "moonsilver custodian"
     ],
     "reason": "Died at Level 1106 by moonsilver custodian.",
-    "recordedAt": "2026-11-17T04:56:25.194Z"
+    "recordedAt": "2026-11-17T04:56:25.194Z",
+    "type": "pve"
   },
   {
     "id": "fau boca seca|2026-11-11T12:22:50Z",
@@ -3022,7 +3102,8 @@
       "bony sea devil"
     ],
     "reason": "Killed at Level 1100 by Fau Boca Seca and bony sea devil.",
-    "recordedAt": "2026-11-17T04:55:55.014Z"
+    "recordedAt": "2026-11-17T04:55:55.014Z",
+    "type": "pvp"
   },
   {
     "id": "lady'silverinha|2026-11-11T04:16:03Z",
@@ -3218,7 +3299,8 @@
       "spiky carnivor"
     ],
     "reason": "Died at Level 571 by spiky carnivor.",
-    "recordedAt": "2026-11-17T04:56:12.702Z"
+    "recordedAt": "2026-11-17T04:56:12.702Z",
+    "type": "pve"
   },
   {
     "id": "tronix bull|2026-11-10T17:58:39Z",
@@ -3245,7 +3327,8 @@
       "decaying totem"
     ],
     "reason": "Died at Level 1820 by decaying totem.",
-    "recordedAt": "2026-11-17T04:55:34.264Z"
+    "recordedAt": "2026-11-17T04:55:34.264Z",
+    "type": "pve"
   },
   {
     "id": "luca the white|2026-11-10T16:38:38Z",
@@ -3258,7 +3341,8 @@
       "menacing carnivor"
     ],
     "reason": "Died at Level 572 by menacing carnivor.",
-    "recordedAt": "2026-11-17T04:56:12.702Z"
+    "recordedAt": "2026-11-17T04:56:12.702Z",
+    "type": "pve"
   },
   {
     "id": "noxiuz|2026-11-10T16:33:06Z",
@@ -3324,7 +3408,8 @@
       "boar man"
     ],
     "reason": "Died at Level 1244 by boar man.",
-    "recordedAt": "2026-11-17T04:56:28.887Z"
+    "recordedAt": "2026-11-17T04:56:28.887Z",
+    "type": "pve"
   },
   {
     "id": "master'guns|2026-11-10T11:54:34Z",
@@ -3485,7 +3570,8 @@
       "lumbering carnivor"
     ],
     "reason": "Died at Level 573 by lumbering carnivor.",
-    "recordedAt": "2026-11-17T04:56:12.702Z"
+    "recordedAt": "2026-11-17T04:56:12.702Z",
+    "type": "pve"
   },
   {
     "id": "soxe druida|2026-11-09T19:17:03Z",
@@ -3580,7 +3666,8 @@
       "Phosphorus"
     ],
     "reason": "Died at Level 1180 by Phosphorus.",
-    "recordedAt": "2026-11-17T04:56:04.359Z"
+    "recordedAt": "2026-11-17T04:56:04.359Z",
+    "type": "pve"
   },
   {
     "id": "palla infernal|2026-11-09T15:27:37Z",
@@ -3607,7 +3694,8 @@
       "brachiodemon"
     ],
     "reason": "Killed at Level 1148 by Shev'Sorcerer and brachiodemon.",
-    "recordedAt": "2026-11-17T04:56:35.268Z"
+    "recordedAt": "2026-11-17T04:56:35.268Z",
+    "type": "pvp"
   },
   {
     "id": "magicwall tank|2026-11-09T12:58:21Z",
@@ -3633,7 +3721,8 @@
       "Shev'Sorcerer"
     ],
     "reason": "Killed at Level 1149 by Shev'Sorcerer.",
-    "recordedAt": "2026-11-17T04:56:35.269Z"
+    "recordedAt": "2026-11-17T04:56:35.269Z",
+    "type": "pvp"
   },
   {
     "id": "soxe druida|2026-11-09T11:49:09Z",
@@ -3698,7 +3787,8 @@
       "mantosaurus"
     ],
     "reason": "Died at Level 759 by mantosaurus.",
-    "recordedAt": "2026-11-17T04:56:06.636Z"
+    "recordedAt": "2026-11-17T04:56:06.636Z",
+    "type": "pve"
   },
   {
     "id": "chaponly|2026-11-09T08:00:29Z",
@@ -3854,7 +3944,8 @@
       "cyclursus"
     ],
     "reason": "Died at Level 1094 by cyclursus.",
-    "recordedAt": "2026-11-17T04:55:48.808Z"
+    "recordedAt": "2026-11-17T04:55:48.808Z",
+    "type": "pve"
   },
   {
     "id": "fenix el patron|2026-11-08T23:05:10Z",
@@ -3867,7 +3958,8 @@
       "sulphur spouter"
     ],
     "reason": "Died at Level 1072 by sulphur spouter.",
-    "recordedAt": "2026-11-17T04:55:55.386Z"
+    "recordedAt": "2026-11-17T04:55:55.386Z",
+    "type": "pve"
   },
   {
     "id": "issac exbelter|2026-11-08T22:31:11Z",
@@ -4618,7 +4710,8 @@
       "agony"
     ],
     "reason": "Killed at Level 1087 by Hillam Tankanada and agony.",
-    "recordedAt": "2026-11-17T04:56:01.504Z"
+    "recordedAt": "2026-11-17T04:56:01.504Z",
+    "type": "pvp"
   },
   {
     "id": "betinho hell|2026-11-07T16:23:47Z",
@@ -4683,7 +4776,8 @@
       "feral sphinx"
     ],
     "reason": "Died at Level 429 by feral sphinx.",
-    "recordedAt": "2026-11-17T04:55:39.880Z"
+    "recordedAt": "2026-11-17T04:55:39.880Z",
+    "type": "pve"
   },
   {
     "id": "metralha ninja|2026-11-07T11:51:20Z",
@@ -4748,7 +4842,8 @@
       "broodrider inferniarch"
     ],
     "reason": "Died at Level 468 by broodrider inferniarch.",
-    "recordedAt": "2026-11-17T04:56:08.085Z"
+    "recordedAt": "2026-11-17T04:56:08.085Z",
+    "type": "pve"
   },
   {
     "id": "zyzz edbombinha|2026-11-07T03:32:53Z",
@@ -4787,7 +4882,8 @@
       "dread intruder"
     ],
     "reason": "Died at Level 589 by dread intruder.",
-    "recordedAt": "2026-11-17T04:56:16.952Z"
+    "recordedAt": "2026-11-17T04:56:16.952Z",
+    "type": "pve"
   },
   {
     "id": "chaponly|2026-11-07T02:00:05Z",
@@ -4907,7 +5003,8 @@
       "Gaz'haragoth"
     ],
     "reason": "Died at Level 1870 by Gaz'haragoth.",
-    "recordedAt": "2026-11-17T04:55:34.022Z"
+    "recordedAt": "2026-11-17T04:55:34.022Z",
+    "type": "pve"
   },
   {
     "id": "bandelk chelbus|2026-11-06T23:25:00Z",
@@ -5062,7 +5159,8 @@
       "Gaz'haragoth"
     ],
     "reason": "Died at Level 721 by Gaz'haragoth.",
-    "recordedAt": "2026-11-17T04:56:01.026Z"
+    "recordedAt": "2026-11-17T04:56:01.026Z",
+    "type": "pve"
   },
   {
     "id": "chapelino|2026-11-06T23:20:24Z",
@@ -5088,7 +5186,8 @@
       "Gaz'haragoth"
     ],
     "reason": "Died at Level 728 by Gaz'haragoth.",
-    "recordedAt": "2026-11-17T04:56:19.877Z"
+    "recordedAt": "2026-11-17T04:56:19.877Z",
+    "type": "pve"
   },
   {
     "id": "vitaum freiodablazer|2026-11-06T23:07:54Z",
@@ -5220,7 +5319,8 @@
       "Bakragore"
     ],
     "reason": "Killed at Level 1206 by Buballu and Bakragore.",
-    "recordedAt": "2026-11-17T04:55:42.109Z"
+    "recordedAt": "2026-11-17T04:55:42.109Z",
+    "type": "pvp"
   },
   {
     "id": "dieguiin moskitao|2026-11-06T15:37:12Z",
@@ -5246,7 +5346,8 @@
       "oozing carcass"
     ],
     "reason": "Died at Level 1304 by oozing carcass.",
-    "recordedAt": "2026-11-17T04:55:48.995Z"
+    "recordedAt": "2026-11-17T04:55:48.995Z",
+    "type": "pve"
   },
   {
     "id": "lukstark|2026-11-06T14:45:37Z",
@@ -5259,7 +5360,8 @@
       "demon outcast"
     ],
     "reason": "Died at Level 1003 by demon outcast.",
-    "recordedAt": "2026-11-17T04:56:13.051Z"
+    "recordedAt": "2026-11-17T04:56:13.051Z",
+    "type": "pve"
   },
   {
     "id": "rengt|2026-11-06T14:14:00Z",
@@ -5401,7 +5503,8 @@
       "blemished spawn"
     ],
     "reason": "Died at Level 1305 by blemished spawn.",
-    "recordedAt": "2026-11-17T04:55:48.995Z"
+    "recordedAt": "2026-11-17T04:55:48.995Z",
+    "type": "pve"
   },
   {
     "id": "ffa|2026-11-06T04:11:00Z",
@@ -5477,7 +5580,8 @@
       "Swanie Druid"
     ],
     "reason": "Slain at Level 478 by Quelibrateu, Tio Lioo, Yoselet, Skyaxy, Ek Oh Yes and Swanie Druid.",
-    "recordedAt": "2026-11-17T04:56:45.929Z"
+    "recordedAt": "2026-11-17T04:56:45.929Z",
+    "type": "pvp"
   },
   {
     "id": "jotao bombinha|2026-11-06T02:20:50Z",
@@ -5671,7 +5775,8 @@
       "Buballu"
     ],
     "reason": "Killed at Level 1208 by Buballu.",
-    "recordedAt": "2026-11-17T04:55:42.109Z"
+    "recordedAt": "2026-11-17T04:55:42.109Z",
+    "type": "pvp"
   },
   {
     "id": "branco rathia|2026-11-05T17:26:28Z",
@@ -5929,7 +6034,8 @@
       "silverfrost sentinel"
     ],
     "reason": "Died at Level 1260 by silverfrost sentinel.",
-    "recordedAt": "2026-11-17T04:56:02.704Z"
+    "recordedAt": "2026-11-17T04:56:02.704Z",
+    "type": "pve"
   },
   {
     "id": "mihawk berserkr|2026-11-05T12:54:02Z",
@@ -5956,7 +6062,8 @@
       "cobra scout"
     ],
     "reason": "Killed at Level 1197 by Alee Mao and cobra scout.",
-    "recordedAt": "2026-11-17T04:55:35.481Z"
+    "recordedAt": "2026-11-17T04:55:35.481Z",
+    "type": "pvp"
   },
   {
     "id": "almocinho secreto|2026-11-05T10:11:06Z",
@@ -6407,7 +6514,8 @@
       "night harpy"
     ],
     "reason": "Died at Level 1972 by night harpy.",
-    "recordedAt": "2026-11-17T04:55:52.132Z"
+    "recordedAt": "2026-11-17T04:55:52.132Z",
+    "type": "pve"
   },
   {
     "id": "hig arch|2026-11-04T19:00:21Z",
@@ -6420,7 +6528,8 @@
       "flimsy lost soul"
     ],
     "reason": "Died at Level 599 by flimsy lost soul.",
-    "recordedAt": "2026-11-17T04:56:01.326Z"
+    "recordedAt": "2026-11-17T04:56:01.326Z",
+    "type": "pve"
   },
   {
     "id": "predactor loles|2026-11-04T17:17:21Z",
@@ -6459,7 +6568,8 @@
       "rotten man-maggot"
     ],
     "reason": "Died at Level 1223 by rotten man-maggot.",
-    "recordedAt": "2026-11-17T04:56:02.450Z"
+    "recordedAt": "2026-11-17T04:56:02.450Z",
+    "type": "pve"
   },
   {
     "id": "garpin commander|2026-11-04T16:59:12Z",
@@ -6500,7 +6610,8 @@
       "brachiodemon"
     ],
     "reason": "Killed at Level 1146 by Shev'Sorcerer and brachiodemon.",
-    "recordedAt": "2026-11-17T04:56:35.269Z"
+    "recordedAt": "2026-11-17T04:56:35.269Z",
+    "type": "pvp"
   },
   {
     "id": "vollcom kawano|2026-11-04T13:36:03Z",
@@ -6513,7 +6624,8 @@
       "moonspawn blightspitter"
     ],
     "reason": "Died at Level 934 by moonspawn blightspitter.",
-    "recordedAt": "2026-11-17T04:56:45.528Z"
+    "recordedAt": "2026-11-17T04:56:45.528Z",
+    "type": "pve"
   },
   {
     "id": "mago geladeira|2026-11-04T13:20:34Z",
@@ -6552,7 +6664,8 @@
       "energy"
     ],
     "reason": "Died at Level 1172 by energy.",
-    "recordedAt": "2026-11-17T04:56:09.017Z"
+    "recordedAt": "2026-11-17T04:56:09.017Z",
+    "type": "pve"
   },
   {
     "id": "siarrrrra|2026-11-04T12:23:49Z",
@@ -6698,7 +6811,8 @@
       "thanatursus"
     ],
     "reason": "Died at Level 252 by thanatursus.",
-    "recordedAt": "2026-11-17T04:56:47.166Z"
+    "recordedAt": "2026-11-17T04:56:47.166Z",
+    "type": "pve"
   },
   {
     "id": "praguinha bysen bombinha|2026-11-04T00:16:29Z",
@@ -6738,7 +6852,8 @@
       "nighthunter"
     ],
     "reason": "Died at Level 1067 by nighthunter.",
-    "recordedAt": "2026-11-17T04:55:55.386Z"
+    "recordedAt": "2026-11-17T04:55:55.386Z",
+    "type": "pve"
   },
   {
     "id": "manuzerah foradesi|2026-11-03T20:41:12Z",
@@ -6842,7 +6957,8 @@
       "eyeless devourer"
     ],
     "reason": "Died at Level 821 by eyeless devourer.",
-    "recordedAt": "2026-11-17T04:56:27.788Z"
+    "recordedAt": "2026-11-17T04:56:27.788Z",
+    "type": "pve"
   },
   {
     "id": "king nesr|2026-11-03T13:02:58Z",
@@ -7833,7 +7949,8 @@
       "Maior Domus"
     ],
     "reason": "Killed at Level 1311 by Ferganixd and Maior Domus.",
-    "recordedAt": "2026-11-17T04:55:33.907Z"
+    "recordedAt": "2026-11-17T04:55:33.907Z",
+    "type": "pvp"
   },
   {
     "id": "hizurak|2026-11-02T15:10:10Z",
@@ -7860,7 +7977,8 @@
       "infernal demon"
     ],
     "reason": "Killed at Level 1145 by Shev'Sorcerer and infernal demon.",
-    "recordedAt": "2026-11-17T04:56:35.269Z"
+    "recordedAt": "2026-11-17T04:56:35.269Z",
+    "type": "pvp"
   },
   {
     "id": "roth californian|2026-11-02T13:42:33Z",
@@ -7900,7 +8018,8 @@
       "death"
     ],
     "reason": "Killed at Level 1097 by Fau Boca Seca and death.",
-    "recordedAt": "2026-11-17T04:55:55.014Z"
+    "recordedAt": "2026-11-17T04:55:55.014Z",
+    "type": "pvp"
   },
   {
     "id": "ikyrou|2026-11-02T11:01:38Z",
@@ -8780,7 +8899,8 @@
       "soul scourge"
     ],
     "reason": "Died at Level 423 by soul scourge.",
-    "recordedAt": "2026-11-17T04:55:39.880Z"
+    "recordedAt": "2026-11-17T04:55:39.880Z",
+    "type": "pve"
   },
   {
     "id": "metralha ninja|2026-11-01T20:45:16Z",
@@ -8982,7 +9102,8 @@
       "wandering pillar"
     ],
     "reason": "Died at Level 1005 by wandering pillar.",
-    "recordedAt": "2026-11-17T04:55:56.877Z"
+    "recordedAt": "2026-11-17T04:55:56.877Z",
+    "type": "pve"
   },
   {
     "id": "mago frigideira|2026-11-01T02:12:46Z",
@@ -9189,7 +9310,8 @@
       "Mordechaj Aaron Blumsztajn"
     ],
     "reason": "Eliminated at Level 1103 by Maga Agnas, Tayzin Loveks Libertabrapune, Ray Pune, Pulga Bombinha, Murillao Bombs, Smith Myth Impiedoso, Mezenguinha Slayer, Prefeito Billionaire, Rabix Aloni, Zamil Nightshade, Mkee Reddington, Phcek Mordomo, Sabugo Bomb Quelibra, We ro and Mordechaj Aaron Blumsztajn.",
-    "recordedAt": "2026-11-17T04:56:25.194Z"
+    "recordedAt": "2026-11-17T04:56:25.194Z",
+    "type": "pvp"
   },
   {
     "id": "jeff da massa|2026-11-01T00:02:39Z",
