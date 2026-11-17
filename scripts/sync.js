@@ -3,7 +3,7 @@ const path = require('path');
 
 const GUILD_NAME = 'Insanity';
 const TIBIADATA_BASE = 'https://api.tibiadata.com/v4';
-const DATA_DIR = path.join(process.cwd(), 'data');
+const DATA_DIR = path.join(process.cwd(), 'public', 'data');
 const DEATHS_FILE = path.join(DATA_DIR, 'deaths.json');
 const META_FILE = path.join(DATA_DIR, 'meta.json');
 

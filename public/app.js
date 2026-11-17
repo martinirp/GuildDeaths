@@ -1,12 +1,12 @@
 const PAGE_SIZE = 50;
 const TOP_PAGE_SIZE = 10;
 
+let rawDeaths = [];
 let allDeaths = [];
 let top100List = [];
 let currentPage = 1;
 let topCurrentPage = 1;
 let pollTimer = null;
-let lastKnownTotal = -1;
 
 const el = {
   guildMeta: document.getElementById('guild-meta'),
@@ -51,45 +51,124 @@ function escapeHtml(str) {
     .replace(/"/g, '&quot;');
 }
 
-async function fetchStatus() {
-  const res = await fetch('/api/status');
-  const data = await res.json();
-  const { meta, sync, totalDeathsStored } = data;
+function computeStats(deaths) {
+  const sorted = [...deaths].sort(
+    (a, b) => new Date(b.time).getTime() - new Date(a.time).getTime()
+  );
 
-  const worldText = meta.world || '';
-  const membersText = meta.membersCount ? `${meta.membersCount} membros` : '';
-  el.guildMeta.textContent = [worldText, membersText].filter(Boolean).join(' • ');
+  const now = Date.now();
+  const oneDayAgo = now - 24 * 60 * 60 * 1000;
+  const sevenDaysAgo = now - 7 * 24 * 60 * 60 * 1000;
 
-  if (totalDeathsStored !== lastKnownTotal) {
-    lastKnownTotal = totalDeathsStored;
-    await Promise.all([fetchDeaths(), fetchStats()]);
+  let deaths24h = 0;
+  let deaths7d = 0;
+  const byPlayer = new Map();
+  const byCreature = new Map();
+
+  for (const d of sorted) {
+    const ts = new Date(d.time).getTime();
+    if (ts >= oneDayAgo) deaths24h++;
+    if (ts >= sevenDaysAgo) deaths7d++;
+
+    const playerEntry = byPlayer.get(d.character) || {
+      name: d.character,
+      vocation: d.vocation,
+      count: 0,
+      lastLevel: d.level,
+      lastDeath: d.time,
+      lastKillers: d.killers || [],
+    };
+    playerEntry.count++;
+    byPlayer.set(d.character, playerEntry);
+
+    for (const k of d.killers || []) {
+      byCreature.set(k, (byCreature.get(k) || 0) + 1);
+    }
   }
 
-  schedulePoll(sync.running ? 2000 : 15000);
+  const topVictims = Array.from(byPlayer.values())
+    .sort((a, b) => b.count - a.count || new Date(b.lastDeath).getTime() - new Date(a.lastDeath).getTime())
+    .slice(0, 100);
+
+  const topCreatures = Array.from(byCreature.entries())
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 15);
+
+  return {
+    totalDeaths: sorted.length,
+    deaths24h,
+    deaths7d,
+    topVictims,
+    topCreatures,
+  };
 }
 
-function schedulePoll(ms) {
-  clearTimeout(pollTimer);
-  pollTimer = setTimeout(fetchStatus, ms);
-}
+function applyFilters() {
+  const search = el.filterSearch.value.trim().toLowerCase();
+  const vocation = el.filterVocation.value.trim().toLowerCase();
+  const sort = el.filterSort.value;
 
-async function fetchDeaths() {
-  const params = new URLSearchParams({
-    search: el.filterSearch.value.trim(),
-    vocation: el.filterVocation.value,
-    sort: el.filterSort.value,
-  });
-  const res = await fetch(`/api/deaths?${params.toString()}`);
-  const data = await res.json();
-  allDeaths = data.deaths || [];
+  let list = [...rawDeaths];
+
+  if (search) {
+    list = list.filter(
+      (d) =>
+        (d.character || '').toLowerCase().includes(search) ||
+        (d.reason || '').toLowerCase().includes(search) ||
+        (d.killers || []).some((k) => k.toLowerCase().includes(search))
+    );
+  }
+
+  if (vocation && vocation !== 'all') {
+    list = list.filter((d) => (d.vocation || '').toLowerCase().includes(vocation));
+  }
+
+  if (sort === 'level_desc') {
+    list.sort((a, b) => b.level - a.level);
+  } else if (sort === 'level_asc') {
+    list.sort((a, b) => a.level - b.level);
+  } else {
+    list.sort((a, b) => new Date(b.time).getTime() - new Date(a.time).getTime());
+  }
+
+  allDeaths = list;
   currentPage = 1;
   renderDeathsTable();
 }
 
-async function fetchStats() {
-  const res = await fetch('/api/stats');
-  const stats = await res.json();
+async function loadData() {
+  try {
+    const bust = Date.now();
+    const [deathsRes, metaRes] = await Promise.all([
+      fetch(`/data/deaths.json?t=${bust}`),
+      fetch(`/data/meta.json?t=${bust}`),
+    ]);
 
+    if (deathsRes.ok) {
+      const parsed = await deathsRes.json();
+      rawDeaths = Array.isArray(parsed) ? parsed : [];
+    }
+
+    if (metaRes.ok) {
+      const meta = await metaRes.json();
+      const worldText = meta.world || '';
+      const membersText = meta.membersCount ? `${meta.membersCount} membros` : '';
+      el.guildMeta.textContent = [worldText, membersText].filter(Boolean).join(' • ');
+    }
+
+    const stats = computeStats(rawDeaths);
+    renderStats(stats);
+    applyFilters();
+  } catch (err) {
+    console.error('Erro ao carregar dados:', err);
+  } finally {
+    clearTimeout(pollTimer);
+    pollTimer = setTimeout(loadData, 60000);
+  }
+}
+
+function renderStats(stats) {
   el.statTotal.textContent = stats.totalDeaths;
   el.stat24h.textContent = stats.deaths24h;
   el.stat7d.textContent = stats.deaths7d;
@@ -291,10 +370,10 @@ el.top100Next.addEventListener('click', () => {
 let searchDebounce = null;
 el.filterSearch.addEventListener('input', () => {
   clearTimeout(searchDebounce);
-  searchDebounce = setTimeout(fetchDeaths, 200);
+  searchDebounce = setTimeout(applyFilters, 150);
 });
-el.filterVocation.addEventListener('change', fetchDeaths);
-el.filterSort.addEventListener('change', fetchDeaths);
+el.filterVocation.addEventListener('change', applyFilters);
+el.filterSort.addEventListener('change', applyFilters);
 
 document.querySelectorAll('.tab').forEach((tabBtn) => {
   tabBtn.addEventListener('click', () => {
@@ -305,6 +384,4 @@ document.querySelectorAll('.tab').forEach((tabBtn) => {
   });
 });
 
-(async function init() {
-  await Promise.all([fetchDeaths(), fetchStats(), fetchStatus()]);
-})();
+loadData();
