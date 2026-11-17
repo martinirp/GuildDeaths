@@ -4,7 +4,8 @@ module.exports = (req, res) => {
   const deaths = readDeaths();
   const stats = buildStats(deaths);
 
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'application/json; charset=utf-8');
   res.setHeader('Cache-Control', 'no-store');
-  res.status(200).json(stats);
+  res.end(JSON.stringify(stats));
 };
-
