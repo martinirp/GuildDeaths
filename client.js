@@ -15,6 +15,7 @@ const el = {
   statTotal: document.getElementById('stat-total'),
   stat24h: document.getElementById('stat-24h'),
   stat7d: document.getElementById('stat-7d'),
+  statVisitors: document.getElementById('stat-visitors'),
   statTopVictim: document.getElementById('stat-top-victim'),
   statTopVictimCount: document.getElementById('stat-top-victim-count'),
   statTopCreature: document.getElementById('stat-top-creature'),
@@ -514,4 +515,23 @@ document.querySelectorAll('.tab').forEach((tabBtn) => {
   });
 });
 
+async function updateVisitorCounter() {
+  try {
+    const key = 'insanity_visit_counted';
+    const alreadyCounted = sessionStorage.getItem(key) === '1';
+    const endpoint = alreadyCounted
+      ? 'https://abacus.jasoncameron.dev/get/insanity-deaths/visits'
+      : 'https://abacus.jasoncameron.dev/hit/insanity-deaths/visits';
+    const res = await fetch(endpoint);
+    if (res.ok) {
+      const data = await res.json();
+      if (typeof data.value === 'number') {
+        el.statVisitors.textContent = data.value.toLocaleString('pt-BR');
+        if (!alreadyCounted) sessionStorage.setItem(key, '1');
+      }
+    }
+  } catch {}
+}
+
+updateVisitorCounter();
 loadData();
