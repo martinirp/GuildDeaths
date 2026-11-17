@@ -6,10 +6,12 @@ let allDeaths = [];
 let top100List = [];
 let currentPage = 1;
 let topCurrentPage = 1;
+let topMode = 'total';
 let pollTimer = null;
 
 const el = {
   guildMeta: document.getElementById('guild-meta'),
+  top100Title: document.getElementById('top100-title'),
   statTotal: document.getElementById('stat-total'),
   stat24h: document.getElementById('stat-24h'),
   stat7d: document.getElementById('stat-7d'),
@@ -51,6 +53,43 @@ function escapeHtml(str) {
     .replace(/"/g, '&quot;');
 }
 
+function isDeathPvP(d) {
+  if (d.type === 'pvp') return true;
+  if (d.type === 'pve') return false;
+  return Array.isArray(d.killers) && d.killers.some((k) => /^[A-Z]/.test(k) && !k.startsWith('The '));
+}
+
+function computeTopVictims(deaths, mode = 'total') {
+  const filtered =
+    mode === 'pvp'
+      ? deaths.filter(isDeathPvP)
+      : mode === 'pve'
+        ? deaths.filter((d) => !isDeathPvP(d))
+        : deaths;
+
+  const sorted = [...filtered].sort(
+    (a, b) => new Date(b.time).getTime() - new Date(a.time).getTime()
+  );
+
+  const byPlayer = new Map();
+  for (const d of sorted) {
+    const playerEntry = byPlayer.get(d.character) || {
+      name: d.character,
+      vocation: d.vocation,
+      count: 0,
+      lastLevel: d.level,
+      lastDeath: d.time,
+      lastKillers: d.killers || [],
+    };
+    playerEntry.count++;
+    byPlayer.set(d.character, playerEntry);
+  }
+
+  return Array.from(byPlayer.values())
+    .sort((a, b) => b.count - a.count || new Date(b.lastDeath).getTime() - new Date(a.lastDeath).getTime())
+    .slice(0, 100);
+}
+
 function computeStats(deaths) {
   const sorted = [...deaths].sort(
     (a, b) => new Date(b.time).getTime() - new Date(a.time).getTime()
@@ -62,7 +101,6 @@ function computeStats(deaths) {
 
   let deaths24h = 0;
   let deaths7d = 0;
-  const byPlayer = new Map();
   const byCreature = new Map();
 
   for (const d of sorted) {
@@ -70,25 +108,12 @@ function computeStats(deaths) {
     if (ts >= oneDayAgo) deaths24h++;
     if (ts >= sevenDaysAgo) deaths7d++;
 
-    const playerEntry = byPlayer.get(d.character) || {
-      name: d.character,
-      vocation: d.vocation,
-      count: 0,
-      lastLevel: d.level,
-      lastDeath: d.time,
-      lastKillers: d.killers || [],
-    };
-    playerEntry.count++;
-    byPlayer.set(d.character, playerEntry);
-
     for (const k of d.killers || []) {
       byCreature.set(k, (byCreature.get(k) || 0) + 1);
     }
   }
 
-  const topVictims = Array.from(byPlayer.values())
-    .sort((a, b) => b.count - a.count || new Date(b.lastDeath).getTime() - new Date(a.lastDeath).getTime())
-    .slice(0, 100);
+  const topVictims = computeTopVictims(sorted, 'total');
 
   const topCreatures = Array.from(byCreature.entries())
     .map(([name, count]) => ({ name, count }))
@@ -339,9 +364,15 @@ function renderTop100Pagination(totalPages) {
   });
 }
 
-function renderRankings(stats) {
-  top100List = (stats.topVictims || []).slice(0, 100);
+function updateTop100View() {
+  const modeLabels = { total: 'Total', pvp: 'PvP', pve: 'PvE' };
+  el.top100Title.textContent = `Top 100 — Mortes (${modeLabels[topMode] || 'Total'})`;
+  top100List = computeTopVictims(rawDeaths, topMode);
   renderTop100Table();
+}
+
+function renderRankings(stats) {
+  updateTop100View();
 
   if (stats.topCreatures.length === 0) {
     el.rankingCreatures.innerHTML = '<li class="ranking-item"><span>Sem dados ainda</span></li>';
@@ -381,6 +412,16 @@ el.filterSearch.addEventListener('input', () => {
 });
 el.filterVocation.addEventListener('change', applyFilters);
 el.filterSort.addEventListener('change', applyFilters);
+
+document.querySelectorAll('.mode-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.mode-btn').forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+    topMode = btn.dataset.topMode;
+    topCurrentPage = 1;
+    updateTop100View();
+  });
+});
 
 document.querySelectorAll('.tab').forEach((tabBtn) => {
   tabBtn.addEventListener('click', () => {

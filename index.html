@@ -81,14 +81,19 @@
         <main id="tab-top100" class="tab-panel active">
           <div class="tibia-box">
             <div class="caption-bar caption-with-arrows">
-              <span>Top 100 — Mortes da Guild Insanity</span>
+              <span id="top100-title">Top 100 — Mortes (Total)</span>
               <div class="caption-pager">
                 <button type="button" id="top100-prev" class="caption-arrow-btn" title="Anterior">◀</button>
-                <span id="top100-range" class="caption-range">1–25</span>
+                <span id="top100-range" class="caption-range">1–10</span>
                 <button type="button" id="top100-next" class="caption-arrow-btn" title="Próximo">▶</button>
               </div>
             </div>
             <div class="box-inner">
+              <div class="top-mode-bar">
+                <button type="button" class="mode-btn active" data-top-mode="total">Total</button>
+                <button type="button" class="mode-btn" data-top-mode="pvp">PvP</button>
+                <button type="button" class="mode-btn" data-top-mode="pve">PvE</button>
+              </div>
               <div class="pagination pagination-top" id="top100-pagination-top"></div>
               <div class="table-container">
                 <table class="tibia-table">

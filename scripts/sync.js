@@ -96,7 +96,18 @@ async function main() {
           for (const death of charDeaths) {
             if (!death || !death.time) continue;
             const id = makeDeathId(member.name, death.time);
-            if (deathsMap.has(id)) continue;
+            const isPvP =
+              (Array.isArray(death.killers) && death.killers.some((k) => k.player || k.summon)) ||
+              (Array.isArray(death.assists) && death.assists.some((a) => a.player || a.summon));
+            const deathType = isPvP ? 'pvp' : 'pve';
+
+            if (deathsMap.has(id)) {
+              const existing = deathsMap.get(id);
+              if (!existing.type) {
+                existing.type = deathType;
+              }
+              continue;
+            }
 
             const killers = Array.isArray(death.killers)
               ? death.killers.map((k) => k.name).filter(Boolean)
@@ -104,6 +115,7 @@ async function main() {
 
             deathsMap.set(id, {
               id,
+              type: deathType,
               character: member.name,
               vocation: member.vocation || 'Unknown',
               rank: member.rank || '',

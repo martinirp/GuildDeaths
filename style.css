@@ -602,3 +602,31 @@ body {
   min-width: 44px;
   text-align: center;
 }
+
+.top-mode-bar {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.mode-btn {
+  background: var(--parchment-row-even);
+  color: var(--tibia-brown);
+  border: 1px solid #7a5c3e;
+  padding: 5px 14px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.mode-btn:hover {
+  background: #ffe8c2;
+}
+
+.mode-btn.active {
+  background: linear-gradient(180deg, #0050a8 0%, #002b5c 100%);
+  color: #ffeac3;
+  border-color: #d1a04d;
+}
