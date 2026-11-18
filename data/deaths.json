@@ -1,5 +1,19 @@
 [
   {
+    "id": "mayinbu|2026-11-18T01:47:08Z",
+    "type": "pve",
+    "character": "Mayinbu",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 167,
+    "time": "2026-11-18T01:47:08Z",
+    "killers": [
+      "ravenous lava lurker"
+    ],
+    "reason": "Died at Level 167 by ravenous lava lurker.",
+    "recordedAt": "2026-11-18T03:49:16.084Z"
+  },
+  {
     "id": "tuco boladaoo|2026-11-17T22:21:22Z",
     "type": "pve",
     "character": "Tuco Boladaoo",
@@ -337,7 +351,8 @@
       "falcon knight"
     ],
     "reason": "Died at Level 401 by falcon knight.",
-    "recordedAt": "2026-11-17T04:55:48.943Z"
+    "recordedAt": "2026-11-17T04:55:48.943Z",
+    "type": "pve"
   },
   {
     "id": "evil demolidor|2026-11-16T22:01:14Z",
@@ -1315,7 +1330,8 @@
       "arachnophobica"
     ],
     "reason": "Died at Level 400 by arachnophobica.",
-    "recordedAt": "2026-11-17T04:55:48.943Z"
+    "recordedAt": "2026-11-17T04:55:48.943Z",
+    "type": "pve"
   },
   {
     "id": "sanguinarius death|2026-11-15T16:12:56Z",
@@ -1384,7 +1400,8 @@
       "draken abomination"
     ],
     "reason": "Died at Level 979 by draken abomination.",
-    "recordedAt": "2026-11-17T04:56:41.763Z"
+    "recordedAt": "2026-11-17T04:56:41.763Z",
+    "type": "pve"
   },
   {
     "id": "pititao|2026-11-15T14:27:09Z",
@@ -4159,7 +4176,8 @@
       "Raigor Stonyhoof"
     ],
     "reason": "Crushed at Level 555 by Hookah King Kill, Giovannexx Edbomb, Bakaj Lando, Zayrgharz, Zarashalis Keritrana, Ignobanco, Fraga Bombinha, Lebranco James, Venzom, Wiviiziinha, Loro Kamado, Doobie Sorc, We ro and Raigor Stonyhoof. Assisted by Neto On and Ryokim Voices.",
-    "recordedAt": "2026-11-17T04:56:47.209Z"
+    "recordedAt": "2026-11-17T04:56:47.209Z",
+    "type": "pvp"
   },
   {
     "id": "ryokim voices|2026-11-08T22:29:31Z",
@@ -4553,7 +4571,8 @@
       "shrieking cry-stal"
     ],
     "reason": "Killed at Level 976 by Tonin de Club and shrieking cry-stal.",
-    "recordedAt": "2026-11-17T04:56:41.763Z"
+    "recordedAt": "2026-11-17T04:56:41.763Z",
+    "type": "pvp"
   },
   {
     "id": "you goji|2026-11-08T04:37:49Z",
@@ -4723,7 +4742,8 @@
       "floating savant"
     ],
     "reason": "Died at Level 684 by floating savant.",
-    "recordedAt": "2026-11-17T04:35:41.126Z"
+    "recordedAt": "2026-11-17T04:35:41.126Z",
+    "type": "pve"
   },
   {
     "id": "descolado|2026-11-07T20:17:23Z",
@@ -4736,7 +4756,8 @@
       "crypt warrior"
     ],
     "reason": "Died at Level 1032 by crypt warrior.",
-    "recordedAt": "2026-11-17T04:55:48.458Z"
+    "recordedAt": "2026-11-17T04:55:48.458Z",
+    "type": "pve"
   },
   {
     "id": "lord bodin|2026-11-07T19:12:21Z",
@@ -6370,7 +6391,8 @@
       "Pjpune"
     ],
     "reason": "Crushed at Level 555 by Yano Kill, No Alfiler defender, Arcanjo Daniel, Rica Rox, Kiing Andreziinho, Magoo Veii, Foras Tero, We ro, Godmode Druid and Pjpune. Assisted by Thucky Nucky, Biserker, Ferganixd, Eu, Vitim do sus and Ocueistore Bombinha.",
-    "recordedAt": "2026-11-17T04:56:47.209Z"
+    "recordedAt": "2026-11-17T04:56:47.209Z",
+    "type": "pvp"
   },
   {
     "id": "king jefinho|2026-11-05T02:08:52Z",
@@ -7696,7 +7718,8 @@
       "Goa Bebeca"
     ],
     "reason": "Crushed at Level 579 by Patryck Dievoque, No Alfiler defender, Kiwos anbus, Bagula Doidow, Murillao Bombs, Boombeck, Zarashalis Keritrana, Rica Rox, Kiing Andreziinho, No Alfiler Pune, Fantasma Vitimada Sociedade, Phcek Mordomo and Goa Bebeca.",
-    "recordedAt": "2026-11-17T04:56:13.440Z"
+    "recordedAt": "2026-11-17T04:56:13.440Z",
+    "type": "pvp"
   },
   {
     "id": "lysa lys|2026-11-03T02:12:04Z",
@@ -7709,7 +7732,8 @@
       "carnivostrich"
     ],
     "reason": "Died at Level 580 by carnivostrich.",
-    "recordedAt": "2026-11-17T04:56:13.440Z"
+    "recordedAt": "2026-11-17T04:56:13.440Z",
+    "type": "pve"
   },
   {
     "id": "links the second|2026-11-03T02:11:24Z",
@@ -8055,7 +8079,8 @@
       "floating savant"
     ],
     "reason": "Died at Level 684 by floating savant.",
-    "recordedAt": "2026-11-17T04:35:41.126Z"
+    "recordedAt": "2026-11-17T04:35:41.126Z",
+    "type": "pve"
   },
   {
     "id": "jardellb|2026-11-02T16:49:47Z",
