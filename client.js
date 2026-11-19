@@ -18,11 +18,12 @@ async function fetchDataJson(filename) {
 let rawDeaths = [];
 let allDeaths = [];
 let top100List = [];
-let allCreaturesList = [];
+let allCreaturesByMode = { total: [], pvp: [], pve: [] };
 let allHallList = [];
 let currentPage = 1;
 let topCurrentPage = 1;
 let topMode = 'total';
+let creaturesMode = 'total';
 let statsMode = 'total';
 let pollTimer = null;
 
@@ -55,6 +56,7 @@ const el = {
   top100PaginationTop: document.getElementById('top100-pagination-top'),
   top100Pagination: document.getElementById('top100-pagination'),
   pagination: document.getElementById('pagination'),
+  creaturesTitle: document.getElementById('creatures-title'),
   rankingCreatures: document.getElementById('ranking-creatures'),
   hallContainer: document.getElementById('hall-container'),
   statsTitle: document.getElementById('stats-title'),
@@ -188,17 +190,19 @@ function computeStats(deaths) {
     .sort((a, b) => b.count - a.count)
     .map((entry, idx) => ({ ...entry, rank: idx + 1 }));
 
-  const topCreaturesPvp = Array.from(byCreaturePvp.entries())
+  const allCreaturesPvp = Array.from(byCreaturePvp.entries())
     .map(([name, count]) => ({ name, count }))
     .sort((a, b) => b.count - a.count)
-    .slice(0, 1);
+    .map((entry, idx) => ({ ...entry, rank: idx + 1 }));
 
-  const topCreaturesPve = Array.from(byCreaturePve.entries())
+  const allCreaturesPve = Array.from(byCreaturePve.entries())
     .map(([name, count]) => ({ name, count }))
     .sort((a, b) => b.count - a.count)
-    .slice(0, 1);
+    .map((entry, idx) => ({ ...entry, rank: idx + 1 }));
 
   const topCreatures = allCreatures.slice(0, 15);
+  const topCreaturesPvp = allCreaturesPvp.slice(0, 1);
+  const topCreaturesPve = allCreaturesPve.slice(0, 1);
 
   return {
     totalDeaths: sorted.length,
@@ -211,6 +215,8 @@ function computeStats(deaths) {
     topCreaturesPvp,
     topCreaturesPve,
     allCreatures,
+    allCreaturesPvp,
+    allCreaturesPve,
   };
 }
 
@@ -649,10 +655,15 @@ function renderHallOfFame(hallList = allHallList) {
 }
 
 function renderCreaturesList() {
+  const modeLabels = { total: 'Total', pvp: 'PvP', pve: 'PvE' };
+  if (el.creaturesTitle) {
+    el.creaturesTitle.textContent = `Mais Letais (${modeLabels[creaturesMode] || 'Total'})`;
+  }
+  const source = allCreaturesByMode[creaturesMode] || allCreaturesByMode.total || [];
   const search = (el.creaturesSearch?.value || '').trim().toLowerCase();
   const list = search
-    ? allCreaturesList.filter((c) => (c.name || '').toLowerCase().includes(search))
-    : allCreaturesList.slice(0, 15);
+    ? source.filter((c) => (c.name || '').toLowerCase().includes(search))
+    : source.slice(0, 15);
 
   if (list.length === 0) {
     el.rankingCreatures.innerHTML = `<li class="ranking-item"><span>${
@@ -673,7 +684,11 @@ function renderCreaturesList() {
 }
 
 function renderRankings(stats) {
-  allCreaturesList = stats.allCreatures || stats.topCreatures || [];
+  allCreaturesByMode = {
+    total: stats.allCreatures || stats.topCreatures || [],
+    pvp: stats.allCreaturesPvp || [],
+    pve: stats.allCreaturesPve || [],
+  };
   updateTop100View();
   renderCreaturesList();
   renderStatsTab();
@@ -1017,6 +1032,15 @@ document.querySelectorAll('.mode-btn[data-top-mode]').forEach((btn) => {
     topMode = btn.dataset.topMode;
     topCurrentPage = 1;
     updateTop100View();
+  });
+});
+
+document.querySelectorAll('.creatures-mode-btn[data-creatures-mode]').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.creatures-mode-btn[data-creatures-mode]').forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+    creaturesMode = btn.dataset.creaturesMode;
+    renderCreaturesList();
   });
 });
 

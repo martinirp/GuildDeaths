@@ -208,9 +208,14 @@
         <main id="tab-creatures" class="tab-panel">
           <div class="tibia-box">
             <div class="caption-bar">
-              <span>Mais Letais</span>
+              <span id="creatures-title">Mais Letais (Total)</span>
             </div>
             <div class="box-inner">
+              <div class="top-mode-bar">
+                <button type="button" class="mode-btn creatures-mode-btn active" data-creatures-mode="total">Total</button>
+                <button type="button" class="mode-btn creatures-mode-btn" data-creatures-mode="pvp">PvP</button>
+                <button type="button" class="mode-btn creatures-mode-btn" data-creatures-mode="pve">PvE</button>
+              </div>
               <div class="filters">
                 <input
                   type="text"
@@ -309,6 +314,6 @@
     </footer>
   </div>
 
-  <script src="/client.js?v=10"></script>
+  <script src="/client.js?v=11"></script>
 </body>
 </html>
