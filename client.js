@@ -40,6 +40,10 @@ const el = {
   statTopPveCount: document.getElementById('stat-top-pve-count'),
   statTopCreature: document.getElementById('stat-top-creature'),
   statTopCreatureCount: document.getElementById('stat-top-creature-count'),
+  statTopCreaturePvp: document.getElementById('stat-top-creature-pvp'),
+  statTopCreaturePvpCount: document.getElementById('stat-top-creature-pvp-count'),
+  statTopCreaturePve: document.getElementById('stat-top-creature-pve'),
+  statTopCreaturePveCount: document.getElementById('stat-top-creature-pve-count'),
   top100Search: document.getElementById('top100-search'),
   filterSearch: document.getElementById('filter-search'),
   filterVocation: document.getElementById('filter-vocation'),
@@ -144,14 +148,24 @@ function computeStats(deaths) {
   let deaths24h = 0;
   let deaths7d = 0;
   const byCreature = new Map();
+  const byCreaturePvp = new Map();
+  const byCreaturePve = new Map();
 
   for (const d of sorted) {
     const ts = new Date(d.time).getTime();
     if (ts >= oneDayAgo) deaths24h++;
     if (ts >= sevenDaysAgo) deaths7d++;
 
+    const pvp = isDeathPvP(d);
     for (const k of d.killers || []) {
       byCreature.set(k, (byCreature.get(k) || 0) + 1);
+      if (pvp) {
+        if (!/^[a-z]/.test(k)) {
+          byCreaturePvp.set(k, (byCreaturePvp.get(k) || 0) + 1);
+        }
+      } else {
+        byCreaturePve.set(k, (byCreaturePve.get(k) || 0) + 1);
+      }
     }
   }
 
@@ -164,6 +178,16 @@ function computeStats(deaths) {
     .sort((a, b) => b.count - a.count)
     .map((entry, idx) => ({ ...entry, rank: idx + 1 }));
 
+  const topCreaturesPvp = Array.from(byCreaturePvp.entries())
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 1);
+
+  const topCreaturesPve = Array.from(byCreaturePve.entries())
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 1);
+
   const topCreatures = allCreatures.slice(0, 15);
 
   return {
@@ -174,6 +198,8 @@ function computeStats(deaths) {
     topVictimsPvp,
     topVictimsPve,
     topCreatures,
+    topCreaturesPvp,
+    topCreaturesPve,
     allCreatures,
   };
 }
@@ -359,12 +385,12 @@ async function loadData() {
   }
 }
 
-function setLeaderHighlight(nameEl, countEl, list) {
+function setHighlightItem(nameEl, countEl, list, singular, plural) {
   if (!nameEl || !countEl) return;
   if (list && list.length > 0) {
     const top = list[0];
     nameEl.textContent = top.name;
-    countEl.textContent = `${top.count} ${top.count === 1 ? 'morte' : 'mortes'}`;
+    countEl.textContent = `${top.count} ${top.count === 1 ? singular : plural}`;
   } else {
     nameEl.textContent = '—';
     countEl.textContent = '—';
@@ -376,18 +402,13 @@ function renderStats(stats) {
   el.stat24h.textContent = stats.deaths24h;
   el.stat7d.textContent = stats.deaths7d;
 
-  setLeaderHighlight(el.statTopVictim, el.statTopVictimCount, stats.topVictims);
-  setLeaderHighlight(el.statTopPvp, el.statTopPvpCount, stats.topVictimsPvp);
-  setLeaderHighlight(el.statTopPve, el.statTopPveCount, stats.topVictimsPve);
+  setHighlightItem(el.statTopVictim, el.statTopVictimCount, stats.topVictims, 'morte', 'mortes');
+  setHighlightItem(el.statTopPvp, el.statTopPvpCount, stats.topVictimsPvp, 'morte', 'mortes');
+  setHighlightItem(el.statTopPve, el.statTopPveCount, stats.topVictimsPve, 'morte', 'mortes');
 
-  if (stats.topCreatures.length > 0) {
-    const topC = stats.topCreatures[0];
-    el.statTopCreature.textContent = topC.name;
-    el.statTopCreatureCount.textContent = `${topC.count} abates`;
-  } else {
-    el.statTopCreature.textContent = '—';
-    el.statTopCreatureCount.textContent = '—';
-  }
+  setHighlightItem(el.statTopCreature, el.statTopCreatureCount, stats.topCreatures, 'abate', 'abates');
+  setHighlightItem(el.statTopCreaturePvp, el.statTopCreaturePvpCount, stats.topCreaturesPvp, 'abate', 'abates');
+  setHighlightItem(el.statTopCreaturePve, el.statTopCreaturePveCount, stats.topCreaturesPve, 'abate', 'abates');
 
   renderRankings(stats);
 }
