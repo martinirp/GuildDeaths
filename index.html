@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tibia - Insanity Top 100</title>
-  <link rel="stylesheet" href="/style.css?v=3" />
+  <link rel="stylesheet" href="/style.css?v=4" />
 </head>
 <body>
   <div class="tibia-page">
@@ -41,6 +41,9 @@
             </button>
             <button class="tab sidebar-link" data-tab="hall">
               <span class="arrow">»</span> Hall da Fama
+            </button>
+            <button class="tab sidebar-link" data-tab="stats">
+              <span class="arrow">»</span> Estatísticas
             </button>
           </nav>
         </div>
@@ -241,6 +244,63 @@
             </div>
           </div>
         </main>
+
+        <main id="tab-stats" class="tab-panel">
+          <div class="tibia-box">
+            <div class="caption-bar">
+              <span id="stats-title">Estatísticas &amp; Projeção</span>
+            </div>
+            <div class="box-inner">
+              <div class="top-mode-bar">
+                <button type="button" class="mode-btn stats-mode-btn active" data-stats-mode="total">Total</button>
+                <button type="button" class="mode-btn stats-mode-btn" data-stats-mode="pvp">PvP</button>
+                <button type="button" class="mode-btn stats-mode-btn" data-stats-mode="pve">PvE</button>
+              </div>
+
+              <div class="stats-kpi-grid">
+                <div class="stats-kpi-card">
+                  <span class="highlight-label">Média Diária</span>
+                  <strong id="stats-avg-day">—</strong>
+                  <small id="stats-avg-sub">—</small>
+                </div>
+                <div class="stats-kpi-card">
+                  <span class="highlight-label">Dia Mais Mortal</span>
+                  <strong id="stats-peak-day">—</strong>
+                  <small id="stats-peak-count">—</small>
+                </div>
+                <div class="stats-kpi-card">
+                  <span class="highlight-label">Projeção Fim do Mês</span>
+                  <strong id="stats-projection">—</strong>
+                  <small id="stats-projection-sub">—</small>
+                </div>
+                <div class="stats-kpi-card">
+                  <span class="highlight-label">Divisão PvP / PvE</span>
+                  <strong id="stats-split">—</strong>
+                  <small id="stats-split-sub">—</small>
+                </div>
+              </div>
+
+              <div class="stats-chart-box">
+                <div class="stats-section-title">Mortes Diárias e Projeção Acumulada do Mês</div>
+                <div class="stats-legend">
+                  <span class="legend-item"><span class="legend-swatch swatch-bar"></span> Mortes/dia (real)</span>
+                  <span class="legend-item"><span class="legend-swatch swatch-bar-proj"></span> Projeção/dia</span>
+                  <span class="legend-item"><span class="legend-swatch swatch-line"></span> Acumulado real</span>
+                  <span class="legend-item"><span class="legend-swatch swatch-line-proj"></span> Projeção acumulada</span>
+                </div>
+                <div class="stats-chart-wrap" id="stats-chart-wrap">
+                  <svg id="stats-chart-svg" class="stats-chart-svg" viewBox="0 0 760 320" preserveAspectRatio="xMidYMid meet"></svg>
+                  <div id="stats-tooltip" class="stats-tooltip hidden"></div>
+                </div>
+              </div>
+
+              <div class="stats-chart-box">
+                <div class="stats-section-title">Mortes por Vocação</div>
+                <div id="stats-vocation-bars" class="vocation-bars"></div>
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
     </div>
 
@@ -249,6 +309,6 @@
     </footer>
   </div>
 
-  <script src="/client.js?v=9"></script>
+  <script src="/client.js?v=10"></script>
 </body>
 </html>

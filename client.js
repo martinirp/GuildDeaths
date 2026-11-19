@@ -23,6 +23,7 @@ let allHallList = [];
 let currentPage = 1;
 let topCurrentPage = 1;
 let topMode = 'total';
+let statsMode = 'total';
 let pollTimer = null;
 
 const el = {
@@ -56,6 +57,19 @@ const el = {
   pagination: document.getElementById('pagination'),
   rankingCreatures: document.getElementById('ranking-creatures'),
   hallContainer: document.getElementById('hall-container'),
+  statsTitle: document.getElementById('stats-title'),
+  statsAvgDay: document.getElementById('stats-avg-day'),
+  statsAvgSub: document.getElementById('stats-avg-sub'),
+  statsPeakDay: document.getElementById('stats-peak-day'),
+  statsPeakCount: document.getElementById('stats-peak-count'),
+  statsProjection: document.getElementById('stats-projection'),
+  statsProjectionSub: document.getElementById('stats-projection-sub'),
+  statsSplit: document.getElementById('stats-split'),
+  statsSplitSub: document.getElementById('stats-split-sub'),
+  statsChartWrap: document.getElementById('stats-chart-wrap'),
+  statsChartSvg: document.getElementById('stats-chart-svg'),
+  statsTooltip: document.getElementById('stats-tooltip'),
+  statsVocationBars: document.getElementById('stats-vocation-bars'),
 };
 
 function getCurrentMonthKey() {
@@ -662,6 +676,294 @@ function renderRankings(stats) {
   allCreaturesList = stats.allCreatures || stats.topCreatures || [];
   updateTop100View();
   renderCreaturesList();
+  renderStatsTab();
+}
+
+function normalizeVocationGroup(voc) {
+  const v = (voc || '').toLowerCase();
+  if (v.includes('knight')) return 'Knight / EK';
+  if (v.includes('paladin')) return 'Paladin / RP';
+  if (v.includes('sorcerer')) return 'Sorcerer / MS';
+  if (v.includes('druid')) return 'Druid / ED';
+  if (v.includes('monk')) return 'Monk / EM';
+  return voc || 'Desconhecida';
+}
+
+function renderStatsTab() {
+  if (!el.statsChartSvg) return;
+
+  const modeLabels = { total: 'Total', pvp: 'PvP', pve: 'PvE' };
+  const monthKey = getCurrentMonthKey();
+  const [yearNum, monthNum] = monthKey.split('-').map(Number);
+  const daysInMonth = new Date(Date.UTC(yearNum, monthNum, 0)).getUTCDate();
+  const now = new Date();
+  const isSameMonth = now.getUTCFullYear() === yearNum && now.getUTCMonth() + 1 === monthNum;
+  const elapsedDays = isSameMonth ? Math.max(1, now.getUTCDate()) : daysInMonth;
+
+  el.statsTitle.textContent = `Estatísticas & Projeção — ${formatMonthLabel(monthKey)} (${modeLabels[statsMode] || 'Total'})`;
+
+  const allMonthDeaths = rawDeaths;
+  const pvpCountAll = allMonthDeaths.filter(isDeathPvP).length;
+  const pveCountAll = allMonthDeaths.length - pvpCountAll;
+  const pvpPct = allMonthDeaths.length > 0 ? Math.round((pvpCountAll / allMonthDeaths.length) * 100) : 0;
+  const pvePct = allMonthDeaths.length > 0 ? 100 - pvpPct : 0;
+
+  el.statsSplit.textContent = `${pvpPct}% / ${pvePct}%`;
+  el.statsSplitSub.textContent = `${pvpCountAll} PvP • ${pveCountAll} PvE`;
+
+  const filtered =
+    statsMode === 'pvp'
+      ? allMonthDeaths.filter(isDeathPvP)
+      : statsMode === 'pve'
+        ? allMonthDeaths.filter((d) => !isDeathPvP(d))
+        : allMonthDeaths;
+
+  const daily = Array(daysInMonth + 1).fill(0);
+  for (const d of filtered) {
+    if (!d.time) continue;
+    const day = Number(String(d.time).slice(8, 10));
+    if (day >= 1 && day <= daysInMonth) {
+      daily[day]++;
+    }
+  }
+
+  const totalSoFar = filtered.length;
+  const avgPerDay = totalSoFar / elapsedDays;
+  const remainingDays = Math.max(0, daysInMonth - elapsedDays);
+  const projectedEnd = Math.round(totalSoFar + avgPerDay * remainingDays);
+
+  // Recent 7-day pace for comparison
+  const recentWindow = Math.min(7, elapsedDays);
+  let recentSum = 0;
+  for (let d = elapsedDays - recentWindow + 1; d <= elapsedDays; d++) {
+    recentSum += daily[d];
+  }
+  const recentAvg = recentSum / recentWindow;
+
+  let peakDay = 1;
+  let peakVal = 0;
+  for (let d = 1; d <= elapsedDays; d++) {
+    if (daily[d] >= peakVal) {
+      peakVal = daily[d];
+      peakDay = d;
+    }
+  }
+
+  el.statsAvgDay.textContent = `${avgPerDay.toFixed(1)} / dia`;
+  el.statsAvgSub.textContent = `Últimos ${recentWindow}d: ${recentAvg.toFixed(1)} / dia`;
+
+  if (peakVal > 0) {
+    const dd = String(peakDay).padStart(2, '0');
+    const mm = String(monthNum).padStart(2, '0');
+    el.statsPeakDay.textContent = `${dd}/${mm}`;
+    el.statsPeakCount.textContent = `${peakVal} ${peakVal === 1 ? 'morte' : 'mortes'}`;
+  } else {
+    el.statsPeakDay.textContent = '—';
+    el.statsPeakCount.textContent = 'Sem dados';
+  }
+
+  el.statsProjection.textContent = `~${projectedEnd.toLocaleString('pt-BR')}`;
+  el.statsProjectionSub.textContent =
+    remainingDays > 0
+      ? `+${Math.round(avgPerDay * remainingDays)} nos próximos ${remainingDays}d`
+      : 'Mês encerrado';
+
+  // Build cumulative arrays
+  const cumReal = Array(daysInMonth + 1).fill(null);
+  const cumProj = Array(daysInMonth + 1).fill(null);
+  let acc = 0;
+  for (let d = 1; d <= elapsedDays; d++) {
+    acc += daily[d];
+    cumReal[d] = acc;
+  }
+  cumProj[elapsedDays] = acc;
+  for (let d = elapsedDays + 1; d <= daysInMonth; d++) {
+    cumProj[d] = Math.round(acc + avgPerDay * (d - elapsedDays));
+  }
+
+  // SVG Chart dimensions
+  const W = 760;
+  const H = 320;
+  const padL = 44;
+  const padR = 54;
+  const padT = 22;
+  const padB = 36;
+  const plotW = W - padL - padR;
+  const plotH = H - padT - padB;
+
+  const maxDaily = Math.max(5, Math.ceil(Math.max(...daily.slice(1), avgPerDay) * 1.15));
+  const maxCum = Math.max(10, Math.ceil(Math.max(projectedEnd, acc) * 1.1));
+
+  const stepX = plotW / daysInMonth;
+  const barW = Math.max(6, stepX * 0.64);
+  const xCenter = (d) => padL + (d - 0.5) * stepX;
+  const yDaily = (v) => padT + plotH - (v / maxDaily) * plotH;
+  const yCum = (v) => padT + plotH - (v / maxCum) * plotH;
+
+  let svgParts = [];
+
+  // Horizontal grid + Y labels (left = daily, right = cumulative)
+  const ticks = 4;
+  for (let i = 0; i <= ticks; i++) {
+    const frac = i / ticks;
+    const y = padT + plotH - frac * plotH;
+    const leftVal = Math.round(frac * maxDaily);
+    const rightVal = Math.round(frac * maxCum);
+    svgParts.push(
+      `<line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="#d9c6a8" stroke-width="1" />`
+    );
+    svgParts.push(
+      `<text x="${padL - 6}" y="${y + 4}" text-anchor="end" font-size="10" fill="#7a5c3e">${leftVal}</text>`
+    );
+    svgParts.push(
+      `<text x="${W - padR + 6}" y="${y + 4}" text-anchor="start" font-size="10" fill="#004294">${rightVal}</text>`
+    );
+  }
+
+  // Axes
+  svgParts.push(
+    `<line x1="${padL}" y1="${padT + plotH}" x2="${W - padR}" y2="${padT + plotH}" stroke="#7a5c3e" stroke-width="1.2" />`
+  );
+
+  // Today divider
+  if (elapsedDays < daysInMonth) {
+    const todayX = padL + elapsedDays * stepX;
+    svgParts.push(
+      `<line x1="${todayX}" y1="${padT}" x2="${todayX}" y2="${padT + plotH}" stroke="#9e8260" stroke-width="1" stroke-dasharray="4 3" />`
+    );
+    svgParts.push(
+      `<text x="${todayX + 4}" y="${padT + 10}" font-size="10" font-weight="bold" fill="#7a5c3e">Projeção →</text>`
+    );
+  }
+
+  // Daily bars (real + projected)
+  for (let d = 1; d <= daysInMonth; d++) {
+    const isProj = d > elapsedDays;
+    const val = isProj ? avgPerDay : daily[d];
+    const h = Math.max(0, (val / maxDaily) * plotH);
+    const x = xCenter(d) - barW / 2;
+    const y = padT + plotH - h;
+
+    if (isProj) {
+      svgParts.push(
+        `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barW.toFixed(1)}" height="${h.toFixed(1)}" fill="rgba(158, 42, 43, 0.2)" stroke="#9e2a2b" stroke-width="1" stroke-dasharray="2 2" />`
+      );
+    } else {
+      svgParts.push(
+        `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barW.toFixed(1)}" height="${h.toFixed(1)}" fill="#9e2a2b" opacity="0.82" />`
+      );
+    }
+
+    // X-axis labels every 2 days (and day 1 / last day)
+    if (d === 1 || d === daysInMonth || d % 2 === 0) {
+      svgParts.push(
+        `<text x="${xCenter(d).toFixed(1)}" y="${H - 12}" text-anchor="middle" font-size="10" fill="#5a3818">${d}</text>`
+      );
+    }
+  }
+
+  // Cumulative real line
+  const realPoints = [];
+  for (let d = 1; d <= elapsedDays; d++) {
+    realPoints.push(`${xCenter(d).toFixed(1)},${yCum(cumReal[d]).toFixed(1)}`);
+  }
+  if (realPoints.length > 0) {
+    svgParts.push(
+      `<polyline fill="none" stroke="#004294" stroke-width="2.5" points="${realPoints.join(' ')}" />`
+    );
+    for (let d = 1; d <= elapsedDays; d++) {
+      svgParts.push(
+        `<circle cx="${xCenter(d).toFixed(1)}" cy="${yCum(cumReal[d]).toFixed(1)}" r="2.8" fill="#004294" />`
+      );
+    }
+  }
+
+  // Cumulative projection line
+  if (elapsedDays < daysInMonth) {
+    const projPoints = [];
+    for (let d = elapsedDays; d <= daysInMonth; d++) {
+      projPoints.push(`${xCenter(d).toFixed(1)},${yCum(cumProj[d]).toFixed(1)}`);
+    }
+    svgParts.push(
+      `<polyline fill="none" stroke="#c87400" stroke-width="2.5" stroke-dasharray="6 4" points="${projPoints.join(' ')}" />`
+    );
+    const endX = xCenter(daysInMonth);
+    const endY = yCum(cumProj[daysInMonth]);
+    svgParts.push(
+      `<circle cx="${endX.toFixed(1)}" cy="${endY.toFixed(1)}" r="4" fill="#c87400" stroke="#ffffff" stroke-width="1.5" />`
+    );
+  }
+
+  // Invisible hover hit areas for tooltips
+  for (let d = 1; d <= daysInMonth; d++) {
+    const x = padL + (d - 1) * stepX;
+    const isProj = d > elapsedDays;
+    const dayVal = isProj ? avgPerDay.toFixed(1) : daily[d];
+    const cumVal = isProj ? cumProj[d] : cumReal[d];
+    svgParts.push(
+      `<rect class="chart-hover-col" data-day="${d}" data-proj="${isProj ? '1' : '0'}" data-daily="${dayVal}" data-cum="${cumVal}" x="${x.toFixed(1)}" y="${padT}" width="${stepX.toFixed(1)}" height="${plotH}" fill="transparent" style="cursor:crosshair" />`
+    );
+  }
+
+  el.statsChartSvg.innerHTML = svgParts.join('');
+
+  // Bind tooltip events
+  const mmStr = String(monthNum).padStart(2, '0');
+  el.statsChartSvg.querySelectorAll('.chart-hover-col').forEach((col) => {
+    col.addEventListener('mouseenter', () => {
+      const d = String(col.dataset.day).padStart(2, '0');
+      const isProj = col.dataset.proj === '1';
+      el.statsTooltip.innerHTML = `
+        <strong>Dia ${d}/${mmStr}${isProj ? ' (Projeção)' : ''}</strong><br/>
+        No dia: ${col.dataset.daily} ${isProj ? '(média)' : 'mortes'}<br/>
+        Acumulado: ${col.dataset.cum} mortes
+      `;
+      el.statsTooltip.classList.remove('hidden');
+    });
+    col.addEventListener('mousemove', (ev) => {
+      const rect = el.statsChartWrap.getBoundingClientRect();
+      let left = ev.clientX - rect.left + 12;
+      let top = ev.clientY - rect.top - 10;
+      if (left + 170 > rect.width) left = ev.clientX - rect.left - 175;
+      if (top < 6) top = 6;
+      el.statsTooltip.style.left = `${left}px`;
+      el.statsTooltip.style.top = `${top}px`;
+    });
+    col.addEventListener('mouseleave', () => {
+      el.statsTooltip.classList.add('hidden');
+    });
+  });
+
+  // Vocation breakdown
+  const byVoc = new Map();
+  for (const d of filtered) {
+    const group = normalizeVocationGroup(d.vocation);
+    byVoc.set(group, (byVoc.get(group) || 0) + 1);
+  }
+  const vocList = Array.from(byVoc.entries())
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => b.count - a.count);
+
+  if (vocList.length === 0) {
+    el.statsVocationBars.innerHTML = '<p class="empty-cell">Sem dados ainda.</p>';
+  } else {
+    const maxVoc = vocList[0].count;
+    el.statsVocationBars.innerHTML = vocList
+      .map((v) => {
+        const pct = totalSoFar > 0 ? Math.round((v.count / totalSoFar) * 100) : 0;
+        const width = Math.max(4, Math.round((v.count / maxVoc) * 100));
+        return `
+          <div class="vocation-row">
+            <span class="vocation-name">${escapeHtml(v.name)}</span>
+            <div class="vocation-bar-track">
+              <div class="vocation-bar-fill" style="width:${width}%"></div>
+            </div>
+            <span class="vocation-count">${v.count} (${pct}%)</span>
+          </div>
+        `;
+      })
+      .join('');
+  }
 }
 
 el.top100Prev.addEventListener('click', () => {
@@ -708,13 +1010,22 @@ el.hallSearch.addEventListener('input', () => {
   hallSearchDebounce = setTimeout(() => renderHallOfFame(allHallList), 150);
 });
 
-document.querySelectorAll('.mode-btn').forEach((btn) => {
+document.querySelectorAll('.mode-btn[data-top-mode]').forEach((btn) => {
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.mode-btn').forEach((b) => b.classList.remove('active'));
+    document.querySelectorAll('.mode-btn[data-top-mode]').forEach((b) => b.classList.remove('active'));
     btn.classList.add('active');
     topMode = btn.dataset.topMode;
     topCurrentPage = 1;
     updateTop100View();
+  });
+});
+
+document.querySelectorAll('.stats-mode-btn[data-stats-mode]').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.stats-mode-btn[data-stats-mode]').forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+    statsMode = btn.dataset.statsMode;
+    renderStatsTab();
   });
 });
 
