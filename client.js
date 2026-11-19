@@ -34,6 +34,10 @@ const el = {
   statVisitors: document.getElementById('stat-visitors'),
   statTopVictim: document.getElementById('stat-top-victim'),
   statTopVictimCount: document.getElementById('stat-top-victim-count'),
+  statTopPvp: document.getElementById('stat-top-pvp'),
+  statTopPvpCount: document.getElementById('stat-top-pvp-count'),
+  statTopPve: document.getElementById('stat-top-pve'),
+  statTopPveCount: document.getElementById('stat-top-pve-count'),
   statTopCreature: document.getElementById('stat-top-creature'),
   statTopCreatureCount: document.getElementById('stat-top-creature-count'),
   top100Search: document.getElementById('top100-search'),
@@ -152,6 +156,8 @@ function computeStats(deaths) {
   }
 
   const topVictims = computeTopVictims(sorted, 'total');
+  const topVictimsPvp = computeTopVictims(sorted, 'pvp', 1);
+  const topVictimsPve = computeTopVictims(sorted, 'pve', 1);
 
   const allCreatures = Array.from(byCreature.entries())
     .map(([name, count]) => ({ name, count }))
@@ -165,6 +171,8 @@ function computeStats(deaths) {
     deaths24h,
     deaths7d,
     topVictims,
+    topVictimsPvp,
+    topVictimsPve,
     topCreatures,
     allCreatures,
   };
@@ -351,19 +359,26 @@ async function loadData() {
   }
 }
 
+function setLeaderHighlight(nameEl, countEl, list) {
+  if (!nameEl || !countEl) return;
+  if (list && list.length > 0) {
+    const top = list[0];
+    nameEl.textContent = top.name;
+    countEl.textContent = `${top.count} ${top.count === 1 ? 'morte' : 'mortes'}`;
+  } else {
+    nameEl.textContent = '—';
+    countEl.textContent = '—';
+  }
+}
+
 function renderStats(stats) {
   el.statTotal.textContent = stats.totalDeaths;
   el.stat24h.textContent = stats.deaths24h;
   el.stat7d.textContent = stats.deaths7d;
 
-  if (stats.topVictims.length > 0) {
-    const top = stats.topVictims[0];
-    el.statTopVictim.textContent = top.name;
-    el.statTopVictimCount.textContent = `${top.count} mortes`;
-  } else {
-    el.statTopVictim.textContent = '—';
-    el.statTopVictimCount.textContent = '—';
-  }
+  setLeaderHighlight(el.statTopVictim, el.statTopVictimCount, stats.topVictims);
+  setLeaderHighlight(el.statTopPvp, el.statTopPvpCount, stats.topVictimsPvp);
+  setLeaderHighlight(el.statTopPve, el.statTopPveCount, stats.topVictimsPve);
 
   if (stats.topCreatures.length > 0) {
     const topC = stats.topCreatures[0];
