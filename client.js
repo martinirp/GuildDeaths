@@ -32,14 +32,10 @@ const el = {
   stat24h: document.getElementById('stat-24h'),
   stat7d: document.getElementById('stat-7d'),
   statVisitors: document.getElementById('stat-visitors'),
-  statTopVictim: document.getElementById('stat-top-victim'),
-  statTopVictimCount: document.getElementById('stat-top-victim-count'),
   statTopPvp: document.getElementById('stat-top-pvp'),
   statTopPvpCount: document.getElementById('stat-top-pvp-count'),
   statTopPve: document.getElementById('stat-top-pve'),
   statTopPveCount: document.getElementById('stat-top-pve-count'),
-  statTopCreature: document.getElementById('stat-top-creature'),
-  statTopCreatureCount: document.getElementById('stat-top-creature-count'),
   statTopCreaturePvp: document.getElementById('stat-top-creature-pvp'),
   statTopCreaturePvpCount: document.getElementById('stat-top-creature-pvp-count'),
   statTopCreaturePve: document.getElementById('stat-top-creature-pve'),
@@ -402,11 +398,9 @@ function renderStats(stats) {
   el.stat24h.textContent = stats.deaths24h;
   el.stat7d.textContent = stats.deaths7d;
 
-  setHighlightItem(el.statTopVictim, el.statTopVictimCount, stats.topVictims, 'morte', 'mortes');
   setHighlightItem(el.statTopPvp, el.statTopPvpCount, stats.topVictimsPvp, 'morte', 'mortes');
   setHighlightItem(el.statTopPve, el.statTopPveCount, stats.topVictimsPve, 'morte', 'mortes');
 
-  setHighlightItem(el.statTopCreature, el.statTopCreatureCount, stats.topCreatures, 'abate', 'abates');
   setHighlightItem(el.statTopCreaturePvp, el.statTopCreaturePvpCount, stats.topCreaturesPvp, 'abate', 'abates');
   setHighlightItem(el.statTopCreaturePve, el.statTopCreaturePveCount, stats.topCreaturesPve, 'abate', 'abates');
 
