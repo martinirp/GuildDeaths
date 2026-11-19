@@ -1,5 +1,19 @@
 const PAGE_SIZE = 50;
 const TOP_PAGE_SIZE = 10;
+const GITHUB_DATA_BASE = 'https://raw.githubusercontent.com/martinirp/GuildDeaths/main/data';
+
+async function fetchDataJson(filename) {
+  const bust = Date.now();
+  try {
+    const res = await fetch(`${GITHUB_DATA_BASE}/${filename}?t=${bust}`, { cache: 'no-store' });
+    if (res.ok) return await res.json();
+  } catch {}
+  try {
+    const res = await fetch(`/data/${filename}?t=${bust}`, { cache: 'no-store' });
+    if (res.ok) return await res.json();
+  } catch {}
+  return null;
+}
 
 let rawDeaths = [];
 let allDeaths = [];
@@ -208,6 +222,15 @@ async function syncLiveOnlineDeaths() {
       rawDeaths.map((d) => [d.id || `${d.character.toLowerCase()}|${d.time}`, d])
     );
 
+    const remoteDeaths = await fetchDataJson('deaths.json');
+    if (Array.isArray(remoteDeaths)) {
+      for (const d of remoteDeaths) {
+        if (!d || !d.time || (d.time || '').slice(0, 7) !== currentMonth) continue;
+        const id = d.id || `${d.character.toLowerCase()}|${d.time}`;
+        if (!deathsMap.has(id)) deathsMap.set(id, d);
+      }
+    }
+
     let cursor = 0;
     const concurrency = 6;
     async function worker() {
@@ -279,29 +302,21 @@ async function scheduleLiveSync() {
 
 async function loadData() {
   try {
-    const bust = Date.now();
-    const [deathsRes, metaRes, hallRes] = await Promise.all([
-      fetch(`/data/deaths.json?t=${bust}`),
-      fetch(`/data/meta.json?t=${bust}`),
-      fetch(`/data/hall-of-fame.json?t=${bust}`),
+    const [parsedDeaths, meta, parsedHall] = await Promise.all([
+      fetchDataJson('deaths.json'),
+      fetchDataJson('meta.json'),
+      fetchDataJson('hall-of-fame.json'),
     ]);
 
     const currentMonth = getCurrentMonthKey();
 
-    if (deathsRes.ok) {
-      const parsed = await deathsRes.json();
-      const list = Array.isArray(parsed) ? parsed : [];
-      rawDeaths = list.filter((d) => (d.time || '').slice(0, 7) === currentMonth);
+    if (Array.isArray(parsedDeaths)) {
+      rawDeaths = parsedDeaths.filter((d) => (d.time || '').slice(0, 7) === currentMonth);
     }
 
-    let hallList = [];
-    if (hallRes.ok) {
-      const parsedHall = await hallRes.json();
-      if (Array.isArray(parsedHall)) hallList = parsedHall;
-    }
+    const hallList = Array.isArray(parsedHall) ? parsedHall : [];
 
-    if (metaRes.ok) {
-      const meta = await metaRes.json();
+    if (meta && typeof meta === 'object') {
       guildInfo.world = meta.world || guildInfo.world;
       guildInfo.membersCount = meta.membersCount || guildInfo.membersCount;
       const lastSync =

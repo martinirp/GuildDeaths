@@ -4,11 +4,6 @@ on:
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
-    inputs:
-      full:
-        description: "Sincronizar todos os membros da guild (--full)"
-        required: false
-        default: "true"
 
 permissions:
   contents: write
@@ -26,12 +21,7 @@ jobs:
           node-version: "20"
 
       - name: Run sync
-        run: |
-          if [ "${{ github.event.inputs.full }}" = "true" ]; then
-            node scripts/sync.js --full
-          else
-            node scripts/sync.js
-          fi
+        run: node scripts/sync.js
 
       - name: Commit updated deaths
         run: |

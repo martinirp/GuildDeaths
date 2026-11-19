@@ -10,7 +10,6 @@ const HALL_FILE = path.join(DATA_DIR, 'hall-of-fame.json');
 
 const CONCURRENCY = 8;
 const REQUEST_DELAY_MS = 60;
-const FULL_SYNC_INTERVAL_MS = 30 * 60 * 1000; // 30 minutos
 
 function isDeathPvP(d) {
   if (d.type === 'pvp') return true;
@@ -76,7 +75,6 @@ async function fetchJsonWithRetry(url, retries = 3) {
 }
 
 async function main() {
-  const forceFull = process.argv.includes('--full');
   await fs.mkdir(DATA_DIR, { recursive: true });
 
   const deathsMap = new Map();
@@ -101,10 +99,6 @@ async function main() {
     meta = { ...meta, ...JSON.parse(await fs.readFile(META_FILE, 'utf-8')) };
   } catch {}
 
-  const lastFullTs = meta.lastFullSync ? new Date(meta.lastFullSync).getTime() : 0;
-  const fullSyncOverdue = !lastFullTs || Number.isNaN(lastFullTs) || (Date.now() - lastFullTs) >= FULL_SYNC_INTERVAL_MS;
-  const isFull = forceFull || fullSyncOverdue;
-
   const guildData = await fetchJsonWithRetry(
     `${TIBIADATA_BASE}/guild/${encodeURIComponent(GUILD_NAME)}`
   );
@@ -112,11 +106,7 @@ async function main() {
   meta.world = guildData?.guild?.world || meta.world;
   meta.membersCount = members.length;
 
-  const targets = isFull
-    ? members
-    : members.filter((m) => String(m.status).toLowerCase() === 'online');
-
-  console.log(`[Sync:${isFull ? 'full' : 'online'}] Verificando ${targets.length} personagens...`);
+  console.log(`[Sync:full] Verificando todos os ${members.length} personagens da guild...`);
 
   let newDeaths = 0;
 
@@ -185,7 +175,7 @@ async function main() {
     return failed;
   }
 
-  let failedMembers = await processTargets(targets, CONCURRENCY);
+  let failedMembers = await processTargets(members, CONCURRENCY);
   if (failedMembers.length > 0) {
     console.log(`[Sync] Tentando novamente ${failedMembers.length} personagens que falharam...`);
     await sleep(2000);
@@ -240,8 +230,8 @@ async function main() {
   hall.sort((a, b) => b.month.localeCompare(a.month));
 
   const nowIso = now.toISOString();
-  if (isFull) meta.lastFullSync = nowIso;
-  else meta.lastOnlineSync = nowIso;
+  meta.lastFullSync = nowIso;
+  meta.lastOnlineSync = nowIso;
 
   await fs.writeFile(DEATHS_FILE, JSON.stringify(currentMonthDeaths, null, 2), 'utf-8');
   await fs.writeFile(HALL_FILE, JSON.stringify(hall, null, 2), 'utf-8');
