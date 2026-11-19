@@ -101,6 +101,14 @@
                 <button type="button" class="mode-btn" data-top-mode="pvp">PvP</button>
                 <button type="button" class="mode-btn" data-top-mode="pve">PvE</button>
               </div>
+              <div class="filters">
+                <input
+                  type="text"
+                  id="top100-search"
+                  class="tibia-input"
+                  placeholder="Buscar personagem, vocação ou causa..."
+                />
+              </div>
               <div class="pagination pagination-top" id="top100-pagination-top"></div>
               <div class="table-container">
                 <table class="tibia-table">
@@ -184,6 +192,14 @@
               <span>Mais Letais</span>
             </div>
             <div class="box-inner">
+              <div class="filters">
+                <input
+                  type="text"
+                  id="creatures-search"
+                  class="tibia-input"
+                  placeholder="Buscar criatura ou jogador..."
+                />
+              </div>
               <ol id="ranking-creatures" class="ranking-list"></ol>
             </div>
           </div>
@@ -194,8 +210,18 @@
             <div class="caption-bar">
               <span>Hall da Fama — Top 3 de Cada Mês</span>
             </div>
-            <div class="box-inner" id="hall-container">
-              <p class="empty-cell">Carregando...</p>
+            <div class="box-inner">
+              <div class="filters">
+                <input
+                  type="text"
+                  id="hall-search"
+                  class="tibia-input"
+                  placeholder="Buscar mês ou personagem..."
+                />
+              </div>
+              <div id="hall-container">
+                <p class="empty-cell">Carregando...</p>
+              </div>
             </div>
           </div>
         </main>
@@ -203,6 +229,6 @@
     </div>
   </div>
 
-  <script src="/client.js?v=5"></script>
+  <script src="/client.js?v=6"></script>
 </body>
 </html>

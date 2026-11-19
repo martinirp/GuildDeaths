@@ -18,6 +18,8 @@ async function fetchDataJson(filename) {
 let rawDeaths = [];
 let allDeaths = [];
 let top100List = [];
+let allCreaturesList = [];
+let allHallList = [];
 let currentPage = 1;
 let topCurrentPage = 1;
 let topMode = 'total';
@@ -34,9 +36,12 @@ const el = {
   statTopVictimCount: document.getElementById('stat-top-victim-count'),
   statTopCreature: document.getElementById('stat-top-creature'),
   statTopCreatureCount: document.getElementById('stat-top-creature-count'),
+  top100Search: document.getElementById('top100-search'),
   filterSearch: document.getElementById('filter-search'),
   filterVocation: document.getElementById('filter-vocation'),
   filterSort: document.getElementById('filter-sort'),
+  creaturesSearch: document.getElementById('creatures-search'),
+  hallSearch: document.getElementById('hall-search'),
   deathsTbody: document.getElementById('deaths-tbody'),
   top100Tbody: document.getElementById('top100-tbody'),
   top100Prev: document.getElementById('top100-prev'),
@@ -90,7 +95,7 @@ function isDeathPvP(d) {
   return Array.isArray(d.killers) && d.killers.some((k) => /^[A-Z]/.test(k) && !k.startsWith('The '));
 }
 
-function computeTopVictims(deaths, mode = 'total') {
+function computeTopVictims(deaths, mode = 'total', limit = 100) {
   const filtered =
     mode === 'pvp'
       ? deaths.filter(isDeathPvP)
@@ -116,9 +121,11 @@ function computeTopVictims(deaths, mode = 'total') {
     byPlayer.set(d.character, playerEntry);
   }
 
-  return Array.from(byPlayer.values())
+  const ranked = Array.from(byPlayer.values())
     .sort((a, b) => b.count - a.count || new Date(b.lastDeath).getTime() - new Date(a.lastDeath).getTime())
-    .slice(0, 100);
+    .map((entry, idx) => ({ ...entry, rank: idx + 1 }));
+
+  return Number.isFinite(limit) ? ranked.slice(0, limit) : ranked;
 }
 
 function computeStats(deaths) {
@@ -146,10 +153,12 @@ function computeStats(deaths) {
 
   const topVictims = computeTopVictims(sorted, 'total');
 
-  const topCreatures = Array.from(byCreature.entries())
+  const allCreatures = Array.from(byCreature.entries())
     .map(([name, count]) => ({ name, count }))
     .sort((a, b) => b.count - a.count)
-    .slice(0, 15);
+    .map((entry, idx) => ({ ...entry, rank: idx + 1 }));
+
+  const topCreatures = allCreatures.slice(0, 15);
 
   return {
     totalDeaths: sorted.length,
@@ -157,6 +166,7 @@ function computeStats(deaths) {
     deaths7d,
     topVictims,
     topCreatures,
+    allCreatures,
   };
 }
 
@@ -314,7 +324,7 @@ async function loadData() {
       rawDeaths = parsedDeaths.filter((d) => (d.time || '').slice(0, 7) === currentMonth);
     }
 
-    const hallList = Array.isArray(parsedHall) ? parsedHall : [];
+    allHallList = Array.isArray(parsedHall) ? parsedHall : [];
 
     if (meta && typeof meta === 'object') {
       guildInfo.world = meta.world || guildInfo.world;
@@ -331,7 +341,7 @@ async function loadData() {
     const stats = computeStats(rawDeaths);
     renderStats(stats);
     applyFilters();
-    renderHallOfFame(hallList);
+    renderHallOfFame(allHallList);
 
     await scheduleLiveSync();
   } catch (err) {
@@ -454,7 +464,7 @@ function renderTop100Table() {
 
   el.top100Tbody.innerHTML = pageItems
     .map((v, idx) => {
-      const pos = start + idx + 1;
+      const pos = v.rank || (start + idx + 1);
       const rankClass = pos <= 3 ? `rank-${pos}` : '';
       const charUrl = `https://www.tibia.com/community/?name=${encodeURIComponent(v.name)}`;
       const lastKillers = (v.lastKillers && v.lastKillers.length > 0) ? v.lastKillers.join(', ') : '—';
@@ -509,7 +519,17 @@ function updateTop100View() {
   const modeLabels = { total: 'Total', pvp: 'PvP', pve: 'PvE' };
   const monthLabel = formatMonthLabel(getCurrentMonthKey());
   el.top100Title.textContent = `Top 100 — ${monthLabel} (${modeLabels[topMode] || 'Total'})`;
-  top100List = computeTopVictims(rawDeaths, topMode);
+  const search = (el.top100Search?.value || '').trim().toLowerCase();
+  if (search) {
+    top100List = computeTopVictims(rawDeaths, topMode, Infinity).filter(
+      (v) =>
+        (v.name || '').toLowerCase().includes(search) ||
+        (v.vocation || '').toLowerCase().includes(search) ||
+        (v.lastKillers || []).some((k) => k.toLowerCase().includes(search))
+    );
+  } else {
+    top100List = computeTopVictims(rawDeaths, topMode, 100);
+  }
   renderTop100Table();
 }
 
@@ -541,14 +561,31 @@ function renderHallCategory(title, items) {
   `;
 }
 
-function renderHallOfFame(hallList) {
+function renderHallOfFame(hallList = allHallList) {
   if (!hallList || hallList.length === 0) {
     el.hallContainer.innerHTML =
       '<p class="empty-cell">O Hall da Fama guarda os Top 3 ao final de cada mês.</p>';
     return;
   }
 
-  el.hallContainer.innerHTML = hallList
+  const search = (el.hallSearch?.value || '').trim().toLowerCase();
+  const filtered = search
+    ? hallList.filter((entry) => {
+        const label = formatMonthLabel(entry.month).toLowerCase();
+        const inMonth = label.includes(search) || (entry.month || '').toLowerCase().includes(search);
+        const allPlayers = [...(entry.total || []), ...(entry.pvp || []), ...(entry.pve || [])];
+        const inPlayers = allPlayers.some((p) => (p.name || '').toLowerCase().includes(search));
+        return inMonth || inPlayers;
+      })
+    : hallList;
+
+  if (filtered.length === 0) {
+    el.hallContainer.innerHTML =
+      '<p class="empty-cell">Nenhum registro encontrado para essa busca.</p>';
+    return;
+  }
+
+  el.hallContainer.innerHTML = filtered
     .map(
       (entry) => `
       <div class="hall-month-card">
@@ -567,23 +604,34 @@ function renderHallOfFame(hallList) {
     .join('');
 }
 
-function renderRankings(stats) {
-  updateTop100View();
+function renderCreaturesList() {
+  const search = (el.creaturesSearch?.value || '').trim().toLowerCase();
+  const list = search
+    ? allCreaturesList.filter((c) => (c.name || '').toLowerCase().includes(search))
+    : allCreaturesList.slice(0, 15);
 
-  if (stats.topCreatures.length === 0) {
-    el.rankingCreatures.innerHTML = '<li class="ranking-item"><span>Sem dados ainda</span></li>';
+  if (list.length === 0) {
+    el.rankingCreatures.innerHTML = `<li class="ranking-item"><span>${
+      search ? 'Nenhum resultado encontrado' : 'Sem dados ainda'
+    }</span></li>`;
   } else {
-    el.rankingCreatures.innerHTML = stats.topCreatures
+    el.rankingCreatures.innerHTML = list
       .map(
         (c, idx) => `
         <li class="ranking-item">
-          <span>#${idx + 1} ${escapeHtml(c.name)}</span>
+          <span>#${c.rank || idx + 1} ${escapeHtml(c.name)}</span>
           <span class="ranking-count">${c.count}</span>
         </li>
       `
       )
       .join('');
   }
+}
+
+function renderRankings(stats) {
+  allCreaturesList = stats.allCreatures || stats.topCreatures || [];
+  updateTop100View();
+  renderCreaturesList();
 }
 
 el.top100Prev.addEventListener('click', () => {
@@ -601,6 +649,15 @@ el.top100Next.addEventListener('click', () => {
   }
 });
 
+let top100SearchDebounce = null;
+el.top100Search.addEventListener('input', () => {
+  clearTimeout(top100SearchDebounce);
+  top100SearchDebounce = setTimeout(() => {
+    topCurrentPage = 1;
+    updateTop100View();
+  }, 150);
+});
+
 let searchDebounce = null;
 el.filterSearch.addEventListener('input', () => {
   clearTimeout(searchDebounce);
@@ -608,6 +665,18 @@ el.filterSearch.addEventListener('input', () => {
 });
 el.filterVocation.addEventListener('change', applyFilters);
 el.filterSort.addEventListener('change', applyFilters);
+
+let creaturesSearchDebounce = null;
+el.creaturesSearch.addEventListener('input', () => {
+  clearTimeout(creaturesSearchDebounce);
+  creaturesSearchDebounce = setTimeout(renderCreaturesList, 150);
+});
+
+let hallSearchDebounce = null;
+el.hallSearch.addEventListener('input', () => {
+  clearTimeout(hallSearchDebounce);
+  hallSearchDebounce = setTimeout(() => renderHallOfFame(allHallList), 150);
+});
 
 document.querySelectorAll('.mode-btn').forEach((btn) => {
   btn.addEventListener('click', () => {
