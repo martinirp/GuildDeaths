@@ -10,6 +10,7 @@ const HALL_FILE = path.join(DATA_DIR, 'hall-of-fame.json');
 
 const CONCURRENCY = 8;
 const REQUEST_DELAY_MS = 60;
+const FULL_SYNC_INTERVAL_MS = 30 * 60 * 1000; // 30 minutos
 
 function isDeathPvP(d) {
   if (d.type === 'pvp') return true;
@@ -75,7 +76,7 @@ async function fetchJsonWithRetry(url, retries = 3) {
 }
 
 async function main() {
-  const isFull = process.argv.includes('--full');
+  const forceFull = process.argv.includes('--full');
   await fs.mkdir(DATA_DIR, { recursive: true });
 
   const deathsMap = new Map();
@@ -100,6 +101,10 @@ async function main() {
     meta = { ...meta, ...JSON.parse(await fs.readFile(META_FILE, 'utf-8')) };
   } catch {}
 
+  const lastFullTs = meta.lastFullSync ? new Date(meta.lastFullSync).getTime() : 0;
+  const fullSyncOverdue = !lastFullTs || Number.isNaN(lastFullTs) || (Date.now() - lastFullTs) >= FULL_SYNC_INTERVAL_MS;
+  const isFull = forceFull || fullSyncOverdue;
+
   const guildData = await fetchJsonWithRetry(
     `${TIBIADATA_BASE}/guild/${encodeURIComponent(GUILD_NAME)}`
   );
@@ -113,63 +118,82 @@ async function main() {
 
   console.log(`[Sync:${isFull ? 'full' : 'online'}] Verificando ${targets.length} personagens...`);
 
-  let cursor = 0;
   let newDeaths = 0;
 
-  async function worker() {
-    while (true) {
-      const idx = cursor++;
-      if (idx >= targets.length) break;
-      const member = targets[idx];
-      try {
-        const data = await fetchJsonWithRetry(
-          `${TIBIADATA_BASE}/character/${encodeURIComponent(member.name)}`
-        );
-        const charDeaths = data?.character?.deaths;
-        if (Array.isArray(charDeaths)) {
-          for (const death of charDeaths) {
-            if (!death || !death.time) continue;
-            const id = makeDeathId(member.name, death.time);
-            const isPvP =
-              (Array.isArray(death.killers) && death.killers.some((k) => k.player || k.summon)) ||
-              (Array.isArray(death.assists) && death.assists.some((a) => a.player || a.summon));
-            const deathType = isPvP ? 'pvp' : 'pve';
+  async function processTargets(list, concurrency) {
+    let cursor = 0;
+    const failed = [];
 
-            if (deathsMap.has(id)) {
-              const existing = deathsMap.get(id);
-              if (!existing.type) {
-                existing.type = deathType;
+    async function worker() {
+      while (true) {
+        const idx = cursor++;
+        if (idx >= list.length) break;
+        const member = list[idx];
+        try {
+          const data = await fetchJsonWithRetry(
+            `${TIBIADATA_BASE}/character/${encodeURIComponent(member.name)}`,
+            4
+          );
+          const charDeaths = data?.character?.deaths;
+          if (Array.isArray(charDeaths)) {
+            for (const death of charDeaths) {
+              if (!death || !death.time) continue;
+              const id = makeDeathId(member.name, death.time);
+              const isPvP =
+                (Array.isArray(death.killers) && death.killers.some((k) => k.player || k.summon)) ||
+                (Array.isArray(death.assists) && death.assists.some((a) => a.player || a.summon));
+              const deathType = isPvP ? 'pvp' : 'pve';
+
+              if (deathsMap.has(id)) {
+                const existing = deathsMap.get(id);
+                if (!existing.type) {
+                  existing.type = deathType;
+                }
+                continue;
               }
-              continue;
+
+              const killers = Array.isArray(death.killers)
+                ? death.killers.map((k) => k.name).filter(Boolean)
+                : [];
+
+              deathsMap.set(id, {
+                id,
+                type: deathType,
+                character: member.name,
+                vocation: member.vocation || 'Unknown',
+                rank: member.rank || '',
+                level: death.level,
+                time: death.time,
+                killers,
+                reason: death.reason || `Died at Level ${death.level} by ${killers.join(', ')}.`,
+                recordedAt: new Date().toISOString(),
+              });
+              newDeaths++;
             }
-
-            const killers = Array.isArray(death.killers)
-              ? death.killers.map((k) => k.name).filter(Boolean)
-              : [];
-
-            deathsMap.set(id, {
-              id,
-              type: deathType,
-              character: member.name,
-              vocation: member.vocation || 'Unknown',
-              rank: member.rank || '',
-              level: death.level,
-              time: death.time,
-              killers,
-              reason: death.reason || `Died at Level ${death.level} by ${killers.join(', ')}.`,
-              recordedAt: new Date().toISOString(),
-            });
-            newDeaths++;
           }
+        } catch {
+          failed.push(member);
         }
-      } catch {}
-      await sleep(REQUEST_DELAY_MS);
+        await sleep(REQUEST_DELAY_MS);
+      }
     }
+
+    await Promise.all(
+      Array.from({ length: Math.min(concurrency, Math.max(1, list.length)) }, () => worker())
+    );
+
+    return failed;
   }
 
-  await Promise.all(
-    Array.from({ length: Math.min(CONCURRENCY, Math.max(1, targets.length)) }, () => worker())
-  );
+  let failedMembers = await processTargets(targets, CONCURRENCY);
+  if (failedMembers.length > 0) {
+    console.log(`[Sync] Tentando novamente ${failedMembers.length} personagens que falharam...`);
+    await sleep(2000);
+    failedMembers = await processTargets(failedMembers, Math.max(2, Math.floor(CONCURRENCY / 2)));
+  }
+  if (failedMembers.length > 0) {
+    console.warn(`[Sync] ${failedMembers.length} personagens falharam após novas tentativas.`);
+  }
 
   const sorted = Array.from(deathsMap.values()).sort(
     (a, b) => new Date(b.time).getTime() - new Date(a.time).getTime()

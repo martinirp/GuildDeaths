@@ -2,13 +2,13 @@ name: Sync Guild Deaths
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
     inputs:
       full:
         description: "Sincronizar todos os membros da guild (--full)"
         required: false
-        default: "false"
+        default: "true"
 
 permissions:
   contents: write
@@ -27,8 +27,7 @@ jobs:
 
       - name: Run sync
         run: |
-          MINUTE=$(date -u +%M)
-          if [ "${{ github.event.inputs.full }}" = "true" ] || [ "$MINUTE" = "00" ]; then
+          if [ "${{ github.event.inputs.full }}" = "true" ]; then
             node scripts/sync.js --full
           else
             node scripts/sync.js
