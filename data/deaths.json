@@ -1,5 +1,357 @@
 [
   {
+    "id": "ikyrou|2026-11-19T23:27:22Z",
+    "type": "pve",
+    "character": "Ikyrou",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 840,
+    "time": "2026-11-19T23:27:22Z",
+    "killers": [
+      "sopping carcass"
+    ],
+    "reason": "Died at Level 840 by sopping carcass.",
+    "recordedAt": "2026-11-20T00:41:56.734Z"
+  },
+  {
+    "id": "marquis mikolaj|2026-11-19T23:11:04Z",
+    "type": "pve",
+    "character": "Marquis Mikolaj",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 367,
+    "time": "2026-11-19T23:11:04Z",
+    "killers": [
+      "hulking prehemoth"
+    ],
+    "reason": "Died at Level 367 by hulking prehemoth.",
+    "recordedAt": "2026-11-20T00:42:06.705Z"
+  },
+  {
+    "id": "fredzoor|2026-11-19T23:07:08Z",
+    "type": "pve",
+    "character": "Fredzoor",
+    "vocation": "Exalted Monk",
+    "rank": "Member",
+    "level": 544,
+    "time": "2026-11-19T23:07:08Z",
+    "killers": [
+      "broodrider inferniarch"
+    ],
+    "reason": "Died at Level 544 by broodrider inferniarch.",
+    "recordedAt": "2026-11-20T00:41:52.684Z"
+  },
+  {
+    "id": "utobra ascension gui|2026-11-19T22:53:10Z",
+    "type": "pve",
+    "character": "Utobra Ascension Gui",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 478,
+    "time": "2026-11-19T22:53:10Z",
+    "killers": [
+      "gorger inferniarch"
+    ],
+    "reason": "Died at Level 478 by gorger inferniarch.",
+    "recordedAt": "2026-11-20T00:42:26.445Z"
+  },
+  {
+    "id": "ysmithe|2026-11-19T22:13:27Z",
+    "type": "pvp",
+    "character": "Ysmithe",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 1014,
+    "time": "2026-11-19T22:13:27Z",
+    "killers": [
+      "Fugiram com troco",
+      "Yano Kill",
+      "Sassazim",
+      "Pehaga",
+      "Gordaozovisk",
+      "Pulga Bombinha",
+      "Kronasz",
+      "Hierrowns",
+      "Killeerz",
+      "Oblivionbo",
+      "Lycanmare",
+      "Lebranco James",
+      "Zukkofy",
+      "Critical Backstab",
+      "Mudrekz Patrocinamais Um",
+      "Masterzita",
+      "Hyoriinmaruu",
+      "Gordoo Patrao",
+      "Leleco do Piseiro"
+    ],
+    "reason": "Eliminated at Level 1014 by Fugiram com troco, Yano Kill, Sassazim, Pehaga, Gordaozovisk, Pulga Bombinha, Kronasz, Hierrowns, Killeerz, Oblivionbo, Lycanmare, Lebranco James, Zukkofy, Critical Backstab, Mudrekz Patrocinamais Um, Masterzita, Hyoriinmaruu, Gordoo Patrao and Leleco do Piseiro. Assisted by Ninja Zabach.",
+    "recordedAt": "2026-11-20T00:42:29.815Z"
+  },
+  {
+    "id": "cereall killerr|2026-11-19T21:37:33Z",
+    "type": "pve",
+    "character": "Cereall Killerr",
+    "vocation": "Exalted Monk",
+    "rank": "Member",
+    "level": 535,
+    "time": "2026-11-19T21:37:33Z",
+    "killers": [
+      "falcon paladin"
+    ],
+    "reason": "Died at Level 535 by falcon paladin.",
+    "recordedAt": "2026-11-20T00:41:43.022Z"
+  },
+  {
+    "id": "cereall killerr|2026-11-19T20:20:48Z",
+    "type": "pve",
+    "character": "Cereall Killerr",
+    "vocation": "Exalted Monk",
+    "rank": "Member",
+    "level": 535,
+    "time": "2026-11-19T20:20:48Z",
+    "killers": [
+      "falcon knight"
+    ],
+    "reason": "Died at Level 535 by falcon knight.",
+    "recordedAt": "2026-11-20T00:41:43.022Z"
+  },
+  {
+    "id": "coronel shock|2026-11-19T20:09:04Z",
+    "type": "pve",
+    "character": "Coronel Shock",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1502,
+    "time": "2026-11-19T20:09:04Z",
+    "killers": [
+      "flimsy lost soul"
+    ],
+    "reason": "Died at Level 1502 by flimsy lost soul.",
+    "recordedAt": "2026-11-20T00:41:44.311Z"
+  },
+  {
+    "id": "lord zyz|2026-11-19T19:23:56Z",
+    "type": "pvp",
+    "character": "Lord Zyz",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 303,
+    "time": "2026-11-19T19:23:56Z",
+    "killers": [
+      "Miguel Patrao Ed",
+      "Tannakka",
+      "Destroy Freddy",
+      "Dala Iror",
+      "Buud Green"
+    ],
+    "reason": "Slain at Level 303 by Miguel Patrao Ed, Tannakka, Destroy Freddy, Dala Iror and Buud Green. Assisted by Devassembly, Young Zig, Tiaguinho, Megazord by Haizoon, Meap, Kandelozo and Niko Niko Ni.",
+    "recordedAt": "2026-11-20T00:42:03.489Z"
+  },
+  {
+    "id": "superstar curujaa|2026-11-19T19:23:30Z",
+    "type": "pvp",
+    "character": "Superstar Curujaa",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 264,
+    "time": "2026-11-19T19:23:30Z",
+    "killers": [
+      "Libraez",
+      "Fugiram com troco",
+      "Miguel Patrao Ed",
+      "Tannakka",
+      "Destroy Freddy",
+      "Buud Green"
+    ],
+    "reason": "Slain at Level 264 by Libraez, Fugiram com troco, Miguel Patrao Ed, Tannakka, Destroy Freddy and Buud Green. Assisted by Tiaguinho, Jurassic, Kandelozo, Maumau Afronta Os and Niko Niko Ni.",
+    "recordedAt": "2026-11-20T00:42:23.007Z"
+  },
+  {
+    "id": "chapelino|2026-11-19T19:23:01Z",
+    "type": "pvp",
+    "character": "Chapelino",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 745,
+    "time": "2026-11-19T19:23:01Z",
+    "killers": [
+      "Libraez",
+      "Fugiram com troco",
+      "Cronic Fechadocom Dejair",
+      "Gordaozovisk",
+      "Pulga Bombinha",
+      "Murillao Bombs",
+      "Kronasz",
+      "Og Ivar",
+      "Hierrowns",
+      "What Doing",
+      "Mandatory vaccine mccreadyxx",
+      "Miguel Patrao Ed",
+      "Prefeito Billionaire",
+      "Weslotty Kamikaze",
+      "Tannakka",
+      "Lycanmare",
+      "Destroy Freddy",
+      "Dala Iror",
+      "Bubu Ue",
+      "Borbiinha",
+      "Telenovela Queen",
+      "Loro Kamado",
+      "Raigor Stonyhoof",
+      "Muhammad Adbul Rahiin",
+      "Buud Green",
+      "Diabel Bez Litosci",
+      "Dieguin Maroto",
+      "Popin Ed"
+    ],
+    "reason": "Annihilated at Level 745 by Libraez, Fugiram com troco, Cronic Fechadocom Dejair, Gordaozovisk, Pulga Bombinha, Murillao Bombs, Kronasz, Og Ivar, Hierrowns, What Doing, Mandatory vaccine mccreadyxx, Miguel Patrao Ed, Prefeito Billionaire, Weslotty Kamikaze, Tannakka, Lycanmare, Destroy Freddy, Dala Iror, Bubu Ue, Borbiinha, Telenovela Queen, Loro Kamado, Raigor Stonyhoof, Muhammad Adbul Rahiin, Buud Green, Diabel Bez Litosci, Dieguin Maroto and Popin Ed. Assisted by Lebranco James, Meap and Niko Niko Ni.",
+    "recordedAt": "2026-11-20T00:41:43.307Z"
+  },
+  {
+    "id": "quiroprata navarro|2026-11-19T19:19:05Z",
+    "type": "pvp",
+    "character": "Quiroprata Navarro",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 443,
+    "time": "2026-11-19T19:19:05Z",
+    "killers": [
+      "Libraez",
+      "Fugiram com troco",
+      "Cronic Fechadocom Dejair",
+      "Escadinha Sobe Ek",
+      "Sudden Death Fly",
+      "Zayrgharz",
+      "Kronasz",
+      "Gbe Essi Klusejro",
+      "Og Ivar",
+      "Hierrowns",
+      "What Doing",
+      "Mandatory vaccine mccreadyxx",
+      "Prefeito Billionaire",
+      "Weslotty Kamikaze",
+      "Tannakka",
+      "Lycanmare",
+      "Lebranco James",
+      "Society Man Dustin",
+      "Dala Iror",
+      "Bubu Ue",
+      "Encore zjqieoijiqwe Bombinha",
+      "Telenovela Queen",
+      "Loro Kamado",
+      "Imrann Arkoris",
+      "Muhammad Adbul Rahiin",
+      "Diabel Bez Litosci",
+      "Popin Ed"
+    ],
+    "reason": "Annihilated at Level 443 by Libraez, Fugiram com troco, Cronic Fechadocom Dejair, Escadinha Sobe Ek, Sudden Death Fly, Zayrgharz, Kronasz, Gbe Essi Klusejro, Og Ivar, Hierrowns, What Doing, Mandatory vaccine mccreadyxx, Prefeito Billionaire, Weslotty Kamikaze, Tannakka, Lycanmare, Lebranco James, Society Man Dustin, Dala Iror, Bubu Ue, Encore zjqieoijiqwe Bombinha, Telenovela Queen, Loro Kamado, Imrann Arkoris, Muhammad Adbul Rahiin, Diabel Bez Litosci and Popin Ed.",
+    "recordedAt": "2026-11-20T00:42:17.898Z"
+  },
+  {
+    "id": "hero weikath|2026-11-19T18:53:11Z",
+    "type": "pve",
+    "character": "Hero Weikath",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 313,
+    "time": "2026-11-19T18:53:11Z",
+    "killers": [
+      "gorger inferniarch"
+    ],
+    "reason": "Died at Level 313 by gorger inferniarch.",
+    "recordedAt": "2026-11-20T00:41:55.766Z"
+  },
+  {
+    "id": "obudzony pan|2026-11-19T18:52:41Z",
+    "type": "pve",
+    "character": "Obudzony Pan",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 395,
+    "time": "2026-11-19T18:52:41Z",
+    "killers": [
+      "gorger inferniarch"
+    ],
+    "reason": "Died at Level 395 by gorger inferniarch.",
+    "recordedAt": "2026-11-20T00:42:12.080Z"
+  },
+  {
+    "id": "jimmy twice|2026-11-19T18:44:50Z",
+    "type": "pvp",
+    "character": "Jimmy Twice",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 247,
+    "time": "2026-11-19T18:44:50Z",
+    "killers": [
+      "Escadinha Sobe Ek",
+      "Pulga Bombinha",
+      "Murillao Bombs",
+      "Zayrgharz",
+      "Raafazerah Quelibra Bombinha",
+      "Og Ivar",
+      "Oblivionbo",
+      "Bubu Ue",
+      "Gabs Entediado",
+      "Leleco do Piseiro"
+    ],
+    "reason": "Crushed at Level 247 by Escadinha Sobe Ek, Pulga Bombinha, Murillao Bombs, Zayrgharz, Raafazerah Quelibra Bombinha, Og Ivar, Oblivionbo, Bubu Ue, Gabs Entediado and Leleco do Piseiro.",
+    "recordedAt": "2026-11-20T00:41:57.971Z"
+  },
+  {
+    "id": "vingador de quelibra|2026-11-19T18:44:20Z",
+    "type": "pvp",
+    "character": "Vingador de Quelibra",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 26,
+    "time": "2026-11-19T18:44:20Z",
+    "killers": [],
+    "reason": "Assisted by Palla infernal, Jimmy Twice, Garrukks, Lystolsz Malandro, Kandelozo and sorcerer familiar of Jurassic.",
+    "recordedAt": "2026-11-20T00:42:27.421Z"
+  },
+  {
+    "id": "joseph climber|2026-11-19T18:42:25Z",
+    "type": "pvp",
+    "character": "Joseph Climber",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 272,
+    "time": "2026-11-19T18:42:25Z",
+    "killers": [
+      "Primo Rodzin",
+      "Escadinha Sobe Ek",
+      "Sudden Death Fly",
+      "Murillao Bombs",
+      "Bubu Ue",
+      "Borbiinha",
+      "Buud Green"
+    ],
+    "reason": "Slain at Level 272 by Primo Rodzin, Escadinha Sobe Ek, Sudden Death Fly, Murillao Bombs, Bubu Ue, Borbiinha and Buud Green. Assisted by Chapoca Bahea and Ocueistore Bombinha.",
+    "recordedAt": "2026-11-20T00:41:57.978Z"
+  },
+  {
+    "id": "vingador de quelibra|2026-11-19T18:42:16Z",
+    "type": "pvp",
+    "character": "Vingador de Quelibra",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 136,
+    "time": "2026-11-19T18:42:16Z",
+    "killers": [
+      "Escadinha Sobe Ek",
+      "Zayrgharz",
+      "Lower Netdown",
+      "Kiing Andreziinho",
+      "Bubu Ue",
+      "Encore zjqieoijiqwe Bombinha",
+      "Viliant",
+      "Buud Green"
+    ],
+    "reason": "Slain at Level 136 by Escadinha Sobe Ek, Zayrgharz, Lower Netdown, Kiing Andreziinho, Bubu Ue, Encore zjqieoijiqwe Bombinha, Viliant and Buud Green. Assisted by Ocueistore Bombinha.",
+    "recordedAt": "2026-11-20T00:42:27.421Z"
+  },
+  {
     "id": "meap|2026-11-19T16:55:43Z",
     "type": "pve",
     "character": "Meap",
@@ -5824,6 +6176,20 @@
     "reason": "Died at Level 560 by gorger inferniarch.",
     "recordedAt": "2026-11-17T04:56:14.738Z",
     "type": "pve"
+  },
+  {
+    "id": "lii ne|2026-11-11T20:51:12Z",
+    "type": "pve",
+    "character": "Lii ne",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 1707,
+    "time": "2026-11-11T20:51:12Z",
+    "killers": [
+      "Phosphorus"
+    ],
+    "reason": "Died at Level 1707 by Phosphorus.",
+    "recordedAt": "2026-11-20T00:42:02.663Z"
   },
   {
     "id": "juvizer torn|2026-11-11T20:47:59Z",
