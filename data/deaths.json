@@ -1,5 +1,62 @@
 [
   {
+    "id": "konnan of life|2026-11-20T21:31:45Z",
+    "type": "pve",
+    "character": "Konnan Of Life",
+    "vocation": "Exalted Monk",
+    "rank": "Member",
+    "level": 478,
+    "time": "2026-11-20T21:31:45Z",
+    "killers": [
+      "manticore"
+    ],
+    "reason": "Died at Level 478 by manticore.",
+    "recordedAt": "2026-11-20T23:02:40.395Z"
+  },
+  {
+    "id": "konnan of life|2026-11-20T20:43:02Z",
+    "type": "pve",
+    "character": "Konnan Of Life",
+    "vocation": "Exalted Monk",
+    "rank": "Member",
+    "level": 478,
+    "time": "2026-11-20T20:43:02Z",
+    "killers": [
+      "gorger inferniarch"
+    ],
+    "reason": "Died at Level 478 by gorger inferniarch.",
+    "recordedAt": "2026-11-20T23:02:40.395Z"
+  },
+  {
+    "id": "metralha ninja|2026-11-20T15:35:51Z",
+    "type": "pvp",
+    "character": "Metralha Ninja",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 353,
+    "time": "2026-11-20T15:35:51Z",
+    "killers": [
+      "Metralha Ninja",
+      "mitmah scout"
+    ],
+    "reason": "Killed at Level 353 by Metralha Ninja and mitmah scout.",
+    "recordedAt": "2026-11-20T23:06:18.770Z"
+  },
+  {
+    "id": "raulzikat cuei sete|2026-11-20T15:06:16Z",
+    "type": "pve",
+    "character": "Raulzikat Cuei Sete",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 467,
+    "time": "2026-11-20T15:06:16Z",
+    "killers": [
+      "cobra assassin"
+    ],
+    "reason": "Died at Level 467 by cobra assassin.",
+    "recordedAt": "2026-11-20T23:11:30.415Z"
+  },
+  {
     "id": "maaha|2026-11-20T12:42:27Z",
     "type": "pve",
     "character": "Maaha",
