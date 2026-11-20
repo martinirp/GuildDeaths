@@ -1,5 +1,19 @@
 [
   {
+    "id": "maaha|2026-11-20T12:42:27Z",
+    "type": "pve",
+    "character": "Maaha",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 896,
+    "time": "2026-11-20T12:42:27Z",
+    "killers": [
+      "mega dragon"
+    ],
+    "reason": "Died at Level 896 by mega dragon.",
+    "recordedAt": "2026-11-20T16:56:27.372Z"
+  },
+  {
     "id": "iber kart|2026-11-20T04:55:00Z",
     "type": "pvp",
     "character": "Iber Kart",
