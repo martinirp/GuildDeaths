@@ -1,5 +1,20 @@
 [
   {
+    "id": "magewinng|2026-11-21T18:52:21Z",
+    "type": "pvp",
+    "character": "Magewinng",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1355,
+    "time": "2026-11-21T18:52:21Z",
+    "killers": [
+      "Magewinng",
+      "infernal demon"
+    ],
+    "reason": "Killed at Level 1355 by Magewinng and infernal demon.",
+    "recordedAt": "2026-11-21T19:29:23.677Z"
+  },
+  {
     "id": "caiquezera freiodablazer|2026-11-21T10:22:14Z",
     "type": "pve",
     "character": "Caiquezera Freiodablazer",
