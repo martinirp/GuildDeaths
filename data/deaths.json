@@ -1,5 +1,19 @@
 [
   {
+    "id": "caiquezera freiodablazer|2026-11-21T10:22:14Z",
+    "type": "pve",
+    "character": "Caiquezera Freiodablazer",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 1101,
+    "time": "2026-11-21T10:22:14Z",
+    "killers": [
+      "rotten golem"
+    ],
+    "reason": "Died at Level 1101 by rotten golem.",
+    "recordedAt": "2026-11-21T12:08:43.608Z"
+  },
+  {
     "id": "flyerhell|2026-11-21T00:03:06Z",
     "type": "pve",
     "character": "Flyerhell",
@@ -68,6 +82,20 @@
     ],
     "reason": "Died at Level 552 by dragolisk.",
     "recordedAt": "2026-11-21T04:11:02.470Z"
+  },
+  {
+    "id": "valdano pkzin bomb|2026-11-20T16:23:21Z",
+    "type": "pve",
+    "character": "Valdano Pkzin Bomb",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 476,
+    "time": "2026-11-20T16:23:21Z",
+    "killers": [
+      "silencer"
+    ],
+    "reason": "Died at Level 476 by silencer.",
+    "recordedAt": "2026-11-21T12:31:39.494Z"
   },
   {
     "id": "metralha ninja|2026-11-20T15:35:51Z",
