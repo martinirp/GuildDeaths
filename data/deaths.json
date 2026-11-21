@@ -1,5 +1,19 @@
 [
   {
+    "id": "flyerhell|2026-11-21T00:03:06Z",
+    "type": "pve",
+    "character": "Flyerhell",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 401,
+    "time": "2026-11-21T00:03:06Z",
+    "killers": [
+      "fury"
+    ],
+    "reason": "Died at Level 401 by fury.",
+    "recordedAt": "2026-11-21T03:53:36.393Z"
+  },
+  {
     "id": "konnan of life|2026-11-20T21:31:45Z",
     "type": "pve",
     "character": "Konnan Of Life",
@@ -26,6 +40,34 @@
     ],
     "reason": "Died at Level 478 by gorger inferniarch.",
     "recordedAt": "2026-11-20T23:02:40.395Z"
+  },
+  {
+    "id": "vitim do sus|2026-11-20T19:40:38Z",
+    "type": "pve",
+    "character": "Vitim do sus",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 552,
+    "time": "2026-11-20T19:40:38Z",
+    "killers": [
+      "mega dragon"
+    ],
+    "reason": "Died at Level 552 by mega dragon.",
+    "recordedAt": "2026-11-21T04:11:02.470Z"
+  },
+  {
+    "id": "vitim do sus|2026-11-20T19:10:28Z",
+    "type": "pve",
+    "character": "Vitim do sus",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 552,
+    "time": "2026-11-20T19:10:28Z",
+    "killers": [
+      "dragolisk"
+    ],
+    "reason": "Died at Level 552 by dragolisk.",
+    "recordedAt": "2026-11-21T04:11:02.470Z"
   },
   {
     "id": "metralha ninja|2026-11-20T15:35:51Z",
@@ -69,6 +111,20 @@
     ],
     "reason": "Died at Level 896 by mega dragon.",
     "recordedAt": "2026-11-20T16:56:27.372Z"
+  },
+  {
+    "id": "coruja underground|2026-11-20T12:37:48Z",
+    "type": "pve",
+    "character": "Coruja Underground",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1280,
+    "time": "2026-11-20T12:37:48Z",
+    "killers": [
+      "converter"
+    ],
+    "reason": "Died at Level 1280 by converter.",
+    "recordedAt": "2026-11-21T03:49:42.486Z"
   },
   {
     "id": "iber kart|2026-11-20T04:55:00Z",
