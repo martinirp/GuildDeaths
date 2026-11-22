@@ -1,5 +1,19 @@
 [
   {
+    "id": "kaephas|2026-11-21T23:22:54Z",
+    "type": "pve",
+    "character": "Kaephas",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 331,
+    "time": "2026-11-21T23:22:54Z",
+    "killers": [
+      "crypt shambler"
+    ],
+    "reason": "Died at Level 331 by crypt shambler.",
+    "recordedAt": "2026-11-22T00:02:31.209Z"
+  },
+  {
     "id": "magewinng|2026-11-21T18:52:21Z",
     "type": "pvp",
     "character": "Magewinng",
@@ -13,6 +27,48 @@
     ],
     "reason": "Killed at Level 1355 by Magewinng and infernal demon.",
     "recordedAt": "2026-11-21T19:29:23.677Z"
+  },
+  {
+    "id": "gustavin obala|2026-11-21T15:20:21Z",
+    "type": "pvp",
+    "character": "Gustavin Obala",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 570,
+    "time": "2026-11-21T15:20:21Z",
+    "killers": [
+      "Jonakz"
+    ],
+    "reason": "Killed at Level 570 by Jonakz.",
+    "recordedAt": "2026-11-22T00:00:15.086Z"
+  },
+  {
+    "id": "roberterah|2026-11-21T12:15:04Z",
+    "type": "pve",
+    "character": "Roberterah",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 818,
+    "time": "2026-11-21T12:15:04Z",
+    "killers": [
+      "rage squid"
+    ],
+    "reason": "Died at Level 818 by rage squid.",
+    "recordedAt": "2026-11-22T00:13:14.625Z"
+  },
+  {
+    "id": "vitaum freiodablazer|2026-11-21T10:22:22Z",
+    "type": "pve",
+    "character": "Vitaum Freiodablazer",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 944,
+    "time": "2026-11-21T10:22:22Z",
+    "killers": [
+      "branchy crawler"
+    ],
+    "reason": "Died at Level 944 by branchy crawler.",
+    "recordedAt": "2026-11-22T00:18:23.705Z"
   },
   {
     "id": "caiquezera freiodablazer|2026-11-21T10:22:14Z",
@@ -97,6 +153,20 @@
     ],
     "reason": "Died at Level 552 by dragolisk.",
     "recordedAt": "2026-11-21T04:11:02.470Z"
+  },
+  {
+    "id": "monk saurio|2026-11-20T18:56:25Z",
+    "type": "pve",
+    "character": "Monk Saurio",
+    "vocation": "Exalted Monk",
+    "rank": "Member",
+    "level": 395,
+    "time": "2026-11-20T18:56:25Z",
+    "killers": [
+      "feral sphinx"
+    ],
+    "reason": "Died at Level 395 by feral sphinx.",
+    "recordedAt": "2026-11-22T00:08:05.163Z"
   },
   {
     "id": "valdano pkzin bomb|2026-11-20T16:23:21Z",
