@@ -1,5 +1,19 @@
 [
   {
+    "id": "oz skyner|2026-11-22T01:34:25Z",
+    "type": "pve",
+    "character": "Oz Skyner",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 113,
+    "time": "2026-11-22T01:34:25Z",
+    "killers": [
+      "midnight asura"
+    ],
+    "reason": "Died at Level 113 by midnight asura.",
+    "recordedAt": "2026-11-22T13:31:37.770Z"
+  },
+  {
     "id": "tuco boladaoo|2026-11-22T01:34:08Z",
     "type": "pve",
     "character": "Tuco Boladaoo",
@@ -12,6 +26,20 @@
     ],
     "reason": "Died at Level 927 by ironblight.",
     "recordedAt": "2026-11-22T05:24:21.271Z"
+  },
+  {
+    "id": "king nesr|2026-11-22T00:56:06Z",
+    "type": "pve",
+    "character": "King Nesr",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 860,
+    "time": "2026-11-22T00:56:06Z",
+    "killers": [
+      "rootthing nutshell"
+    ],
+    "reason": "Died at Level 860 by rootthing nutshell.",
+    "recordedAt": "2026-11-22T13:25:37.941Z"
   },
   {
     "id": "kaephas|2026-11-21T23:22:54Z",
@@ -172,6 +200,64 @@
     "recordedAt": "2026-11-21T12:08:43.608Z"
   },
   {
+    "id": "akally mush|2026-11-21T09:51:09Z",
+    "type": "pve",
+    "character": "Akally Mush",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 556,
+    "time": "2026-11-21T09:51:09Z",
+    "killers": [
+      "burning book"
+    ],
+    "reason": "Died at Level 556 by burning book.",
+    "recordedAt": "2026-11-22T13:13:53.992Z"
+  },
+  {
+    "id": "akally mush|2026-11-21T09:12:08Z",
+    "type": "pvp",
+    "character": "Akally Mush",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 556,
+    "time": "2026-11-21T09:12:08Z",
+    "killers": [
+      "Akally Mush",
+      "burning book"
+    ],
+    "reason": "Killed at Level 556 by Akally Mush and burning book.",
+    "recordedAt": "2026-11-22T13:13:53.992Z"
+  },
+  {
+    "id": "bromi|2026-11-21T02:25:19Z",
+    "type": "pvp",
+    "character": "Bromi",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 520,
+    "time": "2026-11-21T02:25:19Z",
+    "killers": [
+      "Bromi",
+      "squid warden"
+    ],
+    "reason": "Killed at Level 520 by Bromi and squid warden.",
+    "recordedAt": "2026-11-22T13:16:34.339Z"
+  },
+  {
+    "id": "yotah|2026-11-21T01:33:40Z",
+    "type": "pve",
+    "character": "Yotah",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 452,
+    "time": "2026-11-21T01:33:40Z",
+    "killers": [
+      "young goanna"
+    ],
+    "reason": "Died at Level 452 by young goanna.",
+    "recordedAt": "2026-11-22T13:40:43.792Z"
+  },
+  {
     "id": "flyerhell|2026-11-21T00:03:06Z",
     "type": "pve",
     "character": "Flyerhell",
@@ -184,6 +270,20 @@
     ],
     "reason": "Died at Level 401 by fury.",
     "recordedAt": "2026-11-21T03:53:36.393Z"
+  },
+  {
+    "id": "coronel shock|2026-11-20T23:54:10Z",
+    "type": "pve",
+    "character": "Coronel Shock",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1503,
+    "time": "2026-11-20T23:54:10Z",
+    "killers": [
+      "walking pillar"
+    ],
+    "reason": "Died at Level 1503 by walking pillar.",
+    "recordedAt": "2026-11-22T13:18:12.806Z"
   },
   {
     "id": "konnan of life|2026-11-20T21:31:45Z",
@@ -228,6 +328,20 @@
     "recordedAt": "2026-11-21T04:11:02.470Z"
   },
   {
+    "id": "blaw ability|2026-11-20T19:15:13Z",
+    "type": "pve",
+    "character": "Blaw Ability",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 1031,
+    "time": "2026-11-20T19:15:13Z",
+    "killers": [
+      "juvenile bashmu"
+    ],
+    "reason": "Died at Level 1031 by juvenile bashmu.",
+    "recordedAt": "2026-11-22T13:16:12.977Z"
+  },
+  {
     "id": "vitim do sus|2026-11-20T19:10:28Z",
     "type": "pve",
     "character": "Vitim do sus",
@@ -254,6 +368,20 @@
     ],
     "reason": "Died at Level 395 by feral sphinx.",
     "recordedAt": "2026-11-22T00:08:05.163Z"
+  },
+  {
+    "id": "fenixsz malandro|2026-11-20T17:37:12Z",
+    "type": "pve",
+    "character": "Fenixsz Malandro",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 750,
+    "time": "2026-11-20T17:37:12Z",
+    "killers": [
+      "quara looter"
+    ],
+    "reason": "Died at Level 750 by quara looter.",
+    "recordedAt": "2026-11-22T13:21:31.137Z"
   },
   {
     "id": "valdano pkzin bomb|2026-11-20T16:23:21Z",
