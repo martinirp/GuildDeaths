@@ -83,6 +83,29 @@
     "recordedAt": "2026-11-23T09:29:46.811Z"
   },
   {
+    "id": "king jefinho|2026-11-23T03:32:51Z",
+    "type": "pvp",
+    "character": "King jefinho",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 269,
+    "time": "2026-11-23T03:32:51Z",
+    "killers": [
+      "Vincent Cerol Finim",
+      "Hookah King Kill",
+      "Astra Queen",
+      "Murillao Bombs",
+      "Kawan Mododiabllo",
+      "Oblivionbo",
+      "Pune Edbombinhatres",
+      "Mandatory Namechangeiiee",
+      "Sleeping Paladin",
+      "Beerbatov"
+    ],
+    "reason": "Crushed at Level 269 by Vincent Cerol Finim, Hookah King Kill, Astra Queen, Murillao Bombs, Kawan Mododiabllo, Oblivionbo, Pune Edbombinhatres, Mandatory Namechangeiiee, Sleeping Paladin and Beerbatov.",
+    "recordedAt": "2026-11-23T21:34:39.419Z"
+  },
+  {
     "id": "kiriuz kser|2026-11-23T00:16:11Z",
     "type": "pvp",
     "character": "Kiriuz Kser",
@@ -110,6 +133,20 @@
     ],
     "reason": "Died at Level 417 by dragolisk.",
     "recordedAt": "2026-11-23T01:06:10.496Z"
+  },
+  {
+    "id": "grost|2026-11-22T19:52:55Z",
+    "type": "pve",
+    "character": "Grost",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 117,
+    "time": "2026-11-22T19:52:55Z",
+    "killers": [
+      "lamassu"
+    ],
+    "reason": "Died at Level 117 by lamassu.",
+    "recordedAt": "2026-11-23T21:31:54.840Z"
   },
   {
     "id": "im not alvariyo|2026-11-22T19:27:14Z",
@@ -214,6 +251,49 @@
     ],
     "reason": "Died at Level 466 by soul-broken harbinger.",
     "recordedAt": "2026-11-23T01:03:04.720Z"
+  },
+  {
+    "id": "deterok|2026-11-22T11:13:05Z",
+    "type": "pve",
+    "character": "Deterok",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 1247,
+    "time": "2026-11-22T11:13:05Z",
+    "killers": [
+      "radicular totem"
+    ],
+    "reason": "Died at Level 1247 by radicular totem.",
+    "recordedAt": "2026-11-23T21:27:59.022Z"
+  },
+  {
+    "id": "deterok|2026-11-22T10:53:27Z",
+    "type": "pvp",
+    "character": "Deterok",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 1249,
+    "time": "2026-11-22T10:53:27Z",
+    "killers": [
+      "Deterok",
+      "rotten man-maggot"
+    ],
+    "reason": "Killed at Level 1249 by Deterok and rotten man-maggot.",
+    "recordedAt": "2026-11-23T21:27:59.022Z"
+  },
+  {
+    "id": "obudzony pan|2026-11-22T10:35:22Z",
+    "type": "pve",
+    "character": "Obudzony Pan",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 404,
+    "time": "2026-11-22T10:35:22Z",
+    "killers": [
+      "burster spectre"
+    ],
+    "reason": "Died at Level 404 by burster spectre.",
+    "recordedAt": "2026-11-23T21:40:35.185Z"
   },
   {
     "id": "yame thorim|2026-11-22T02:54:51Z",
@@ -541,6 +621,20 @@
     ],
     "reason": "Died at Level 306 by headwalker.",
     "recordedAt": "2026-11-23T09:24:37.762Z"
+  },
+  {
+    "id": "obudzony pan|2026-11-21T12:56:02Z",
+    "type": "pve",
+    "character": "Obudzony Pan",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 400,
+    "time": "2026-11-21T12:56:02Z",
+    "killers": [
+      "burster spectre"
+    ],
+    "reason": "Died at Level 400 by burster spectre.",
+    "recordedAt": "2026-11-23T21:40:35.185Z"
   },
   {
     "id": "roberterah|2026-11-21T12:15:04Z",
@@ -998,6 +1092,20 @@
     "recordedAt": "2026-11-20T23:11:30.415Z"
   },
   {
+    "id": "obudzony pan|2026-11-20T13:34:20Z",
+    "type": "pve",
+    "character": "Obudzony Pan",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 397,
+    "time": "2026-11-20T13:34:20Z",
+    "killers": [
+      "ripper spectre"
+    ],
+    "reason": "Died at Level 397 by ripper spectre.",
+    "recordedAt": "2026-11-23T21:40:35.185Z"
+  },
+  {
     "id": "maaha|2026-11-20T12:42:27Z",
     "type": "pve",
     "character": "Maaha",
@@ -1052,6 +1160,20 @@
     ],
     "reason": "Died at Level 606 by cave devourer.",
     "recordedAt": "2026-11-22T05:15:44.407Z"
+  },
+  {
+    "id": "pala neurotico|2026-11-20T07:54:17Z",
+    "type": "pve",
+    "character": "Pala Neurotico",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 1222,
+    "time": "2026-11-20T07:54:17Z",
+    "killers": [
+      "demon"
+    ],
+    "reason": "Died at Level 1222 by demon.",
+    "recordedAt": "2026-11-23T21:41:05.249Z"
   },
   {
     "id": "iber kart|2026-11-20T04:55:00Z",
