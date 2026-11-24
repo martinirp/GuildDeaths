@@ -1,5 +1,48 @@
 [
   {
+    "id": "maroreu endilan|2026-11-24T11:29:16Z",
+    "type": "pve",
+    "character": "Maroreu Endilan",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 425,
+    "time": "2026-11-24T11:29:16Z",
+    "killers": [
+      "greedbeast"
+    ],
+    "reason": "Died at Level 425 by greedbeast.",
+    "recordedAt": "2026-11-24T16:23:56.927Z"
+  },
+  {
+    "id": "lystol malandro|2026-11-24T01:25:12Z",
+    "type": "pvp",
+    "character": "Lystol Malandro",
+    "vocation": "Exalted Monk",
+    "rank": "Member",
+    "level": 406,
+    "time": "2026-11-24T01:25:12Z",
+    "killers": [
+      "Lystol Malandro",
+      "hellflayer"
+    ],
+    "reason": "Killed at Level 406 by Lystol Malandro and hellflayer.",
+    "recordedAt": "2026-11-24T16:23:08.093Z"
+  },
+  {
+    "id": "metralha ninja|2026-11-23T21:06:05Z",
+    "type": "pve",
+    "character": "Metralha Ninja",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 369,
+    "time": "2026-11-23T21:06:05Z",
+    "killers": [
+      "usurper knight"
+    ],
+    "reason": "Died at Level 369 by usurper knight.",
+    "recordedAt": "2026-11-24T16:24:36.940Z"
+  },
+  {
     "id": "cryndor|2026-11-23T19:40:59Z",
     "type": "pve",
     "character": "Cryndor",
@@ -12,6 +55,21 @@
     ],
     "reason": "Died at Level 651 by breach brood.",
     "recordedAt": "2026-11-24T05:30:57.934Z"
+  },
+  {
+    "id": "metralha ninja|2026-11-23T19:02:54Z",
+    "type": "pvp",
+    "character": "Metralha Ninja",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 369,
+    "time": "2026-11-23T19:02:54Z",
+    "killers": [
+      "Metralha Ninja",
+      "mitmah scout"
+    ],
+    "reason": "Killed at Level 369 by Metralha Ninja and mitmah scout.",
+    "recordedAt": "2026-11-24T16:24:36.940Z"
   },
   {
     "id": "danone volpe|2026-11-23T18:54:43Z",
@@ -54,6 +112,104 @@
     ],
     "reason": "Died at Level 1016 by tremendous tyrant.",
     "recordedAt": "2026-11-24T05:53:03.008Z"
+  },
+  {
+    "id": "manuzerah foradesi|2026-11-23T14:03:04Z",
+    "type": "pve",
+    "character": "Manuzerah Foradesi",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 363,
+    "time": "2026-11-23T14:03:04Z",
+    "killers": [
+      "burster spectre"
+    ],
+    "reason": "Died at Level 363 by burster spectre.",
+    "recordedAt": "2026-11-24T16:23:55.422Z"
+  },
+  {
+    "id": "metralha ninja|2026-11-23T13:42:15Z",
+    "type": "pve",
+    "character": "Metralha Ninja",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 370,
+    "time": "2026-11-23T13:42:15Z",
+    "killers": [
+      "sulphider"
+    ],
+    "reason": "Died at Level 370 by sulphider.",
+    "recordedAt": "2026-11-24T16:24:36.940Z"
+  },
+  {
+    "id": "metralha ninja|2026-11-23T13:38:48Z",
+    "type": "pve",
+    "character": "Metralha Ninja",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 371,
+    "time": "2026-11-23T13:38:48Z",
+    "killers": [
+      "sulphider"
+    ],
+    "reason": "Died at Level 371 by sulphider.",
+    "recordedAt": "2026-11-24T16:24:36.940Z"
+  },
+  {
+    "id": "maroreu endilan|2026-11-23T11:27:17Z",
+    "type": "pve",
+    "character": "Maroreu Endilan",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 425,
+    "time": "2026-11-23T11:27:17Z",
+    "killers": [
+      "Goshnar's Malice"
+    ],
+    "reason": "Died at Level 425 by Goshnar's Malice.",
+    "recordedAt": "2026-11-24T16:23:56.927Z"
+  },
+  {
+    "id": "bja|2026-11-23T08:50:22Z",
+    "type": "pve",
+    "character": "Bja",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 626,
+    "time": "2026-11-23T08:50:22Z",
+    "killers": [
+      "flimsy lost soul"
+    ],
+    "reason": "Died at Level 626 by flimsy lost soul.",
+    "recordedAt": "2026-11-24T16:11:33.186Z"
+  },
+  {
+    "id": "chaponly|2026-11-23T07:43:53Z",
+    "type": "pve",
+    "character": "Chaponly",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 425,
+    "time": "2026-11-23T07:43:53Z",
+    "killers": [
+      "mega dragon"
+    ],
+    "reason": "Died at Level 425 by mega dragon.",
+    "recordedAt": "2026-11-24T16:12:36.808Z"
+  },
+  {
+    "id": "chaponly|2026-11-23T06:40:24Z",
+    "type": "pve",
+    "character": "Chaponly",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 424,
+    "time": "2026-11-23T06:40:24Z",
+    "killers": [
+      "dragolisk"
+    ],
+    "reason": "Died at Level 424 by dragolisk.",
+    "recordedAt": "2026-11-24T16:12:36.808Z"
   },
   {
     "id": "frankie ak|2026-11-23T03:36:49Z",
@@ -225,6 +381,34 @@
     "recordedAt": "2026-11-24T05:49:55.868Z"
   },
   {
+    "id": "chokinhu|2026-11-23T01:43:48Z",
+    "type": "pve",
+    "character": "Chokinhu",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 349,
+    "time": "2026-11-23T01:43:48Z",
+    "killers": [
+      "demon"
+    ],
+    "reason": "Died at Level 349 by demon.",
+    "recordedAt": "2026-11-24T16:12:37.052Z"
+  },
+  {
+    "id": "hyllesh vaind|2026-11-23T00:34:34Z",
+    "type": "pvp",
+    "character": "Hyllesh Vaind",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 395,
+    "time": "2026-11-23T00:34:34Z",
+    "killers": [
+      "sineater inferniarch"
+    ],
+    "reason": "Died at Level 395 by sineater inferniarch. Assisted by Jeff da Massa and Cedilha.",
+    "recordedAt": "2026-11-24T16:18:53.434Z"
+  },
+  {
     "id": "kiriuz kser|2026-11-23T00:16:11Z",
     "type": "pvp",
     "character": "Kiriuz Kser",
@@ -238,6 +422,20 @@
     ],
     "reason": "Killed at Level 1531 by Magnifik Clau Clau and brachiodemon.",
     "recordedAt": "2026-11-23T09:14:35.091Z"
+  },
+  {
+    "id": "bankysh|2026-11-22T23:41:17Z",
+    "type": "pve",
+    "character": "Bankysh",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 445,
+    "time": "2026-11-22T23:41:17Z",
+    "killers": [
+      "arachnophobica"
+    ],
+    "reason": "Died at Level 445 by arachnophobica.",
+    "recordedAt": "2026-11-24T16:11:20.132Z"
   },
   {
     "id": "chaponly|2026-11-22T23:29:34Z",
@@ -296,6 +494,36 @@
     "recordedAt": "2026-11-23T21:31:54.840Z"
   },
   {
+    "id": "lystolsz malandro|2026-11-22T19:29:30Z",
+    "type": "pvp",
+    "character": "Lystolsz Malandro",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 692,
+    "time": "2026-11-22T19:29:30Z",
+    "killers": [
+      "Keelzera Returns",
+      "Primo Rodzin",
+      "Kfox Icecreamking",
+      "Tayzin Loveks Libertabrapune",
+      "Gezafoko Geza Gezafoko",
+      "Ray Pune",
+      "Jonakz",
+      "Murillao Bombs",
+      "Og Ivar",
+      "Arcanjo Daniel",
+      "Kiing Andreziinho",
+      "Pune Edbombinhatres",
+      "Lycanmare",
+      "Eoutras Parada",
+      "Badu Brisa Torta",
+      "Doobie Sorc",
+      "Heea"
+    ],
+    "reason": "Eliminated at Level 692 by Keelzera Returns, Primo Rodzin, Kfox Icecreamking, Tayzin Loveks Libertabrapune, Gezafoko Geza Gezafoko, Ray Pune, Jonakz, Murillao Bombs, Og Ivar, Arcanjo Daniel, Kiing Andreziinho, Pune Edbombinhatres, Lycanmare, Eoutras Parada, Badu Brisa Torta, Doobie Sorc and Heea. Assisted by Kandelozo.",
+    "recordedAt": "2026-11-24T16:23:08.199Z"
+  },
+  {
     "id": "im not alvariyo|2026-11-22T19:27:14Z",
     "type": "pvp",
     "character": "Im Not Alvariyo",
@@ -342,6 +570,64 @@
     "recordedAt": "2026-11-23T09:04:30.181Z"
   },
   {
+    "id": "nando alwayz|2026-11-22T19:23:12Z",
+    "type": "pvp",
+    "character": "Nando Alwayz",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 610,
+    "time": "2026-11-22T19:23:12Z",
+    "killers": [
+      "Nando Alwayz",
+      "Cronic Fechadocom Dejair",
+      "Escadinha Sobe Ek",
+      "Tayzin Loveks Libertabrapune",
+      "Bakaj Lando",
+      "Jonakz",
+      "Weslotty Kamikaze",
+      "Kiing Andreziinho",
+      "Eoutras Parada",
+      "Dala Iror",
+      "Nodokzao Supreme",
+      "Ciskinhoo",
+      "Doobie Sorc"
+    ],
+    "reason": "Crushed at Level 610 by Nando Alwayz, Cronic Fechadocom Dejair, Escadinha Sobe Ek, Tayzin Loveks Libertabrapune, Bakaj Lando, Jonakz, Weslotty Kamikaze, Kiing Andreziinho, Eoutras Parada, Dala Iror, Nodokzao Supreme, Ciskinhoo and Doobie Sorc.",
+    "recordedAt": "2026-11-24T16:25:46.109Z"
+  },
+  {
+    "id": "nando alwayz|2026-11-22T19:13:26Z",
+    "type": "pve",
+    "character": "Nando Alwayz",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 610,
+    "time": "2026-11-22T19:13:26Z",
+    "killers": [
+      "young goanna"
+    ],
+    "reason": "Died at Level 610 by young goanna.",
+    "recordedAt": "2026-11-24T16:25:46.109Z"
+  },
+  {
+    "id": "hellbombinha|2026-11-22T17:17:43Z",
+    "type": "pvp",
+    "character": "Hellbombinha",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 314,
+    "time": "2026-11-22T17:17:43Z",
+    "killers": [
+      "Hurleyzim",
+      "Borelzika",
+      "Pedrin Bombinhaeterno",
+      "Comandate Balgrano",
+      "Wenwu"
+    ],
+    "reason": "Slain at Level 314 by Hurleyzim, Borelzika, Pedrin Bombinhaeterno, Comandate Balgrano and Wenwu.",
+    "recordedAt": "2026-11-24T16:18:18.022Z"
+  },
+  {
     "id": "taoki|2026-11-22T16:59:55Z",
     "type": "pvp",
     "character": "Taoki",
@@ -356,6 +642,21 @@
     ],
     "reason": "Killed at Level 162 by Hurleyzim, Borelzika and Wenwu. Assisted by Frozono.",
     "recordedAt": "2026-11-23T01:26:59.512Z"
+  },
+  {
+    "id": "buballu|2026-11-22T16:52:25Z",
+    "type": "pvp",
+    "character": "Buballu",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 1211,
+    "time": "2026-11-22T16:52:25Z",
+    "killers": [
+      "Buballu",
+      "Bakragore"
+    ],
+    "reason": "Killed at Level 1211 by Buballu and Bakragore.",
+    "recordedAt": "2026-11-24T16:12:10.930Z"
   },
   {
     "id": "cotocake|2026-11-22T15:30:01Z",
@@ -398,6 +699,20 @@
     ],
     "reason": "Died at Level 466 by soul-broken harbinger.",
     "recordedAt": "2026-11-23T01:03:04.720Z"
+  },
+  {
+    "id": "fenix el patron|2026-11-22T13:10:33Z",
+    "type": "pve",
+    "character": "Fenix El Patron",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 1083,
+    "time": "2026-11-22T13:10:33Z",
+    "killers": [
+      "nighthunter"
+    ],
+    "reason": "Died at Level 1083 by nighthunter.",
+    "recordedAt": "2026-11-24T16:16:22.438Z"
   },
   {
     "id": "deterok|2026-11-22T11:13:05Z",
@@ -513,6 +828,20 @@
     "recordedAt": "2026-11-22T05:24:21.271Z"
   },
   {
+    "id": "hyllesh vaind|2026-11-22T01:20:07Z",
+    "type": "pve",
+    "character": "Hyllesh Vaind",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 396,
+    "time": "2026-11-22T01:20:07Z",
+    "killers": [
+      "makara"
+    ],
+    "reason": "Died at Level 396 by makara.",
+    "recordedAt": "2026-11-24T16:18:53.434Z"
+  },
+  {
     "id": "manuzerah foradesi|2026-11-22T01:02:48Z",
     "type": "pve",
     "character": "Manuzerah Foradesi",
@@ -567,6 +896,20 @@
     ],
     "reason": "Died at Level 331 by crypt shambler.",
     "recordedAt": "2026-11-22T00:02:31.209Z"
+  },
+  {
+    "id": "hyllesh vaind|2026-11-21T23:13:20Z",
+    "type": "pve",
+    "character": "Hyllesh Vaind",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 396,
+    "time": "2026-11-21T23:13:20Z",
+    "killers": [
+      "headpecker"
+    ],
+    "reason": "Died at Level 396 by headpecker.",
+    "recordedAt": "2026-11-24T16:18:53.434Z"
   },
   {
     "id": "chaponly|2026-11-21T21:20:18Z",
@@ -983,6 +1326,20 @@
     "recordedAt": "2026-11-22T13:40:43.792Z"
   },
   {
+    "id": "cereall killerr|2026-11-21T01:16:26Z",
+    "type": "pve",
+    "character": "Cereall Killerr",
+    "vocation": "Exalted Monk",
+    "rank": "Member",
+    "level": 536,
+    "time": "2026-11-21T01:16:26Z",
+    "killers": [
+      "falcon paladin"
+    ],
+    "reason": "Died at Level 536 by falcon paladin.",
+    "recordedAt": "2026-11-24T16:12:24.219Z"
+  },
+  {
     "id": "nervuura bomb|2026-11-21T01:05:51Z",
     "type": "pvp",
     "character": "Nervuura Bomb",
@@ -1195,6 +1552,21 @@
     "recordedAt": "2026-11-23T01:06:10.496Z"
   },
   {
+    "id": "nando alwayz|2026-11-20T17:42:12Z",
+    "type": "pvp",
+    "character": "Nando Alwayz",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 598,
+    "time": "2026-11-20T17:42:12Z",
+    "killers": [
+      "Nando Alwayz",
+      "hellhunter inferniarch"
+    ],
+    "reason": "Killed at Level 598 by Nando Alwayz and hellhunter inferniarch.",
+    "recordedAt": "2026-11-24T16:25:46.109Z"
+  },
+  {
     "id": "fenixsz malandro|2026-11-20T17:37:12Z",
     "type": "pve",
     "character": "Fenixsz Malandro",
@@ -1207,6 +1579,21 @@
     ],
     "reason": "Died at Level 750 by quara looter.",
     "recordedAt": "2026-11-22T13:21:31.137Z"
+  },
+  {
+    "id": "cedilha|2026-11-20T17:00:37Z",
+    "type": "pvp",
+    "character": "Cedilha",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 1102,
+    "time": "2026-11-20T17:00:37Z",
+    "killers": [
+      "Jonakz",
+      "quara raider"
+    ],
+    "reason": "Killed at Level 1102 by Jonakz and quara raider.",
+    "recordedAt": "2026-11-24T16:12:23.936Z"
   },
   {
     "id": "valdano pkzin bomb|2026-11-20T16:23:21Z",
@@ -1280,6 +1667,34 @@
     ],
     "reason": "Died at Level 467 by cobra assassin.",
     "recordedAt": "2026-11-20T23:11:30.415Z"
+  },
+  {
+    "id": "chokinhu|2026-11-20T14:49:10Z",
+    "type": "pvp",
+    "character": "Chokinhu",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 351,
+    "time": "2026-11-20T14:49:10Z",
+    "killers": [
+      "Escorpiao Verdenasmont"
+    ],
+    "reason": "Killed at Level 351 by Escorpiao Verdenasmont.",
+    "recordedAt": "2026-11-24T16:12:37.052Z"
+  },
+  {
+    "id": "cedilha|2026-11-20T14:27:33Z",
+    "type": "pve",
+    "character": "Cedilha",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 1102,
+    "time": "2026-11-20T14:27:33Z",
+    "killers": [
+      "mycobiontic beetle"
+    ],
+    "reason": "Died at Level 1102 by mycobiontic beetle.",
+    "recordedAt": "2026-11-24T16:12:23.936Z"
   },
   {
     "id": "herbert implacavel|2026-11-20T13:52:55Z",
