@@ -1,5 +1,61 @@
 [
   {
+    "id": "cryndor|2026-11-23T19:40:59Z",
+    "type": "pve",
+    "character": "Cryndor",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 651,
+    "time": "2026-11-23T19:40:59Z",
+    "killers": [
+      "breach brood"
+    ],
+    "reason": "Died at Level 651 by breach brood.",
+    "recordedAt": "2026-11-24T05:30:57.934Z"
+  },
+  {
+    "id": "danone volpe|2026-11-23T18:54:43Z",
+    "type": "pve",
+    "character": "Danone Volpe",
+    "vocation": "Exalted Monk",
+    "rank": "Member",
+    "level": 697,
+    "time": "2026-11-23T18:54:43Z",
+    "killers": [
+      "death"
+    ],
+    "reason": "Died at Level 697 by death.",
+    "recordedAt": "2026-11-24T05:30:58.709Z"
+  },
+  {
+    "id": "cur uja|2026-11-23T18:44:12Z",
+    "type": "pve",
+    "character": "Cur Uja",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1349,
+    "time": "2026-11-23T18:44:12Z",
+    "killers": [
+      "sulphur spouter"
+    ],
+    "reason": "Died at Level 1349 by sulphur spouter.",
+    "recordedAt": "2026-11-24T05:30:58.291Z"
+  },
+  {
+    "id": "ysmithe|2026-11-23T14:39:54Z",
+    "type": "pve",
+    "character": "Ysmithe",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 1016,
+    "time": "2026-11-23T14:39:54Z",
+    "killers": [
+      "tremendous tyrant"
+    ],
+    "reason": "Died at Level 1016 by tremendous tyrant.",
+    "recordedAt": "2026-11-24T05:53:03.008Z"
+  },
+  {
     "id": "frankie ak|2026-11-23T03:36:49Z",
     "type": "pvp",
     "character": "Frankie Ak",
@@ -83,6 +139,31 @@
     "recordedAt": "2026-11-23T09:29:46.811Z"
   },
   {
+    "id": "superstar curujaa|2026-11-23T03:33:35Z",
+    "type": "pvp",
+    "character": "Superstar Curujaa",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 263,
+    "time": "2026-11-23T03:33:35Z",
+    "killers": [
+      "Astra Queen",
+      "Ray Pune",
+      "Jonakz",
+      "Murillao Bombs",
+      "Kawan Mododiabllo",
+      "Oblivionbo",
+      "Pune Edbombinhatres",
+      "Mandatory Namechangeiiee",
+      "Sleeping Paladin",
+      "Beerbatov",
+      "Foras Tero",
+      "Godmode Druid"
+    ],
+    "reason": "Crushed at Level 263 by Astra Queen, Ray Pune, Jonakz, Murillao Bombs, Kawan Mododiabllo, Oblivionbo, Pune Edbombinhatres, Mandatory Namechangeiiee, Sleeping Paladin, Beerbatov, Foras Tero and Godmode Druid. Assisted by Mullekotty, Royal Shamz and Biserker.",
+    "recordedAt": "2026-11-24T05:49:55.868Z"
+  },
+  {
     "id": "king jefinho|2026-11-23T03:32:51Z",
     "type": "pvp",
     "character": "King jefinho",
@@ -104,6 +185,44 @@
     ],
     "reason": "Crushed at Level 269 by Vincent Cerol Finim, Hookah King Kill, Astra Queen, Murillao Bombs, Kawan Mododiabllo, Oblivionbo, Pune Edbombinhatres, Mandatory Namechangeiiee, Sleeping Paladin and Beerbatov.",
     "recordedAt": "2026-11-23T21:34:39.419Z"
+  },
+  {
+    "id": "nico ultimatechar|2026-11-23T03:32:37Z",
+    "type": "pvp",
+    "character": "Nico Ultimatechar",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 268,
+    "time": "2026-11-23T03:32:37Z",
+    "killers": [
+      "Vincent Cerol Finim",
+      "Astra Queen",
+      "Alfredo Bombiiinha",
+      "Murillao Bombs",
+      "Kawan Mododiabllo",
+      "Oblivionbo",
+      "Pune Edbombinhatres",
+      "Sleeping Paladin",
+      "Beerbatov",
+      "Foras Tero",
+      "Godmode Druid"
+    ],
+    "reason": "Crushed at Level 268 by Vincent Cerol Finim, Astra Queen, Alfredo Bombiiinha, Murillao Bombs, Kawan Mododiabllo, Oblivionbo, Pune Edbombinhatres, Sleeping Paladin, Beerbatov, Foras Tero and Godmode Druid.",
+    "recordedAt": "2026-11-24T05:44:09.542Z"
+  },
+  {
+    "id": "superstar curujaa|2026-11-23T03:18:29Z",
+    "type": "pvp",
+    "character": "Superstar Curujaa",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 263,
+    "time": "2026-11-23T03:18:29Z",
+    "killers": [
+      "Pune Edbombinhatres"
+    ],
+    "reason": "Killed at Level 263 by Pune Edbombinhatres. Assisted by Hawker Bombinha and Lystolsz Malandro.",
+    "recordedAt": "2026-11-24T05:49:55.868Z"
   },
   {
     "id": "kiriuz kser|2026-11-23T00:16:11Z",
@@ -133,6 +252,34 @@
     ],
     "reason": "Died at Level 417 by dragolisk.",
     "recordedAt": "2026-11-23T01:06:10.496Z"
+  },
+  {
+    "id": "cuervo chris|2026-11-22T22:16:50Z",
+    "type": "pve",
+    "character": "Cuervo Chris",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 630,
+    "time": "2026-11-22T22:16:50Z",
+    "killers": [
+      "falcon paladin"
+    ],
+    "reason": "Died at Level 630 by falcon paladin.",
+    "recordedAt": "2026-11-24T05:30:58.051Z"
+  },
+  {
+    "id": "strongwave|2026-11-22T20:59:05Z",
+    "type": "pve",
+    "character": "Strongwave",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1048,
+    "time": "2026-11-22T20:59:05Z",
+    "killers": [
+      "haunted hunter"
+    ],
+    "reason": "Died at Level 1048 by haunted hunter.",
+    "recordedAt": "2026-11-24T05:49:55.379Z"
   },
   {
     "id": "grost|2026-11-22T19:52:55Z",
@@ -464,6 +611,20 @@
     "recordedAt": "2026-11-22T20:50:46.209Z"
   },
   {
+    "id": "oh dios mio|2026-11-21T19:47:22Z",
+    "type": "pve",
+    "character": "Oh dios mio",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 789,
+    "time": "2026-11-21T19:47:22Z",
+    "killers": [
+      "dragolisk"
+    ],
+    "reason": "Died at Level 789 by dragolisk.",
+    "recordedAt": "2026-11-24T05:44:33.579Z"
+  },
+  {
     "id": "lady'silverinha|2026-11-21T18:55:56Z",
     "type": "pve",
     "character": "Lady'Silverinha",
@@ -722,6 +883,20 @@
     "recordedAt": "2026-11-22T13:13:53.992Z"
   },
   {
+    "id": "tebico pipa|2026-11-21T09:22:30Z",
+    "type": "pve",
+    "character": "Tebico pipa",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 834,
+    "time": "2026-11-21T09:22:30Z",
+    "killers": [
+      "rootthing bug tracker"
+    ],
+    "reason": "Died at Level 834 by rootthing bug tracker.",
+    "recordedAt": "2026-11-24T05:50:09.434Z"
+  },
+  {
     "id": "akally mush|2026-11-21T09:12:08Z",
     "type": "pvp",
     "character": "Akally Mush",
@@ -806,6 +981,21 @@
     ],
     "reason": "Died at Level 452 by young goanna.",
     "recordedAt": "2026-11-22T13:40:43.792Z"
+  },
+  {
+    "id": "nervuura bomb|2026-11-21T01:05:51Z",
+    "type": "pvp",
+    "character": "Nervuura Bomb",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 242,
+    "time": "2026-11-21T01:05:51Z",
+    "killers": [
+      "Nervuura Bomb",
+      "manticore"
+    ],
+    "reason": "Killed at Level 242 by Nervuura Bomb and manticore.",
+    "recordedAt": "2026-11-24T05:44:09.180Z"
   },
   {
     "id": "flyerhell|2026-11-21T00:03:06Z",
@@ -1090,6 +1280,21 @@
     ],
     "reason": "Died at Level 467 by cobra assassin.",
     "recordedAt": "2026-11-20T23:11:30.415Z"
+  },
+  {
+    "id": "herbert implacavel|2026-11-20T13:52:55Z",
+    "type": "pvp",
+    "character": "Herbert Implacavel",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 1355,
+    "time": "2026-11-20T13:52:55Z",
+    "killers": [
+      "Pune Edbombinhatres",
+      "sopping corpus"
+    ],
+    "reason": "Killed at Level 1355 by Pune Edbombinhatres and sopping corpus.",
+    "recordedAt": "2026-11-24T05:35:31.582Z"
   },
   {
     "id": "obudzony pan|2026-11-20T13:34:20Z",
