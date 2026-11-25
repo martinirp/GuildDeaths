@@ -1,5 +1,20 @@
 [
   {
+    "id": "shev'sorcerer|2026-11-24T13:43:52Z",
+    "type": "pvp",
+    "character": "Shev'Sorcerer",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1154,
+    "time": "2026-11-24T13:43:52Z",
+    "killers": [
+      "Shev'Sorcerer",
+      "brachiodemon"
+    ],
+    "reason": "Killed at Level 1154 by Shev'Sorcerer and brachiodemon.",
+    "recordedAt": "2026-11-25T01:07:22.235Z"
+  },
+  {
     "id": "maroreu endilan|2026-11-24T11:29:16Z",
     "type": "pve",
     "character": "Maroreu Endilan",
@@ -12,6 +27,20 @@
     ],
     "reason": "Died at Level 425 by greedbeast.",
     "recordedAt": "2026-11-24T16:23:56.927Z"
+  },
+  {
+    "id": "tamon dalan|2026-11-24T04:39:36Z",
+    "type": "pve",
+    "character": "Tamon Dalan",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 696,
+    "time": "2026-11-24T04:39:36Z",
+    "killers": [
+      "gorger inferniarch"
+    ],
+    "reason": "Died at Level 696 by gorger inferniarch.",
+    "recordedAt": "2026-11-25T01:08:01.325Z"
   },
   {
     "id": "lystol malandro|2026-11-24T01:25:12Z",
@@ -264,6 +293,31 @@
     "recordedAt": "2026-11-23T09:19:31.387Z"
   },
   {
+    "id": "shondemu|2026-11-23T03:34:43Z",
+    "type": "pvp",
+    "character": "Shondemu",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 297,
+    "time": "2026-11-23T03:34:43Z",
+    "killers": [
+      "Vincent Cerol Finim",
+      "Astra Queen",
+      "Alfredo Bombiiinha",
+      "Jonakz",
+      "Murillao Bombs",
+      "Kawan Mododiabllo",
+      "Mchamineh",
+      "Oblivionbo",
+      "Pune Edbombinhatres",
+      "Mandatory Namechangeiiee",
+      "Sleeping Paladin",
+      "Foras Tero"
+    ],
+    "reason": "Crushed at Level 297 by Vincent Cerol Finim, Astra Queen, Alfredo Bombiiinha, Jonakz, Murillao Bombs, Kawan Mododiabllo, Mchamineh, Oblivionbo, Pune Edbombinhatres, Mandatory Namechangeiiee, Sleeping Paladin and Foras Tero. Assisted by Superstar Curujaa.",
+    "recordedAt": "2026-11-25T01:07:22.491Z"
+  },
+  {
     "id": "yotah|2026-11-23T03:34:32Z",
     "type": "pvp",
     "character": "Yotah",
@@ -381,6 +435,20 @@
     "recordedAt": "2026-11-24T05:49:55.868Z"
   },
   {
+    "id": "king nesr|2026-11-23T02:14:17Z",
+    "type": "pve",
+    "character": "King Nesr",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 863,
+    "time": "2026-11-23T02:14:17Z",
+    "killers": [
+      "rootthing nutshell"
+    ],
+    "reason": "Died at Level 863 by rootthing nutshell.",
+    "recordedAt": "2026-11-25T00:57:14.781Z"
+  },
+  {
     "id": "chokinhu|2026-11-23T01:43:48Z",
     "type": "pve",
     "character": "Chokinhu",
@@ -407,6 +475,20 @@
     ],
     "reason": "Died at Level 395 by sineater inferniarch. Assisted by Jeff da Massa and Cedilha.",
     "recordedAt": "2026-11-24T16:18:53.434Z"
+  },
+  {
+    "id": "papi nikoo|2026-11-23T00:31:38Z",
+    "type": "pve",
+    "character": "Papi Nikoo",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 384,
+    "time": "2026-11-23T00:31:38Z",
+    "killers": [
+      "cursed prospector"
+    ],
+    "reason": "Died at Level 384 by cursed prospector.",
+    "recordedAt": "2026-11-25T01:05:03.166Z"
   },
   {
     "id": "kiriuz kser|2026-11-23T00:16:11Z",
@@ -758,6 +840,20 @@
     "recordedAt": "2026-11-23T21:40:35.185Z"
   },
   {
+    "id": "shev'sorcerer|2026-11-22T10:02:33Z",
+    "type": "pve",
+    "character": "Shev'Sorcerer",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1152,
+    "time": "2026-11-22T10:02:33Z",
+    "killers": [
+      "darklight construct"
+    ],
+    "reason": "Died at Level 1152 by darklight construct.",
+    "recordedAt": "2026-11-25T01:07:22.235Z"
+  },
+  {
     "id": "yame thorim|2026-11-22T02:54:51Z",
     "type": "pve",
     "character": "Yame Thorim",
@@ -770,6 +866,20 @@
     ],
     "reason": "Died at Level 296 by burster spectre.",
     "recordedAt": "2026-11-23T09:29:34.358Z"
+  },
+  {
+    "id": "sir of justice|2026-11-22T02:42:45Z",
+    "type": "pve",
+    "character": "Sir of justice",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 928,
+    "time": "2026-11-22T02:42:45Z",
+    "killers": [
+      "juvenile bashmu"
+    ],
+    "reason": "Died at Level 928 by juvenile bashmu.",
+    "recordedAt": "2026-11-25T01:07:23.206Z"
   },
   {
     "id": "yappanese|2026-11-22T01:50:16Z",
@@ -1625,6 +1735,22 @@
     "recordedAt": "2026-11-20T23:06:18.770Z"
   },
   {
+    "id": "predactor loles|2026-11-20T15:17:09Z",
+    "type": "pvp",
+    "character": "Predactor Loles",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 783,
+    "time": "2026-11-20T15:17:09Z",
+    "killers": [
+      "Predactor Loles",
+      "Jonakz",
+      "energetic book"
+    ],
+    "reason": "Killed at Level 783 by Predactor Loles, Jonakz and energetic book.",
+    "recordedAt": "2026-11-25T01:05:42.211Z"
+  },
+  {
     "id": "garra de rato|2026-11-20T15:15:56Z",
     "type": "pve",
     "character": "Garra de Rato",
@@ -1712,6 +1838,20 @@
     "recordedAt": "2026-11-24T05:35:31.582Z"
   },
   {
+    "id": "predactor loles|2026-11-20T13:36:15Z",
+    "type": "pve",
+    "character": "Predactor Loles",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 783,
+    "time": "2026-11-20T13:36:15Z",
+    "killers": [
+      "rage squid"
+    ],
+    "reason": "Died at Level 783 by rage squid.",
+    "recordedAt": "2026-11-25T01:05:42.211Z"
+  },
+  {
     "id": "obudzony pan|2026-11-20T13:34:20Z",
     "type": "pve",
     "character": "Obudzony Pan",
@@ -1752,6 +1892,20 @@
     ],
     "reason": "Died at Level 1280 by converter.",
     "recordedAt": "2026-11-21T03:49:42.486Z"
+  },
+  {
+    "id": "angel winnix|2026-11-20T10:28:36Z",
+    "type": "pve",
+    "character": "Angel Winnix",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 547,
+    "time": "2026-11-20T10:28:36Z",
+    "killers": [
+      "adult goanna"
+    ],
+    "reason": "Died at Level 547 by adult goanna.",
+    "recordedAt": "2026-11-25T00:44:53.389Z"
   },
   {
     "id": "ryokim voices|2026-11-20T09:41:59Z",
