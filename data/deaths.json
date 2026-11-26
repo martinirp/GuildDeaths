@@ -1,5 +1,281 @@
 [
   {
+    "id": "the halloween|2026-11-26T10:13:18Z",
+    "type": "pve",
+    "character": "The Halloween",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1108,
+    "time": "2026-11-26T10:13:18Z",
+    "killers": [
+      "ice"
+    ],
+    "reason": "Died at Level 1108 by ice.",
+    "recordedAt": "2026-11-26T11:35:14.459Z"
+  },
+  {
+    "id": "eslyp|2026-11-26T04:22:34Z",
+    "type": "pvp",
+    "character": "Eslyp",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 744,
+    "time": "2026-11-26T04:22:34Z",
+    "killers": [
+      "Cronic Fechadocom Dejair",
+      "No Alfiler defender",
+      "Eslyp",
+      "King Athila",
+      "Murillao Bombs",
+      "Zayrgharz",
+      "Colim Smith",
+      "Mandatory Namechangeiiee",
+      "Magnifik Clau Clau",
+      "Fantasma Vitimada Sociedade",
+      "Pauleth Girls",
+      "Black Faire",
+      "Nodokzao Supreme",
+      "Sorcerer Do Mau",
+      "We ro",
+      "Sargento Queiroz",
+      "Cookkie Monstah"
+    ],
+    "reason": "Eliminated at Level 744 by Cronic Fechadocom Dejair, No Alfiler defender, Eslyp, King Athila, Murillao Bombs, Zayrgharz, Colim Smith, Mandatory Namechangeiiee, Magnifik Clau Clau, Fantasma Vitimada Sociedade, Pauleth Girls, Black Faire, Nodokzao Supreme, Sorcerer Do Mau, We ro, Sargento Queiroz and Cookkie Monstah. Assisted by Mullekotty.",
+    "recordedAt": "2026-11-26T11:23:23.174Z"
+  },
+  {
+    "id": "pinx deadly|2026-11-26T04:17:09Z",
+    "type": "pvp",
+    "character": "Pinx Deadly",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 150,
+    "time": "2026-11-26T04:17:09Z",
+    "killers": [
+      "Maga Agnas",
+      "No Alfiler defender",
+      "Murillao Bombs",
+      "Pauleth Girls",
+      "We ro",
+      "Sargento Queiroz"
+    ],
+    "reason": "Slain at Level 150 by Maga Agnas, No Alfiler defender, Murillao Bombs, Pauleth Girls, We ro and Sargento Queiroz.",
+    "recordedAt": "2026-11-26T11:33:19.013Z"
+  },
+  {
+    "id": "eslyp|2026-11-26T04:16:41Z",
+    "type": "pvp",
+    "character": "Eslyp",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 744,
+    "time": "2026-11-26T04:16:41Z",
+    "killers": [
+      "Masho Alfa Padruiknight",
+      "Maga Agnas",
+      "No Alfiler defender",
+      "Kajuferent Rilia",
+      "King Athila",
+      "Murillao Bombs",
+      "Colim Smith",
+      "Mandatory vaccine mccreadyxx",
+      "Pune Edbombinhatres",
+      "Mandatory Namechangeiiee",
+      "Mikaaza Warlord Ruzad",
+      "Magnifik Clau Clau",
+      "Phcek Mordomo",
+      "Black Faire",
+      "Loro Kamado",
+      "Arezokit Legend",
+      "We ro"
+    ],
+    "reason": "Eliminated at Level 744 by Masho Alfa Padruiknight, Maga Agnas, No Alfiler defender, Kajuferent Rilia, King Athila, Murillao Bombs, Colim Smith, Mandatory vaccine mccreadyxx, Pune Edbombinhatres, Mandatory Namechangeiiee, Mikaaza Warlord Ruzad, Magnifik Clau Clau, Phcek Mordomo, Black Faire, Loro Kamado, Arezokit Legend and We ro. Assisted by Sorcerer of Rafael, Mullekotty and Odibrapune Bombab.",
+    "recordedAt": "2026-11-26T11:23:23.174Z"
+  },
+  {
+    "id": "superstar curujaa|2026-11-26T04:15:48Z",
+    "type": "pvp",
+    "character": "Superstar Curujaa",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 262,
+    "time": "2026-11-26T04:15:48Z",
+    "killers": [
+      "Masho Alfa Padruiknight",
+      "Maga Agnas",
+      "No Alfiler defender",
+      "Murillao Bombs",
+      "Colim Smith",
+      "Mandatory vaccine mccreadyxx",
+      "Pune Edbombinhatres",
+      "Mandatory Namechangeiiee",
+      "Mikaaza Warlord Ruzad",
+      "Magnifik Clau Clau",
+      "We ro",
+      "Sargento Queiroz"
+    ],
+    "reason": "Crushed at Level 262 by Masho Alfa Padruiknight, Maga Agnas, No Alfiler defender, Murillao Bombs, Colim Smith, Mandatory vaccine mccreadyxx, Pune Edbombinhatres, Mandatory Namechangeiiee, Mikaaza Warlord Ruzad, Magnifik Clau Clau, We ro and Sargento Queiroz. Assisted by Eslyp and Arezokit Legend.",
+    "recordedAt": "2026-11-26T11:35:01.331Z"
+  },
+  {
+    "id": "radham|2026-11-26T04:14:53Z",
+    "type": "pvp",
+    "character": "Radham",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 520,
+    "time": "2026-11-26T04:14:53Z",
+    "killers": [
+      "Masho Alfa Padruiknight",
+      "No Alfiler defender",
+      "Iexival lcezarl lexival",
+      "Thitoz",
+      "Kajuferent Rilia",
+      "King Athila",
+      "Murillao Bombs",
+      "Colim Smith",
+      "Mandatory vaccine mccreadyxx",
+      "Pune Edbombinhatres",
+      "Mandatory Namechangeiiee",
+      "Magnifik Clau Clau",
+      "Fantasma Vitimada Sociedade",
+      "Phcek Mordomo",
+      "Pauleth Girls",
+      "Loro Kamado",
+      "Foras Tero",
+      "Sargento Queiroz"
+    ],
+    "reason": "Eliminated at Level 520 by Masho Alfa Padruiknight, No Alfiler defender, Iexival lcezarl lexival, Thitoz, Kajuferent Rilia, King Athila, Murillao Bombs, Colim Smith, Mandatory vaccine mccreadyxx, Pune Edbombinhatres, Mandatory Namechangeiiee, Magnifik Clau Clau, Fantasma Vitimada Sociedade, Phcek Mordomo, Pauleth Girls, Loro Kamado, Foras Tero and Sargento Queiroz. Assisted by Aprendiz de Alquimiista.",
+    "recordedAt": "2026-11-26T11:33:32.957Z"
+  },
+  {
+    "id": "pinx deadly|2026-11-26T04:14:24Z",
+    "type": "pve",
+    "character": "Pinx Deadly",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 152,
+    "time": "2026-11-26T04:14:24Z",
+    "killers": [
+      "lamassu"
+    ],
+    "reason": "Died at Level 152 by lamassu.",
+    "recordedAt": "2026-11-26T11:33:19.013Z"
+  },
+  {
+    "id": "superstar curujaa|2026-11-26T04:14:19Z",
+    "type": "pvp",
+    "character": "Superstar Curujaa",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 262,
+    "time": "2026-11-26T04:14:19Z",
+    "killers": [
+      "No Alfiler defender",
+      "Kajuferent Rilia",
+      "King Athila",
+      "Murillao Bombs",
+      "Zayrgharz",
+      "Colim Smith",
+      "Pune Edbombinhatres",
+      "Mandatory Namechangeiiee",
+      "Magnifik Clau Clau",
+      "Fantasma Vitimada Sociedade",
+      "Phcek Mordomo",
+      "Gabs Entediado",
+      "Pauleth Girls",
+      "Nodokzao Supreme",
+      "Foras Tero",
+      "We ro"
+    ],
+    "reason": "Eliminated at Level 262 by No Alfiler defender, Kajuferent Rilia, King Athila, Murillao Bombs, Zayrgharz, Colim Smith, Pune Edbombinhatres, Mandatory Namechangeiiee, Magnifik Clau Clau, Fantasma Vitimada Sociedade, Phcek Mordomo, Gabs Entediado, Pauleth Girls, Nodokzao Supreme, Foras Tero and We ro. Assisted by Mullekotty and Monks King.",
+    "recordedAt": "2026-11-26T11:35:01.331Z"
+  },
+  {
+    "id": "radham|2026-11-26T04:12:44Z",
+    "type": "pvp",
+    "character": "Radham",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 520,
+    "time": "2026-11-26T04:12:44Z",
+    "killers": [
+      "Kajuferent Rilia",
+      "King Athila",
+      "Murillao Bombs",
+      "Colim Smith",
+      "Pune Edbombinhatres",
+      "Mandatory Namechangeiiee",
+      "Magnifik Clau Clau",
+      "Fantasma Vitimada Sociedade",
+      "Dougzk An Kadiq",
+      "Artorias Of Souls",
+      "Phcek Mordomo",
+      "Gabs Entediado",
+      "Pauleth Girls",
+      "Nodokzao Supreme",
+      "Beerbatov",
+      "Loro Kamado",
+      "Foras Tero",
+      "Arezokit Legend",
+      "We ro",
+      "Sargento Queiroz"
+    ],
+    "reason": "Annihilated at Level 520 by Kajuferent Rilia, King Athila, Murillao Bombs, Colim Smith, Pune Edbombinhatres, Mandatory Namechangeiiee, Magnifik Clau Clau, Fantasma Vitimada Sociedade, Dougzk An Kadiq, Artorias Of Souls, Phcek Mordomo, Gabs Entediado, Pauleth Girls, Nodokzao Supreme, Beerbatov, Loro Kamado, Foras Tero, Arezokit Legend, We ro and Sargento Queiroz.",
+    "recordedAt": "2026-11-26T11:33:32.957Z"
+  },
+  {
+    "id": "edu tipster|2026-11-26T04:11:49Z",
+    "type": "pvp",
+    "character": "Edu Tipster",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 670,
+    "time": "2026-11-26T04:11:49Z",
+    "killers": [
+      "Masho Alfa Padruiknight",
+      "Kajuferent Rilia",
+      "King Athila",
+      "Murillao Bombs",
+      "Zayrgharz",
+      "Colim Smith",
+      "Kiing Andreziinho",
+      "Pune Edbombinhatres",
+      "Darconyn",
+      "Mandatory Namechangeiiee",
+      "Mikaaza Warlord Ruzad",
+      "Magnifik Clau Clau",
+      "Fantasma Vitimada Sociedade",
+      "Dougzk An Kadiq",
+      "Artorias Of Souls",
+      "Phcek Mordomo",
+      "Pauleth Girls",
+      "Black Faire",
+      "Beerbatov",
+      "Loro Kamado",
+      "Foras Tero",
+      "Arezokit Legend",
+      "We ro",
+      "Sargento Queiroz"
+    ],
+    "reason": "Annihilated at Level 670 by Masho Alfa Padruiknight, Kajuferent Rilia, King Athila, Murillao Bombs, Zayrgharz, Colim Smith, Kiing Andreziinho, Pune Edbombinhatres, Darconyn, Mandatory Namechangeiiee, Mikaaza Warlord Ruzad, Magnifik Clau Clau, Fantasma Vitimada Sociedade, Dougzk An Kadiq, Artorias Of Souls, Phcek Mordomo, Pauleth Girls, Black Faire, Beerbatov, Loro Kamado, Foras Tero, Arezokit Legend, We ro and Sargento Queiroz.",
+    "recordedAt": "2026-11-26T11:23:09.555Z"
+  },
+  {
+    "id": "superstar curujaa|2026-11-26T03:59:50Z",
+    "type": "pve",
+    "character": "Superstar Curujaa",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 263,
+    "time": "2026-11-26T03:59:50Z",
+    "killers": [
+      "sphinx"
+    ],
+    "reason": "Died at Level 263 by sphinx.",
+    "recordedAt": "2026-11-26T11:35:01.331Z"
+  },
+  {
     "id": "neri isback|2026-11-26T01:21:43Z",
     "type": "pvp",
     "character": "Neri Isback",
@@ -43,6 +319,34 @@
     "recordedAt": "2026-11-26T02:36:10.291Z"
   },
   {
+    "id": "pan kada|2026-11-25T23:47:27Z",
+    "type": "pve",
+    "character": "Pan Kada",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 1107,
+    "time": "2026-11-25T23:47:27Z",
+    "killers": [
+      "Grendel Greenlunch"
+    ],
+    "reason": "Died at Level 1107 by Grendel Greenlunch.",
+    "recordedAt": "2026-11-26T11:32:41.456Z"
+  },
+  {
+    "id": "sio maybe|2026-11-25T23:34:25Z",
+    "type": "pve",
+    "character": "Sio Maybe",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 301,
+    "time": "2026-11-25T23:34:25Z",
+    "killers": [
+      "Duke Krule"
+    ],
+    "reason": "Died at Level 301 by Duke Krule.",
+    "recordedAt": "2026-11-26T11:34:23.760Z"
+  },
+  {
     "id": "bysen tretaon|2026-11-25T22:53:06Z",
     "type": "pve",
     "character": "Bysen Tretaon",
@@ -57,6 +361,62 @@
     "recordedAt": "2026-11-26T02:25:16.799Z"
   },
   {
+    "id": "betinho hell|2026-11-25T21:46:44Z",
+    "type": "pve",
+    "character": "Betinho Hell",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 836,
+    "time": "2026-11-25T21:46:44Z",
+    "killers": [
+      "mean lost soul"
+    ],
+    "reason": "Died at Level 836 by mean lost soul.",
+    "recordedAt": "2026-11-26T11:19:26.835Z"
+  },
+  {
+    "id": "staro flundra|2026-11-25T20:31:58Z",
+    "type": "pvp",
+    "character": "Staro Flundra",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 634,
+    "time": "2026-11-25T20:31:58Z",
+    "killers": [
+      "Libraez",
+      "Kfox Icecreamking",
+      "Gezafoko Geza Gezafoko",
+      "King Athila",
+      "Hierrowns",
+      "Mandatory vaccine mccreadyxx",
+      "Destroy Freddy",
+      "Fantasma Vitimada Sociedade",
+      "Ramonzyn Teensinna",
+      "Encore zjqieoijiqwe Bombinha",
+      "Nodokzao Supreme",
+      "Netonesz Libertabra",
+      "Ruthless Top Damage",
+      "Popin Ed"
+    ],
+    "reason": "Crushed at Level 634 by Libraez, Kfox Icecreamking, Gezafoko Geza Gezafoko, King Athila, Hierrowns, Mandatory vaccine mccreadyxx, Destroy Freddy, Fantasma Vitimada Sociedade, Ramonzyn Teensinna, Encore zjqieoijiqwe Bombinha, Nodokzao Supreme, Netonesz Libertabra, Ruthless Top Damage and Popin Ed.",
+    "recordedAt": "2026-11-26T11:35:00.832Z"
+  },
+  {
+    "id": "devassembly|2026-11-25T20:31:09Z",
+    "type": "pvp",
+    "character": "Devassembly",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 248,
+    "time": "2026-11-25T20:31:09Z",
+    "killers": [
+      "Quelibra Bombinha",
+      "Escadinha Sobe Ek"
+    ],
+    "reason": "Killed at Level 248 by Quelibra Bombinha and Escadinha Sobe Ek.",
+    "recordedAt": "2026-11-26T11:22:32.120Z"
+  },
+  {
     "id": "leozim indestrutivel|2026-11-25T20:01:40Z",
     "type": "pve",
     "character": "Leozim Indestrutivel",
@@ -69,6 +429,65 @@
     ],
     "reason": "Died at Level 1575 by darklight emitter.",
     "recordedAt": "2026-11-26T02:32:25.724Z"
+  },
+  {
+    "id": "devassembly|2026-11-25T19:52:19Z",
+    "type": "pvp",
+    "character": "Devassembly",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 248,
+    "time": "2026-11-25T19:52:19Z",
+    "killers": [
+      "Yazidd",
+      "Tannakka",
+      "Lebranco James",
+      "Wesclley",
+      "We ro",
+      "Gordoo Patrao"
+    ],
+    "reason": "Slain at Level 248 by Yazidd, Tannakka, Lebranco James, Wesclley, We ro and Gordoo Patrao. Assisted by Maguinho do churrasco, Jotao Bombinha, Sir Jack Fastless, Ffa, Oh dios mio, Wharlord, Ocueistore Bombinha and Kandelozo.",
+    "recordedAt": "2026-11-26T11:22:32.120Z"
+  },
+  {
+    "id": "maka cheira returned|2026-11-25T19:51:18Z",
+    "type": "pvp",
+    "character": "Maka Cheira Returned",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 393,
+    "time": "2026-11-25T19:51:18Z",
+    "killers": [
+      "Cronic Fechadocom Dejair",
+      "Kfox Icecreamking",
+      "Escadinha Sobe Ek",
+      "King Athila",
+      "Ruthlesspedzel",
+      "Mimado de jacabra",
+      "Lebranco James",
+      "Wesclley",
+      "Luu an",
+      "Political Sorcerer",
+      "Encore zjqieoijiqwe Bombinha",
+      "Hyoriinmaruu",
+      "We ro"
+    ],
+    "reason": "Crushed at Level 393 by Cronic Fechadocom Dejair, Kfox Icecreamking, Escadinha Sobe Ek, King Athila, Ruthlesspedzel, Mimado de jacabra, Lebranco James, Wesclley, Luu an, Political Sorcerer, Encore zjqieoijiqwe Bombinha, Hyoriinmaruu and We ro. Assisted by Jotao Bombinha.",
+    "recordedAt": "2026-11-26T11:29:59.409Z"
+  },
+  {
+    "id": "biduinn|2026-11-25T18:06:48Z",
+    "type": "pve",
+    "character": "Biduinn",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 389,
+    "time": "2026-11-25T18:06:48Z",
+    "killers": [
+      "gore horn"
+    ],
+    "reason": "Died at Level 389 by gore horn.",
+    "recordedAt": "2026-11-26T11:19:26.976Z"
   },
   {
     "id": "menos grande|2026-11-25T17:55:24Z",
@@ -172,6 +591,29 @@
     ],
     "reason": "Crushed at Level 321 by Escadinha Sobe Ek, Bakaj Lando, Mchamineh, Mezenguinha Slayer, The Shazam, Hierrowns, Lower Netdown, Weslotty Kamikaze, Kiing Andreziinho, Gabs Entediado, Netonesz Libertabra, We ro and druid familiar of Cronic Fechadocom Dejair.",
     "recordedAt": "2026-11-26T02:42:04.706Z"
+  },
+  {
+    "id": "papi nikoo|2026-11-25T17:53:05Z",
+    "type": "pvp",
+    "character": "Papi Nikoo",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 384,
+    "time": "2026-11-25T17:53:05Z",
+    "killers": [
+      "Escadinha Sobe Ek",
+      "Bakaj Lando",
+      "Mchamineh",
+      "Habib Tnte",
+      "Weslotty Kamikaze",
+      "Rabix Aloni",
+      "Telenovela Queen",
+      "Vaniix",
+      "We ro",
+      "Diabel Bez Litosci"
+    ],
+    "reason": "Crushed at Level 384 by Escadinha Sobe Ek, Bakaj Lando, Mchamineh, Habib Tnte, Weslotty Kamikaze, Rabix Aloni, Telenovela Queen, Vaniix, We ro and Diabel Bez Litosci.",
+    "recordedAt": "2026-11-26T11:32:41.486Z"
   },
   {
     "id": "lela paramore|2026-11-25T17:52:58Z",
@@ -311,6 +753,40 @@
     ],
     "reason": "Killed at Level 1207 by Jotao Bombao.",
     "recordedAt": "2026-11-26T02:31:21.166Z"
+  },
+  {
+    "id": "edu tipster|2026-11-25T17:06:55Z",
+    "type": "pvp",
+    "character": "Edu Tipster",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 671,
+    "time": "2026-11-25T17:06:55Z",
+    "killers": [
+      "Quelibra Bombinha",
+      "Cronic Fechadocom Dejair",
+      "Escadinha Sobe Ek",
+      "Low Macabro",
+      "Thitoz",
+      "Gezafoko Geza Gezafoko",
+      "Sudden Death Fly",
+      "Kronasz",
+      "Liban Shermis",
+      "Og Ivar",
+      "Rabix Aloni",
+      "Lycanmare",
+      "Tirro Max",
+      "Bubu Ue",
+      "Vaniix",
+      "We ro",
+      "Edu Tipster",
+      "Martich",
+      "Raigor Stonyhoof",
+      "Diabel Bez Litosci",
+      "Godmode Druid"
+    ],
+    "reason": "Annihilated at Level 671 by Quelibra Bombinha, Cronic Fechadocom Dejair, Escadinha Sobe Ek, Low Macabro, Thitoz, Gezafoko Geza Gezafoko, Sudden Death Fly, Kronasz, Liban Shermis, Og Ivar, Rabix Aloni, Lycanmare, Tirro Max, Bubu Ue, Vaniix, We ro, Edu Tipster, Martich, Raigor Stonyhoof, Diabel Bez Litosci and Godmode Druid. Assisted by Young Zig and Hawker Destroyer.",
+    "recordedAt": "2026-11-26T11:23:09.555Z"
   },
   {
     "id": "puga pina|2026-11-25T17:04:41Z",
@@ -500,6 +976,20 @@
     "recordedAt": "2026-11-26T02:34:54.970Z"
   },
   {
+    "id": "pan kada|2026-11-25T14:39:50Z",
+    "type": "pve",
+    "character": "Pan Kada",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 1108,
+    "time": "2026-11-25T14:39:50Z",
+    "killers": [
+      "eyeless devourer"
+    ],
+    "reason": "Died at Level 1108 by eyeless devourer.",
+    "recordedAt": "2026-11-26T11:32:41.456Z"
+  },
+  {
     "id": "don jotaeme|2026-11-25T13:35:56Z",
     "type": "pvp",
     "character": "Don Jotaeme",
@@ -514,6 +1004,50 @@
     ],
     "reason": "Killed at Level 425 by Bakaj Lando, Sanasio and Ahito Druid. Assisted by Lannax, Galegoh Delicinha and Kan Zinho.",
     "recordedAt": "2026-11-26T02:27:10.395Z"
+  },
+  {
+    "id": "bidek phantom|2026-11-25T13:32:48Z",
+    "type": "pve",
+    "character": "Bidek Phantom",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 358,
+    "time": "2026-11-25T13:32:48Z",
+    "killers": [
+      "vexclaw"
+    ],
+    "reason": "Died at Level 358 by vexclaw.",
+    "recordedAt": "2026-11-26T11:19:26.943Z"
+  },
+  {
+    "id": "embaixador eduardo|2026-11-25T13:30:38Z",
+    "type": "pvp",
+    "character": "Embaixador Eduardo",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 76,
+    "time": "2026-11-25T13:30:38Z",
+    "killers": [
+      "Magico Drunka",
+      "Oblivionbo",
+      "Ahito Druid"
+    ],
+    "reason": "Killed at Level 76 by Magico Drunka, Oblivionbo and Ahito Druid.",
+    "recordedAt": "2026-11-26T11:23:10.825Z"
+  },
+  {
+    "id": "ezarel galante|2026-11-25T12:45:41Z",
+    "type": "pve",
+    "character": "Ezarel Galante",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 231,
+    "time": "2026-11-25T12:45:41Z",
+    "killers": [
+      "cinder wyrmling"
+    ],
+    "reason": "Died at Level 231 by cinder wyrmling.",
+    "recordedAt": "2026-11-26T11:23:23.485Z"
   },
   {
     "id": "deterok|2026-11-25T11:17:48Z",
@@ -583,6 +1117,44 @@
     ],
     "reason": "Eliminated at Level 693 by Mherlin, Thitoz, Jadaner, Mezenguinha Slayer, Kiing Andreziinho, Lebranco James, Dougzk An Kadiq, Ultimate Explosion Thunder, Phcek Mordomo, Borbiinha, Luizz mage, Beerbatov, Ruthless Top Damage, Loro Kamado, Foras Tero, Martich and Diabel Bez Litosci. Assisted by Russin Feroz.",
     "recordedAt": "2026-11-25T09:22:39.424Z"
+  },
+  {
+    "id": "edu tipster|2026-11-25T04:08:00Z",
+    "type": "pvp",
+    "character": "Edu Tipster",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 671,
+    "time": "2026-11-25T04:08:00Z",
+    "killers": [
+      "Maga Agnas",
+      "Smooth The Dark",
+      "Boybomb",
+      "Hookah King Kill",
+      "Low Macabro",
+      "Thitoz",
+      "Bakaj Lando",
+      "Pulga Bombinha",
+      "Murillao Bombs",
+      "Chongas Charlovero",
+      "Boombeck",
+      "Colim Smith",
+      "Kiing Andreziinho",
+      "Luizeras Gyn",
+      "Rubini Politico",
+      "Magnifik Clau Clau",
+      "Fantasma Vitimada Sociedade",
+      "Dougzk An Kadiq",
+      "Phcek Mordomo",
+      "Borbiinha",
+      "Gabs Entediado",
+      "Beerbatov",
+      "Loro Kamado",
+      "Buud Green",
+      "Diabel Bez Litosci"
+    ],
+    "reason": "Annihilated at Level 671 by Maga Agnas, Smooth The Dark, Boybomb, Hookah King Kill, Low Macabro, Thitoz, Bakaj Lando, Pulga Bombinha, Murillao Bombs, Chongas Charlovero, Boombeck, Colim Smith, Kiing Andreziinho, Luizeras Gyn, Rubini Politico, Magnifik Clau Clau, Fantasma Vitimada Sociedade, Dougzk An Kadiq, Phcek Mordomo, Borbiinha, Gabs Entediado, Beerbatov, Loro Kamado, Buud Green and Diabel Bez Litosci. Assisted by Russin Feroz, Viliant and Arezokit Legend.",
+    "recordedAt": "2026-11-26T11:23:09.555Z"
   },
   {
     "id": "eslyp|2026-11-25T04:06:50Z",
@@ -674,6 +1246,52 @@
     ],
     "reason": "Annihilated at Level 1478 by Libraez, Boybomb, Hookah King Kill, Low Macabro, Mherlin, Thitoz, Moreno de Hat, Bakaj Lando, Pulga Bombinha, Murillao Bombs, Chongas Charlovero, Ninja Zabach, Boombeck, Colim Smith, Kiing Andreziinho, Russin Feroz, Luizeras Gyn, Rubini Politico, Magnifik Clau Clau, Wesclley, Fantasma Vitimada Sociedade, Dougzk An Kadiq, Artorias Of Souls, Otal do Fantasma, Phcek Mordomo, Borbiinha, Gabs Entediado, Nodokzao Supreme, Netonesz Libertabra, Beerbatov, Ruthless Top Damage, Loro Kamado, Foras Tero, Viliant, Arezokit Legend, Martich, Buud Green and Diabel Bez Litosci. Assisted by Jeff da Massa, Bowery King, Monza Grind and Zyra Deco.",
     "recordedAt": "2026-11-25T09:26:36.540Z"
+  },
+  {
+    "id": "edu tipster|2026-11-25T04:05:58Z",
+    "type": "pvp",
+    "character": "Edu Tipster",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 671,
+    "time": "2026-11-25T04:05:58Z",
+    "killers": [
+      "Libraez",
+      "Boybomb",
+      "Hookah King Kill",
+      "Mherlin",
+      "Thitoz",
+      "Gezafoko Geza Gezafoko",
+      "Bakaj Lando",
+      "Pulga Bombinha",
+      "Murillao Bombs",
+      "Chongas Charlovero",
+      "Ninja Zabach",
+      "Boombeck",
+      "Kiing Andreziinho",
+      "Russin Feroz",
+      "Lebranco James",
+      "Rubini Politico",
+      "Magnifik Clau Clau",
+      "Wesclley",
+      "Fantasma Vitimada Sociedade",
+      "Dougzk An Kadiq",
+      "Otal do Fantasma",
+      "Phcek Mordomo",
+      "Borbiinha",
+      "Gabs Entediado",
+      "Netonesz Libertabra",
+      "Beerbatov",
+      "Ruthless Top Damage",
+      "Loro Kamado",
+      "Foras Tero",
+      "Viliant",
+      "Arezokit Legend",
+      "Martich",
+      "Buud Green"
+    ],
+    "reason": "Annihilated at Level 671 by Libraez, Boybomb, Hookah King Kill, Mherlin, Thitoz, Gezafoko Geza Gezafoko, Bakaj Lando, Pulga Bombinha, Murillao Bombs, Chongas Charlovero, Ninja Zabach, Boombeck, Kiing Andreziinho, Russin Feroz, Lebranco James, Rubini Politico, Magnifik Clau Clau, Wesclley, Fantasma Vitimada Sociedade, Dougzk An Kadiq, Otal do Fantasma, Phcek Mordomo, Borbiinha, Gabs Entediado, Netonesz Libertabra, Beerbatov, Ruthless Top Damage, Loro Kamado, Foras Tero, Viliant, Arezokit Legend, Martich and Buud Green. Assisted by Monza Grind.",
+    "recordedAt": "2026-11-26T11:23:09.555Z"
   },
   {
     "id": "nervuura bomb|2026-11-25T02:48:39Z",
@@ -869,6 +1487,20 @@
     "recordedAt": "2026-11-26T02:38:19.260Z"
   },
   {
+    "id": "leeodrask|2026-11-24T23:58:08Z",
+    "type": "pve",
+    "character": "Leeodrask",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1425,
+    "time": "2026-11-24T23:58:08Z",
+    "killers": [
+      "oozing corpus"
+    ],
+    "reason": "Died at Level 1425 by oozing corpus.",
+    "recordedAt": "2026-11-26T11:28:32.371Z"
+  },
+  {
     "id": "luiz archery|2026-11-24T22:38:57Z",
     "type": "pve",
     "character": "Luiz Archery",
@@ -881,6 +1513,34 @@
     ],
     "reason": "Died at Level 822 by ink blob.",
     "recordedAt": "2026-11-25T09:25:20.661Z"
+  },
+  {
+    "id": "leeodrask|2026-11-24T22:27:40Z",
+    "type": "pve",
+    "character": "Leeodrask",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1426,
+    "time": "2026-11-24T22:27:40Z",
+    "killers": [
+      "bloated man-maggot"
+    ],
+    "reason": "Died at Level 1426 by bloated man-maggot.",
+    "recordedAt": "2026-11-26T11:28:32.371Z"
+  },
+  {
+    "id": "betinho hell|2026-11-24T22:06:01Z",
+    "type": "pve",
+    "character": "Betinho Hell",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 837,
+    "time": "2026-11-24T22:06:01Z",
+    "killers": [
+      "enthralled demon"
+    ],
+    "reason": "Died at Level 837 by enthralled demon.",
+    "recordedAt": "2026-11-26T11:19:26.835Z"
   },
   {
     "id": "harakora|2026-11-24T20:52:31Z",
@@ -909,6 +1569,20 @@
     ],
     "reason": "Died at Level 753 by falcon paladin.",
     "recordedAt": "2026-11-25T09:15:12.444Z"
+  },
+  {
+    "id": "ezarel galante|2026-11-24T16:56:18Z",
+    "type": "pve",
+    "character": "Ezarel Galante",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 230,
+    "time": "2026-11-24T16:56:18Z",
+    "killers": [
+      "bluebeak"
+    ],
+    "reason": "Died at Level 230 by bluebeak.",
+    "recordedAt": "2026-11-26T11:23:23.485Z"
   },
   {
     "id": "chaos knight|2026-11-24T16:48:16Z",
@@ -1068,6 +1742,68 @@
     ],
     "reason": "Killed at Level 406 by Lystol Malandro and hellflayer.",
     "recordedAt": "2026-11-24T16:23:08.093Z"
+  },
+  {
+    "id": "banzehco|2026-11-23T23:44:51Z",
+    "type": "pvp",
+    "character": "Banzehco",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1615,
+    "time": "2026-11-23T23:44:51Z",
+    "killers": [
+      "Ferobra Bombinha",
+      "Fantasma Ed Maisdois",
+      "sulphider"
+    ],
+    "reason": "Killed at Level 1615 by Ferobra Bombinha, Fantasma Ed Maisdois and sulphider.",
+    "recordedAt": "2026-11-26T11:19:26.393Z"
+  },
+  {
+    "id": "banzehco|2026-11-23T23:32:23Z",
+    "type": "pvp",
+    "character": "Banzehco",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1616,
+    "time": "2026-11-23T23:32:23Z",
+    "killers": [
+      "Master Royality",
+      "Ferobra Bombinha",
+      "Lady Bartender",
+      "Chaos Ruler",
+      "Alfreds Love",
+      "Aga Doiso",
+      "Pai da juju",
+      "Lukus Fira",
+      "Guizao Bombinha",
+      "Neo Doombringer",
+      "Panoramics",
+      "Jammy Boy",
+      "Im Druidx Masterr",
+      "Socrit",
+      "Talvez Leticia",
+      "Guizzin Bombaum",
+      "Brutus Palek",
+      "Fantasma Ed Maisdois"
+    ],
+    "reason": "Eliminated at Level 1616 by Master Royality, Ferobra Bombinha, Lady Bartender, Chaos Ruler, Alfreds Love, Aga Doiso, Pai da juju, Lukus Fira, Guizao Bombinha, Neo Doombringer, Panoramics, Jammy Boy, Im Druidx Masterr, Socrit, Talvez Leticia, Guizzin Bombaum, Brutus Palek and Fantasma Ed Maisdois.",
+    "recordedAt": "2026-11-26T11:19:26.393Z"
+  },
+  {
+    "id": "banzehco|2026-11-23T23:28:28Z",
+    "type": "pvp",
+    "character": "Banzehco",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1618,
+    "time": "2026-11-23T23:28:28Z",
+    "killers": [
+      "Fantasma Ed Maisdois",
+      "sulphider"
+    ],
+    "reason": "Killed at Level 1618 by Fantasma Ed Maisdois and sulphider.",
+    "recordedAt": "2026-11-26T11:19:26.393Z"
   },
   {
     "id": "metralha ninja|2026-11-23T21:06:05Z",
@@ -1389,6 +2125,21 @@
     "recordedAt": "2026-11-23T09:10:28.917Z"
   },
   {
+    "id": "elage kilven|2026-11-23T03:35:40Z",
+    "type": "pvp",
+    "character": "Elage Kilven",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 133,
+    "time": "2026-11-23T03:35:40Z",
+    "killers": [
+      "Oblivionbo",
+      "Foras Tero"
+    ],
+    "reason": "Killed at Level 133 by Oblivionbo and Foras Tero. Assisted by Mullekotty, Tamon Dalan, Superstar Curujaa, Carloseduardo and paladin familiar of Rpe Fredbombaum.",
+    "recordedAt": "2026-11-26T11:23:10.334Z"
+  },
+  {
     "id": "mxiiis|2026-11-23T03:35:39Z",
     "type": "pvp",
     "character": "Mxiiis",
@@ -1634,6 +2385,29 @@
     "recordedAt": "2026-11-25T09:32:13.692Z"
   },
   {
+    "id": "maluketez bomba|2026-11-23T03:31:44Z",
+    "type": "pvp",
+    "character": "Maluketez Bomba",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 552,
+    "time": "2026-11-23T03:31:44Z",
+    "killers": [
+      "Ray Pune",
+      "Jonakz",
+      "Murillao Bombs",
+      "Mchamineh",
+      "Oblivionbo",
+      "Pune Edbombinhatres",
+      "Mandatory Namechangeiiee",
+      "Tordo Nevinnyon",
+      "Sleeping Paladin",
+      "Godmode Druid"
+    ],
+    "reason": "Crushed at Level 552 by Ray Pune, Jonakz, Murillao Bombs, Mchamineh, Oblivionbo, Pune Edbombinhatres, Mandatory Namechangeiiee, Tordo Nevinnyon, Sleeping Paladin and Godmode Druid. Assisted by Royal Shamz.",
+    "recordedAt": "2026-11-26T11:29:59.460Z"
+  },
+  {
     "id": "mickey malandro|2026-11-23T03:31:19Z",
     "type": "pvp",
     "character": "Mickey Malandro",
@@ -1739,6 +2513,23 @@
     ],
     "reason": "Died at Level 679 by wardragon.",
     "recordedAt": "2026-11-25T09:25:33.457Z"
+  },
+  {
+    "id": "banzehco|2026-11-23T00:42:01Z",
+    "type": "pvp",
+    "character": "Banzehco",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1619,
+    "time": "2026-11-23T00:42:01Z",
+    "killers": [
+      "Mano Toon",
+      "Super Gremista",
+      "Cardinottt",
+      "nighthunter"
+    ],
+    "reason": "Killed at Level 1619 by Mano Toon, Super Gremista, Cardinottt and nighthunter.",
+    "recordedAt": "2026-11-26T11:19:26.393Z"
   },
   {
     "id": "hyllesh vaind|2026-11-23T00:34:34Z",
@@ -1868,6 +2659,20 @@
     "recordedAt": "2026-11-24T05:30:58.051Z"
   },
   {
+    "id": "master'guns|2026-11-22T22:16:24Z",
+    "type": "pve",
+    "character": "Master'Guns",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 257,
+    "time": "2026-11-22T22:16:24Z",
+    "killers": [
+      "soul-broken harbinger"
+    ],
+    "reason": "Died at Level 257 by soul-broken harbinger.",
+    "recordedAt": "2026-11-26T11:30:11.970Z"
+  },
+  {
     "id": "strongwave|2026-11-22T20:59:05Z",
     "type": "pve",
     "character": "Strongwave",
@@ -1967,6 +2772,21 @@
     "recordedAt": "2026-11-23T01:13:10.047Z"
   },
   {
+    "id": "druiida abusado|2026-11-22T19:26:13Z",
+    "type": "pvp",
+    "character": "Druiida Abusado",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 148,
+    "time": "2026-11-22T19:26:13Z",
+    "killers": [
+      "Gezafoko Geza Gezafoko",
+      "Venzom"
+    ],
+    "reason": "Killed at Level 148 by Gezafoko Geza Gezafoko and Venzom.",
+    "recordedAt": "2026-11-26T11:22:57.262Z"
+  },
+  {
     "id": "bromi|2026-11-22T19:23:31Z",
     "type": "pvp",
     "character": "Bromi",
@@ -2024,6 +2844,20 @@
     ],
     "reason": "Died at Level 610 by young goanna.",
     "recordedAt": "2026-11-24T16:25:46.109Z"
+  },
+  {
+    "id": "banzehco|2026-11-22T17:31:27Z",
+    "type": "pve",
+    "character": "Banzehco",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1621,
+    "time": "2026-11-22T17:31:27Z",
+    "killers": [
+      "many faces"
+    ],
+    "reason": "Died at Level 1621 by many faces.",
+    "recordedAt": "2026-11-26T11:19:26.393Z"
   },
   {
     "id": "hellbombinha|2026-11-22T17:17:43Z",
@@ -2214,6 +3048,34 @@
     ],
     "reason": "Died at Level 600 by true frost flower asura.",
     "recordedAt": "2026-11-25T09:16:53.001Z"
+  },
+  {
+    "id": "baleryon punitivo|2026-11-22T05:18:12Z",
+    "type": "pve",
+    "character": "Baleryon Punitivo",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 1006,
+    "time": "2026-11-22T05:18:12Z",
+    "killers": [
+      "emerald tortoise"
+    ],
+    "reason": "Died at Level 1006 by emerald tortoise.",
+    "recordedAt": "2026-11-26T11:19:26.290Z"
+  },
+  {
+    "id": "baleryon punitivo|2026-11-22T04:16:13Z",
+    "type": "pve",
+    "character": "Baleryon Punitivo",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 1007,
+    "time": "2026-11-22T04:16:13Z",
+    "killers": [
+      "gorerilla"
+    ],
+    "reason": "Died at Level 1007 by gorerilla.",
+    "recordedAt": "2026-11-26T11:19:26.291Z"
   },
   {
     "id": "harakora|2026-11-22T03:46:46Z",
@@ -2712,6 +3574,20 @@
     "recordedAt": "2026-11-22T00:13:14.625Z"
   },
   {
+    "id": "banzehco|2026-11-21T11:38:54Z",
+    "type": "pve",
+    "character": "Banzehco",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1623,
+    "time": "2026-11-21T11:38:54Z",
+    "killers": [
+      "crape man"
+    ],
+    "reason": "Died at Level 1623 by crape man.",
+    "recordedAt": "2026-11-26T11:19:26.393Z"
+  },
+  {
     "id": "ryokim voices|2026-11-21T11:36:10Z",
     "type": "pve",
     "character": "Ryokim Voices",
@@ -3124,6 +4000,22 @@
     "recordedAt": "2026-11-24T16:25:46.109Z"
   },
   {
+    "id": "mago frigideira|2026-11-20T17:37:16Z",
+    "type": "pvp",
+    "character": "Mago Frigideira",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 463,
+    "time": "2026-11-20T17:37:16Z",
+    "killers": [
+      "Magnifik Clau Clau",
+      "Mago Frigideira",
+      "quara looter"
+    ],
+    "reason": "Killed at Level 463 by Magnifik Clau Clau, Mago Frigideira and quara looter.",
+    "recordedAt": "2026-11-26T11:29:59.118Z"
+  },
+  {
     "id": "fenixsz malandro|2026-11-20T17:37:12Z",
     "type": "pve",
     "character": "Fenixsz Malandro",
@@ -3136,6 +4028,20 @@
     ],
     "reason": "Died at Level 750 by quara looter.",
     "recordedAt": "2026-11-22T13:21:31.137Z"
+  },
+  {
+    "id": "mago frigideira|2026-11-20T17:34:09Z",
+    "type": "pve",
+    "character": "Mago Frigideira",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 463,
+    "time": "2026-11-20T17:34:09Z",
+    "killers": [
+      "rootthing amber shaper"
+    ],
+    "reason": "Died at Level 463 by rootthing amber shaper.",
+    "recordedAt": "2026-11-26T11:29:59.118Z"
   },
   {
     "id": "cedilha|2026-11-20T17:00:37Z",
@@ -4099,6 +5005,20 @@
     "recordedAt": "2026-11-20T07:47:59.977Z"
   },
   {
+    "id": "banzehco|2026-11-20T01:21:50Z",
+    "type": "pve",
+    "character": "Banzehco",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1625,
+    "time": "2026-11-20T01:21:50Z",
+    "killers": [
+      "noxious ripptor"
+    ],
+    "reason": "Died at Level 1625 by noxious ripptor.",
+    "recordedAt": "2026-11-26T11:19:26.393Z"
+  },
+  {
     "id": "clubwinng|2026-11-20T00:58:59Z",
     "type": "pvp",
     "character": "Clubwinng",
@@ -4217,6 +5137,20 @@
     "recordedAt": "2026-11-20T00:42:26.445Z"
   },
   {
+    "id": "banzehco|2026-11-19T22:38:01Z",
+    "type": "pve",
+    "character": "Banzehco",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1627,
+    "time": "2026-11-19T22:38:01Z",
+    "killers": [
+      "quara raider"
+    ],
+    "reason": "Died at Level 1627 by quara raider.",
+    "recordedAt": "2026-11-26T11:19:26.393Z"
+  },
+  {
     "id": "ysmithe|2026-11-19T22:13:27Z",
     "type": "pvp",
     "character": "Ysmithe",
@@ -4261,6 +5195,20 @@
     ],
     "reason": "Died at Level 535 by falcon paladin.",
     "recordedAt": "2026-11-20T00:41:43.022Z"
+  },
+  {
+    "id": "banzehco|2026-11-19T21:37:29Z",
+    "type": "pve",
+    "character": "Banzehco",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1630,
+    "time": "2026-11-19T21:37:29Z",
+    "killers": [
+      "turbulent elemental"
+    ],
+    "reason": "Died at Level 1630 by turbulent elemental.",
+    "recordedAt": "2026-11-26T11:19:26.393Z"
   },
   {
     "id": "cereall killerr|2026-11-19T20:20:48Z",
@@ -6558,6 +7506,20 @@
     "recordedAt": "2026-11-19T18:12:43.101Z"
   },
   {
+    "id": "banzehco|2026-11-18T20:03:07Z",
+    "type": "pve",
+    "character": "Banzehco",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1632,
+    "time": "2026-11-18T20:03:07Z",
+    "killers": [
+      "many faces"
+    ],
+    "reason": "Died at Level 1632 by many faces.",
+    "recordedAt": "2026-11-26T11:19:26.393Z"
+  },
+  {
     "id": "felix factory|2026-11-18T18:45:52Z",
     "type": "pve",
     "character": "Felix Factory",
@@ -7170,6 +8132,21 @@
     "recordedAt": "2026-11-17T22:28:53.093Z"
   },
   {
+    "id": "banzehco|2026-11-17T10:46:09Z",
+    "type": "pvp",
+    "character": "Banzehco",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1634,
+    "time": "2026-11-17T10:46:09Z",
+    "killers": [
+      "Banzehco",
+      "broodrider inferniarch"
+    ],
+    "reason": "Killed at Level 1634 by Banzehco and broodrider inferniarch.",
+    "recordedAt": "2026-11-26T11:19:26.393Z"
+  },
+  {
     "id": "li pin|2026-11-17T09:52:38Z",
     "type": "pve",
     "character": "Li Pin",
@@ -7290,6 +8267,20 @@
     "reason": "Died at Level 325 by burster spectre.",
     "recordedAt": "2026-11-17T04:56:15.591Z",
     "type": "pve"
+  },
+  {
+    "id": "banzehco|2026-11-17T01:27:33Z",
+    "type": "pve",
+    "character": "Banzehco",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1636,
+    "time": "2026-11-17T01:27:33Z",
+    "killers": [
+      "bulltaur brute"
+    ],
+    "reason": "Died at Level 1636 by bulltaur brute.",
+    "recordedAt": "2026-11-26T11:19:26.393Z"
   },
   {
     "id": "bysen tretaon|2026-11-17T01:22:42Z",
@@ -9667,6 +10658,20 @@
     "reason": "Killed at Level 1206 by Buballu and Bakragore.",
     "recordedAt": "2026-11-17T04:55:42.109Z",
     "type": "pvp"
+  },
+  {
+    "id": "banzehco|2026-11-12T19:03:41Z",
+    "type": "pve",
+    "character": "Banzehco",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1638,
+    "time": "2026-11-12T19:03:41Z",
+    "killers": [
+      "bulltaur alchemist"
+    ],
+    "reason": "Died at Level 1638 by bulltaur alchemist.",
+    "recordedAt": "2026-11-26T11:19:26.393Z"
   },
   {
     "id": "lady'silverinha|2026-11-12T18:54:56Z",
