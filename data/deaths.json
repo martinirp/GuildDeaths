@@ -1,5 +1,19 @@
 [
   {
+    "id": "frankie ak|2026-11-27T08:04:18Z",
+    "type": "pve",
+    "character": "Frankie Ak",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 612,
+    "time": "2026-11-27T08:04:18Z",
+    "killers": [
+      "energuardian of tales"
+    ],
+    "reason": "Died at Level 612 by energuardian of tales.",
+    "recordedAt": "2026-11-27T12:21:11.211Z"
+  },
+  {
     "id": "deal bombinha|2026-11-27T02:32:42Z",
     "type": "pvp",
     "character": "Deal Bombinha",
@@ -42,6 +56,20 @@
     ],
     "reason": "Died at Level 214 by werehyaena.",
     "recordedAt": "2026-11-27T03:12:01.091Z"
+  },
+  {
+    "id": "pela kaczaza|2026-11-27T01:03:32Z",
+    "type": "pve",
+    "character": "Pela Kaczaza",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 385,
+    "time": "2026-11-27T01:03:32Z",
+    "killers": [
+      "monk's apparition"
+    ],
+    "reason": "Died at Level 385 by monk's apparition.",
+    "recordedAt": "2026-11-27T12:27:43.787Z"
   },
   {
     "id": "ocueistore bombinha|2026-11-26T23:47:33Z",
@@ -111,6 +139,76 @@
     ],
     "reason": "Crushed at Level 303 by Boybomb, Cotonas, Captain Modoy, Hierrowns, Lower Netdown, Luizeras Gyn, Lycanmare, Loro Kamado, Gordoo Patrao and Dieguin Maroto.",
     "recordedAt": "2026-11-27T03:07:35.035Z"
+  },
+  {
+    "id": "noxiuz|2026-11-26T23:38:59Z",
+    "type": "pvp",
+    "character": "Noxiuz",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 593,
+    "time": "2026-11-26T23:38:59Z",
+    "killers": [
+      "Kastanic",
+      "Primo Rodzin",
+      "Tryzek Zabo Cowboy",
+      "Travis Fullfield",
+      "Zombi of Hell",
+      "Low Macabro",
+      "Mherlin",
+      "Luchador",
+      "Tayzin Loveks Libertabrapune",
+      "Pousadao Isback",
+      "Kruxus on Jacabra",
+      "Giovannexx Edbomb",
+      "King Athila",
+      "Rusty Canalha",
+      "Cotonas",
+      "Lyukaah",
+      "Thayran Assombrado",
+      "Raijin Obscuro",
+      "Kronasz",
+      "Gbe Essi Klusejro",
+      "Ninja Zabach",
+      "Captain Modoy",
+      "Hierrowns",
+      "Rafuskao Bombao",
+      "Prefeito Billionaire",
+      "Lower Netdown",
+      "Le hib",
+      "Russin Feroz",
+      "Luizeras Gyn",
+      "Rabix Aloni",
+      "Darconyn",
+      "Lycanmare",
+      "Gota Contra Golpistas",
+      "Destroy Freddy",
+      "Lebranco James",
+      "Elmas Fashero",
+      "Society Man Dustin",
+      "Ultimate Explosion Thunder",
+      "Sorc Garrafinha",
+      "Mkee Reddington",
+      "Ahito Druid",
+      "Phcek Mordomo",
+      "Masterzita",
+      "Borbiinha",
+      "Sabugo Bomb Quelibra",
+      "Nodokzao Supreme",
+      "Hyoriinmaruu",
+      "Gatunerah",
+      "Ciskinhoo",
+      "Loro Kamado",
+      "Viliant",
+      "We ro",
+      "Muhammad Adbul Rahiin",
+      "Saquenme De Latam",
+      "Gordoo Patrao",
+      "Popin Ed",
+      "Javiman"
+    ],
+    "reason": "Annihilated at Level 593 by Kastanic, Primo Rodzin, Tryzek Zabo Cowboy, Travis Fullfield, Zombi of Hell, Low Macabro, Mherlin, Luchador, Tayzin Loveks Libertabrapune, Pousadao Isback, Kruxus on Jacabra, Giovannexx Edbomb, King Athila, Rusty Canalha, Cotonas, Lyukaah, Thayran Assombrado, Raijin Obscuro, Kronasz, Gbe Essi Klusejro, Ninja Zabach, Captain Modoy, Hierrowns, Rafuskao Bombao, Prefeito Billionaire, Lower Netdown, Le hib, Russin Feroz, Luizeras Gyn, Rabix Aloni, Darconyn, Lycanmare, Gota Contra Golpistas, Destroy Freddy, Lebranco James, Elmas Fashero, Society Man Dustin, Ultimate Explosion Thunder, Sorc Garrafinha, Mkee Reddington, Ahito Druid, Phcek Mordomo, Masterzita, Borbiinha, Sabugo Bomb Quelibra, Nodokzao Supreme, Hyoriinmaruu, Gatunerah, Ciskinhoo, Loro Kamado, Viliant, We ro, Muhammad Adbul Rahiin, Saquenme De Latam, Gordoo Patrao, Popin Ed and Javiman. Assisted by Arch Lokus.",
+    "recordedAt": "2026-11-27T12:26:53.280Z"
   },
   {
     "id": "gabriel killrats|2026-11-26T23:38:46Z",
@@ -430,6 +528,25 @@
     "recordedAt": "2026-11-27T03:13:21.410Z"
   },
   {
+    "id": "puga pina|2026-11-26T21:54:33Z",
+    "type": "pvp",
+    "character": "Puga pina",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 306,
+    "time": "2026-11-26T21:54:33Z",
+    "killers": [
+      "Breno Martiovsky",
+      "Zukkofy",
+      "Ruthless Top Damage",
+      "Shannon Arrumie",
+      "Muhammad Adbul Rahiin",
+      "Vedxedzik"
+    ],
+    "reason": "Slain at Level 306 by Breno Martiovsky, Zukkofy, Ruthless Top Damage, Shannon Arrumie, Muhammad Adbul Rahiin and Vedxedzik.",
+    "recordedAt": "2026-11-27T12:28:21.376Z"
+  },
+  {
     "id": "internal gogita|2026-11-26T21:54:22Z",
     "type": "pvp",
     "character": "Internal Gogita",
@@ -607,6 +724,34 @@
     ],
     "reason": "Died at Level 232 by hawk hopper.",
     "recordedAt": "2026-11-27T03:07:48.489Z"
+  },
+  {
+    "id": "lady'silverinha|2026-11-26T15:17:50Z",
+    "type": "pve",
+    "character": "Lady'Silverinha",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 447,
+    "time": "2026-11-26T15:17:50Z",
+    "killers": [
+      "cobra vizier"
+    ],
+    "reason": "Died at Level 447 by cobra vizier.",
+    "recordedAt": "2026-11-27T12:24:08.266Z"
+  },
+  {
+    "id": "knight davin|2026-11-26T14:57:24Z",
+    "type": "pve",
+    "character": "Knight Davin",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 1564,
+    "time": "2026-11-26T14:57:24Z",
+    "killers": [
+      "enthralled dragon"
+    ],
+    "reason": "Died at Level 1564 by enthralled dragon.",
+    "recordedAt": "2026-11-27T12:23:54.921Z"
   },
   {
     "id": "ndead inquisition|2026-11-26T14:14:18Z",
@@ -1499,6 +1644,45 @@
     "recordedAt": "2026-11-27T03:08:41.304Z"
   },
   {
+    "id": "cur uja|2026-11-26T04:06:37Z",
+    "type": "pvp",
+    "character": "Cur Uja",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1350,
+    "time": "2026-11-26T04:06:37Z",
+    "killers": [
+      "Isu ka",
+      "Maga Agnas",
+      "Thitoz",
+      "Kajuferent Rilia",
+      "King Athila",
+      "Murillao Bombs",
+      "Colim Smith",
+      "Kiing Andreziinho",
+      "Pune Edbombinhatres",
+      "Darconyn",
+      "Mikaaza Warlord Ruzad",
+      "Magnifik Clau Clau",
+      "Fantasma Vitimada Sociedade",
+      "Dougzk An Kadiq",
+      "Artorias Of Souls",
+      "Phcek Mordomo",
+      "Gabs Entediado",
+      "Pauleth Girls",
+      "Black Faire",
+      "Nodokzao Supreme",
+      "Beerbatov",
+      "Loro Kamado",
+      "Arezokit Legend",
+      "We ro",
+      "Sargento Queiroz",
+      "Cookkie Monstah"
+    ],
+    "reason": "Annihilated at Level 1350 by Isu ka, Maga Agnas, Thitoz, Kajuferent Rilia, King Athila, Murillao Bombs, Colim Smith, Kiing Andreziinho, Pune Edbombinhatres, Darconyn, Mikaaza Warlord Ruzad, Magnifik Clau Clau, Fantasma Vitimada Sociedade, Dougzk An Kadiq, Artorias Of Souls, Phcek Mordomo, Gabs Entediado, Pauleth Girls, Black Faire, Nodokzao Supreme, Beerbatov, Loro Kamado, Arezokit Legend, We ro, Sargento Queiroz and Cookkie Monstah. Assisted by Sorcerer of Rafael, Odibrapune Bombab, Talla Izenny, Neri Isback, Dwork, Rpe Fredbombaum, Ocueistore Bombinha, Im Not Alvariyo and Edu Tipster.",
+    "recordedAt": "2026-11-27T12:19:52.118Z"
+  },
+  {
     "id": "odibrapune bombab|2026-11-26T04:02:46Z",
     "type": "pvp",
     "character": "Odibrapune Bombab",
@@ -1697,6 +1881,20 @@
     ],
     "reason": "Died at Level 301 by Duke Krule.",
     "recordedAt": "2026-11-26T11:34:23.760Z"
+  },
+  {
+    "id": "monklox|2026-11-25T23:07:26Z",
+    "type": "pve",
+    "character": "Monklox",
+    "vocation": "Exalted Monk",
+    "rank": "Member",
+    "level": 837,
+    "time": "2026-11-25T23:07:26Z",
+    "killers": [
+      "gorger inferniarch"
+    ],
+    "reason": "Died at Level 837 by gorger inferniarch.",
+    "recordedAt": "2026-11-27T12:26:38.751Z"
   },
   {
     "id": "noxiuz|2026-11-25T23:03:20Z",
@@ -2576,6 +2774,20 @@
     ],
     "reason": "Died at Level 1028 by carnivostrich.",
     "recordedAt": "2026-11-27T03:08:02.092Z"
+  },
+  {
+    "id": "dunno charforsale godlike|2026-11-25T14:53:27Z",
+    "type": "pve",
+    "character": "Dunno Charforsale Godlike",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 1771,
+    "time": "2026-11-25T14:53:27Z",
+    "killers": [
+      "mantosaurus"
+    ],
+    "reason": "Died at Level 1771 by mantosaurus.",
+    "recordedAt": "2026-11-27T12:20:43.440Z"
   },
   {
     "id": "pan kada|2026-11-25T14:39:50Z",
