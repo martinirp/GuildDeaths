@@ -25,6 +25,36 @@
     "recordedAt": "2026-11-28T03:51:46.488Z"
   },
   {
+    "id": "fabbe warface|2026-11-28T02:44:46Z",
+    "type": "pvp",
+    "character": "Fabbe Warface",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1339,
+    "time": "2026-11-28T02:44:46Z",
+    "killers": [
+      "Tryzek Zabo Cowboy",
+      "Astra Queen",
+      "Mherlin",
+      "Gordaozovisk",
+      "Giovannexx Edbomb",
+      "King Athila",
+      "Pulga Bombinha",
+      "Boombeck",
+      "Colim Smith",
+      "Mandatory vaccine mccreadyxx",
+      "Miguel Patrao Ed",
+      "Oblivionbo",
+      "Pune Edbombinhatres",
+      "Tordo Nevinnyon",
+      "Ramoonzyn Pune",
+      "Phcek Mordomo",
+      "Goa Bebeca"
+    ],
+    "reason": "Eliminated at Level 1339 by Tryzek Zabo Cowboy, Astra Queen, Mherlin, Gordaozovisk, Giovannexx Edbomb, King Athila, Pulga Bombinha, Boombeck, Colim Smith, Mandatory vaccine mccreadyxx, Miguel Patrao Ed, Oblivionbo, Pune Edbombinhatres, Tordo Nevinnyon, Ramoonzyn Pune, Phcek Mordomo and Goa Bebeca.",
+    "recordedAt": "2026-11-28T12:29:07.393Z"
+  },
+  {
     "id": "tommy shelby first|2026-11-28T02:14:22Z",
     "type": "pvp",
     "character": "Tommy Shelby First",
@@ -43,6 +73,37 @@
     ],
     "reason": "Slain at Level 196 by Biglarsorce, Alfredo Bombiiinha, Pune Bombaed, Miguel Patrao Ed, Ston Zharayost, Nolove Tributarista and Wiviiziinha.",
     "recordedAt": "2026-11-28T03:52:50.549Z"
+  },
+  {
+    "id": "don jotaeme|2026-11-28T01:42:23Z",
+    "type": "pvp",
+    "character": "Don Jotaeme",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 422,
+    "time": "2026-11-28T01:42:23Z",
+    "killers": [
+      "Goa Bebeca",
+      "young goanna"
+    ],
+    "reason": "Killed at Level 422 by Goa Bebeca and young goanna. Assisted by Zeppikz and Tamon Dalan.",
+    "recordedAt": "2026-11-28T12:28:04.957Z"
+  },
+  {
+    "id": "you goji|2026-11-28T01:39:19Z",
+    "type": "pvp",
+    "character": "You Goji",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 307,
+    "time": "2026-11-28T01:39:19Z",
+    "killers": [
+      "Mandatory Namechangeiiee",
+      "You Goji",
+      "young goanna"
+    ],
+    "reason": "Killed at Level 307 by Mandatory Namechangeiiee, You Goji and young goanna.",
+    "recordedAt": "2026-11-28T12:49:23.075Z"
   },
   {
     "id": "el garras|2026-11-28T01:29:43Z",
@@ -95,6 +156,22 @@
     ],
     "reason": "Died at Level 1017 by blemished spawn.",
     "recordedAt": "2026-11-28T03:54:06.477Z"
+  },
+  {
+    "id": "branco rathia|2026-11-27T22:28:06Z",
+    "type": "pvp",
+    "character": "Branco Rathia",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 1437,
+    "time": "2026-11-27T22:28:06Z",
+    "killers": [
+      "Pune Bombaed",
+      "Pune Edbombinhatres",
+      "sopping corpus"
+    ],
+    "reason": "Killed at Level 1437 by Pune Bombaed, Pune Edbombinhatres and sopping corpus.",
+    "recordedAt": "2026-11-28T12:26:34.522Z"
   },
   {
     "id": "tuco boladaoo|2026-11-27T21:53:12Z",
@@ -151,6 +228,93 @@
     ],
     "reason": "Died at Level 222 by shell drake.",
     "recordedAt": "2026-11-27T21:57:52.856Z"
+  },
+  {
+    "id": "bigodelas|2026-11-27T19:16:14Z",
+    "type": "pvp",
+    "character": "Bigodelas",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 80,
+    "time": "2026-11-27T19:16:14Z",
+    "killers": [
+      "Ruthless Top Damage"
+    ],
+    "reason": "Killed at Level 80 by Ruthless Top Damage.",
+    "recordedAt": "2026-11-28T12:26:21.326Z"
+  },
+  {
+    "id": "druiida abusado|2026-11-27T16:26:27Z",
+    "type": "pvp",
+    "character": "Druiida Abusado",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 147,
+    "time": "2026-11-27T16:26:27Z",
+    "killers": [
+      "Escadinha Sobe Ek",
+      "Rusty Canalha",
+      "Lower Netdown",
+      "Killeerz",
+      "Luizeras Gyn",
+      "Rabix Aloni",
+      "Sanasio",
+      "Viliant"
+    ],
+    "reason": "Slain at Level 147 by Escadinha Sobe Ek, Rusty Canalha, Lower Netdown, Killeerz, Luizeras Gyn, Rabix Aloni, Sanasio and Viliant.",
+    "recordedAt": "2026-11-28T12:28:17.759Z"
+  },
+  {
+    "id": "drynor|2026-11-27T16:26:23Z",
+    "type": "pvp",
+    "character": "Drynor",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 281,
+    "time": "2026-11-27T16:26:23Z",
+    "killers": [
+      "Astra Queen",
+      "Rusty Canalha",
+      "Ruthlesspedzel",
+      "Cotonas",
+      "Raijin Obscuro",
+      "Mchamineh",
+      "Mezenguinha Slayer",
+      "Lower Netdown",
+      "Killeerz",
+      "Rabix Aloni",
+      "King Wesley",
+      "Fantasma Vitimada Sociedade",
+      "Goa Bebeca",
+      "Mudrekz Patrocinamais Um",
+      "Cardinot On",
+      "Loro Kamado",
+      "Viliant"
+    ],
+    "reason": "Eliminated at Level 281 by Astra Queen, Rusty Canalha, Ruthlesspedzel, Cotonas, Raijin Obscuro, Mchamineh, Mezenguinha Slayer, Lower Netdown, Killeerz, Rabix Aloni, King Wesley, Fantasma Vitimada Sociedade, Goa Bebeca, Mudrekz Patrocinamais Um, Cardinot On, Loro Kamado and Viliant. Assisted by Menos Grande and Mago exterminador.",
+    "recordedAt": "2026-11-28T12:28:17.831Z"
+  },
+  {
+    "id": "kenpachi zaraki|2026-11-27T16:25:35Z",
+    "type": "pvp",
+    "character": "Kenpachi Zaraki",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 176,
+    "time": "2026-11-27T16:25:35Z",
+    "killers": [
+      "Sorcerereiro",
+      "Gordaozovisk",
+      "What Doing",
+      "Doninho Bomberman",
+      "Dala Iror",
+      "The Major Bomba",
+      "Papirito",
+      "Oddesito",
+      "Vedxedzik"
+    ],
+    "reason": "Slain at Level 176 by Sorcerereiro, Gordaozovisk, What Doing, Doninho Bomberman, Dala Iror, The Major Bomba, Papirito, Oddesito and Vedxedzik.",
+    "recordedAt": "2026-11-28T12:32:40.986Z"
   },
   {
     "id": "dwork|2026-11-27T16:23:31Z",
@@ -239,6 +403,30 @@
     ],
     "reason": "Annihilated at Level 576 by Cronic Fechadocom Dejair, Sassazim, Zombi of Hell, Astra Queen, Gordaozovisk, Pousadao Isback, Kajuferent Rilia, Bakaj Lando, Rusty Canalha, Pulga Bombinha, Mchamineh, Mezenguinha Slayer, Og Ivar, Hierrowns, Mandatory vaccine mccreadyxx, Lower Netdown, Danvidel On Assombra, Oblivionbo, Luizeras Gyn, No Alfiler Pune, Lycanmare, King Wesley, Destroy Freddy, Sanasio, Fantasma Vitimada Sociedade, Lord sem Perna, Dougzk An Kadiq, Drakanizin, Goa Bebeca, Encore zjqieoijiqwe Bombinha, Nodokzao Supreme, We ro, Uham dla Ciebie and Escangalhado. Assisted by Hintz Bombinha, Bertmarik, Gabriel Killrats, Tirro Max, Hawker Bombinha, Diegod Rushando, Hawker Destroyer, Rinnegan Supremo, Wos Ed and Mago exterminador.",
     "recordedAt": "2026-11-28T03:54:19.909Z"
+  },
+  {
+    "id": "druiida abusado|2026-11-27T16:03:46Z",
+    "type": "pvp",
+    "character": "Druiida Abusado",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 147,
+    "time": "2026-11-27T16:03:46Z",
+    "killers": [
+      "Shadow Zerah",
+      "Zombi of Hell",
+      "Pousadao Isback",
+      "Bakaj Lando",
+      "Rusty Canalha",
+      "Pulga Bombinha",
+      "Mandatory vaccine mccreadyxx",
+      "Tannakka",
+      "Rubini Politico",
+      "Zukkofy",
+      "Borbiinha"
+    ],
+    "reason": "Crushed at Level 147 by Shadow Zerah, Zombi of Hell, Pousadao Isback, Bakaj Lando, Rusty Canalha, Pulga Bombinha, Mandatory vaccine mccreadyxx, Tannakka, Rubini Politico, Zukkofy and Borbiinha. Assisted by Drynor, Gabriel Killrats, Hawker Destroyer and Rinnegan Supremo.",
+    "recordedAt": "2026-11-28T12:28:17.759Z"
   },
   {
     "id": "metralha ninja|2026-11-27T16:03:11Z",
@@ -352,6 +540,46 @@
     ],
     "reason": "Killed at Level 150 by Mandatory vaccine mccreadyxx, Maanuziita, Rubini Politico and Nodokzao Supreme. Assisted by Hawker Bombinha.",
     "recordedAt": "2026-11-28T03:50:40.397Z"
+  },
+  {
+    "id": "druiida abusado|2026-11-27T15:58:10Z",
+    "type": "pvp",
+    "character": "Druiida Abusado",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 147,
+    "time": "2026-11-27T15:58:10Z",
+    "killers": [
+      "Shadow Zerah",
+      "Kydraw",
+      "Gordaozovisk",
+      "Cotonas",
+      "Mandatory vaccine mccreadyxx",
+      "Maanuziita",
+      "Dougzk An Kadiq",
+      "Nodokzao Supreme",
+      "We ro",
+      "Sargor Arirosh"
+    ],
+    "reason": "Crushed at Level 147 by Shadow Zerah, Kydraw, Gordaozovisk, Cotonas, Mandatory vaccine mccreadyxx, Maanuziita, Dougzk An Kadiq, Nodokzao Supreme, We ro and Sargor Arirosh.",
+    "recordedAt": "2026-11-28T12:28:17.759Z"
+  },
+  {
+    "id": "don jotaeme|2026-11-27T15:56:52Z",
+    "type": "pvp",
+    "character": "Don Jotaeme",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 423,
+    "time": "2026-11-27T15:56:52Z",
+    "killers": [
+      "Aggressive Fabbrih",
+      "Dougzk An Kadiq",
+      "Wineberiid",
+      "Escangalhado"
+    ],
+    "reason": "Killed at Level 423 by Aggressive Fabbrih, Dougzk An Kadiq, Wineberiid and Escangalhado.",
+    "recordedAt": "2026-11-28T12:28:04.957Z"
   },
   {
     "id": "metralha ninja|2026-11-27T15:56:25Z",
@@ -563,6 +791,39 @@
     "recordedAt": "2026-11-28T03:54:19.909Z"
   },
   {
+    "id": "febi on quelibra|2026-11-27T15:55:21Z",
+    "type": "pvp",
+    "character": "Febi on Quelibra",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 133,
+    "time": "2026-11-27T15:55:21Z",
+    "killers": [
+      "Gordaozovisk",
+      "Cotonas",
+      "Chumaquer",
+      "Mchamineh",
+      "Hierrowns",
+      "Lower Netdown",
+      "Killeerz",
+      "Danvidel On Assombra",
+      "Tannakka",
+      "Oblivionbo",
+      "Luizeras Gyn",
+      "Rabix Aloni",
+      "Lycanmare",
+      "Sanasio",
+      "Wesclley",
+      "Drakanizin",
+      "Goa Bebeca",
+      "Nodokzao Supreme",
+      "Loro Kamado",
+      "Sargor Arirosh"
+    ],
+    "reason": "Annihilated at Level 133 by Gordaozovisk, Cotonas, Chumaquer, Mchamineh, Hierrowns, Lower Netdown, Killeerz, Danvidel On Assombra, Tannakka, Oblivionbo, Luizeras Gyn, Rabix Aloni, Lycanmare, Sanasio, Wesclley, Drakanizin, Goa Bebeca, Nodokzao Supreme, Loro Kamado and Sargor Arirosh. Assisted by Prefeito Billionaire.",
+    "recordedAt": "2026-11-28T12:29:20.809Z"
+  },
+  {
     "id": "mxiiis|2026-11-27T15:55:09Z",
     "type": "pvp",
     "character": "Mxiiis",
@@ -650,6 +911,55 @@
     "recordedAt": "2026-11-28T03:52:13.258Z"
   },
   {
+    "id": "druiida abusado|2026-11-27T15:55:03Z",
+    "type": "pvp",
+    "character": "Druiida Abusado",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 148,
+    "time": "2026-11-27T15:55:03Z",
+    "killers": [
+      "Cronic Fechadocom Dejair",
+      "Soiiji",
+      "Cotonas",
+      "Murillao Bombs",
+      "Prefeito Billionaire",
+      "Killeerz",
+      "Oblivionbo",
+      "Zukkofy",
+      "Dougzk An Kadiq",
+      "Drakanizin",
+      "Goa Bebeca",
+      "Telenovela Queen",
+      "We ro"
+    ],
+    "reason": "Crushed at Level 148 by Cronic Fechadocom Dejair, Soiiji, Cotonas, Murillao Bombs, Prefeito Billionaire, Killeerz, Oblivionbo, Zukkofy, Dougzk An Kadiq, Drakanizin, Goa Bebeca, Telenovela Queen and We ro. Assisted by Puga pina.",
+    "recordedAt": "2026-11-28T12:28:17.759Z"
+  },
+  {
+    "id": "don jotaeme|2026-11-27T15:54:18Z",
+    "type": "pvp",
+    "character": "Don Jotaeme",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 423,
+    "time": "2026-11-27T15:54:18Z",
+    "killers": [
+      "Astra Queen",
+      "Fixx Rubinete",
+      "Kajuferent Rilia",
+      "Killeerz",
+      "Wesclley",
+      "Fantasma Vitimada Sociedade",
+      "Zukkofy",
+      "Goa Bebeca",
+      "Cardinot On",
+      "Loro Kamado"
+    ],
+    "reason": "Crushed at Level 423 by Astra Queen, Fixx Rubinete, Kajuferent Rilia, Killeerz, Wesclley, Fantasma Vitimada Sociedade, Zukkofy, Goa Bebeca, Cardinot On and Loro Kamado. Assisted by Juvizer Torn, Febi on Quelibra, Prefeito Billionaire, Telenovela Queen and Mago exterminador.",
+    "recordedAt": "2026-11-28T12:28:04.957Z"
+  },
+  {
     "id": "stynnk fellas|2026-11-27T15:52:07Z",
     "type": "pvp",
     "character": "Stynnk Fellas",
@@ -672,6 +982,70 @@
     ],
     "reason": "Crushed at Level 276 by Bakaj Lando, Pulga Bombinha, Chumaquer, Doninho Bomberman, Lower Netdown, Sanasio, Zukkofy, Dougzk An Kadiq, Artorias Of Souls, Loro Kamado and Barbie Mandraka. Assisted by Crazy The Mythus.",
     "recordedAt": "2026-11-27T21:57:00.963Z"
+  },
+  {
+    "id": "druvolkz aposentado|2026-11-27T15:50:31Z",
+    "type": "pvp",
+    "character": "Druvolkz Aposentado",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 1686,
+    "time": "2026-11-27T15:50:31Z",
+    "killers": [
+      "Biglarsorce",
+      "Cronic Fechadocom Dejair",
+      "Tryzek Zabo Cowboy",
+      "Stoon Flael",
+      "Kydraw",
+      "Boybomb",
+      "Escadinha Sobe Ek",
+      "Astra Queen",
+      "Mherlin",
+      "Gordaozovisk",
+      "Fixx Rubinete",
+      "Bakaj Lando",
+      "Rusty Canalha",
+      "Soiiji",
+      "Pulga Bombinha",
+      "Murillao Bombs",
+      "Chumaquer",
+      "Raijin Obscuro",
+      "Mchamineh",
+      "Gbe Essi Klusejro",
+      "Mezenguinha Slayer",
+      "Hierrowns",
+      "Mandatory vaccine mccreadyxx",
+      "Prefeito Billionaire",
+      "Killeerz",
+      "Danvidel On Assombra",
+      "Tannakka",
+      "Oblivionbo",
+      "Luizeras Gyn",
+      "Rabix Aloni",
+      "Lycanmare",
+      "Gota Contra Golpistas",
+      "Maanuziita",
+      "Destroy Freddy",
+      "Lebranco James",
+      "Rubini Politico",
+      "Sanasio",
+      "Wesclley",
+      "Fantasma Vitimada Sociedade",
+      "Thebone Collector Zabojca",
+      "Zukkofy",
+      "Dougzk An Kadiq",
+      "Drakanizin",
+      "Goa Bebeca",
+      "Cardinot On",
+      "Encore zjqieoijiqwe Bombinha",
+      "Borbiinha",
+      "Gabs Entediado",
+      "Loro Kamado",
+      "Sargor Arirosh",
+      "Papirito"
+    ],
+    "reason": "Annihilated at Level 1686 by Biglarsorce, Cronic Fechadocom Dejair, Tryzek Zabo Cowboy, Stoon Flael, Kydraw, Boybomb, Escadinha Sobe Ek, Astra Queen, Mherlin, Gordaozovisk, Fixx Rubinete, Bakaj Lando, Rusty Canalha, Soiiji, Pulga Bombinha, Murillao Bombs, Chumaquer, Raijin Obscuro, Mchamineh, Gbe Essi Klusejro, Mezenguinha Slayer, Hierrowns, Mandatory vaccine mccreadyxx, Prefeito Billionaire, Killeerz, Danvidel On Assombra, Tannakka, Oblivionbo, Luizeras Gyn, Rabix Aloni, Lycanmare, Gota Contra Golpistas, Maanuziita, Destroy Freddy, Lebranco James, Rubini Politico, Sanasio, Wesclley, Fantasma Vitimada Sociedade, Thebone Collector Zabojca, Zukkofy, Dougzk An Kadiq, Drakanizin, Goa Bebeca, Cardinot On, Encore zjqieoijiqwe Bombinha, Borbiinha, Gabs Entediado, Loro Kamado, Sargor Arirosh and Papirito.",
+    "recordedAt": "2026-11-28T12:28:17.791Z"
   },
   {
     "id": "stynnk fellas|2026-11-27T15:46:29Z",
@@ -701,6 +1075,26 @@
     ],
     "reason": "Killed at Level 455 by Cronic Fechadocom Dejair, Anjozzin Insano, Bakaj Lando and Arezokit Legend. Assisted by Garra de Rato, Tadin Swog, Juvizer Torn, Benzu Is Back, Cur Uja, Dake Leeniand, Galegoh Delicinha, Ma maina, Tiaguinho, Druvolkz Aposentado, Magicwall Tank, Jurassic and Mago Geladeirabomb.",
     "recordedAt": "2026-11-28T03:49:11.099Z"
+  },
+  {
+    "id": "febi on quelibra|2026-11-27T15:46:28Z",
+    "type": "pvp",
+    "character": "Febi on Quelibra",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 133,
+    "time": "2026-11-27T15:46:28Z",
+    "killers": [
+      "Cronic Fechadocom Dejair",
+      "Anjozzin Insano",
+      "Fixx Rubinete",
+      "Wesclley",
+      "Goa Bebeca",
+      "Wineberiid",
+      "We ro"
+    ],
+    "reason": "Slain at Level 133 by Cronic Fechadocom Dejair, Anjozzin Insano, Fixx Rubinete, Wesclley, Goa Bebeca, Wineberiid and We ro. Assisted by Quelibra Bombinha, Hawker Bombinha and Raulzikat Cuei Sete.",
+    "recordedAt": "2026-11-28T12:29:20.809Z"
   },
   {
     "id": "nico ultimatechar|2026-11-27T15:45:58Z",
@@ -775,6 +1169,31 @@
     "recordedAt": "2026-11-28T03:54:06.157Z"
   },
   {
+    "id": "don jotaeme|2026-11-27T15:45:58Z",
+    "type": "pvp",
+    "character": "Don Jotaeme",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 423,
+    "time": "2026-11-27T15:45:58Z",
+    "killers": [
+      "Cronic Fechadocom Dejair",
+      "Tryzek Zabo Cowboy",
+      "Astra Queen",
+      "Rusty Canalha",
+      "Maanuziita",
+      "Lebranco James",
+      "Wesclley",
+      "Fantasma Vitimada Sociedade",
+      "Borbiinha",
+      "Diegod Rushando",
+      "Wineberiid",
+      "We ro"
+    ],
+    "reason": "Crushed at Level 423 by Cronic Fechadocom Dejair, Tryzek Zabo Cowboy, Astra Queen, Rusty Canalha, Maanuziita, Lebranco James, Wesclley, Fantasma Vitimada Sociedade, Borbiinha, Diegod Rushando, Wineberiid and We ro. Assisted by Garra de Rato, Druvolkz Aposentado and Metralha Ninja.",
+    "recordedAt": "2026-11-28T12:28:04.957Z"
+  },
+  {
     "id": "tepper livermore|2026-11-27T15:43:43Z",
     "type": "pvp",
     "character": "Tepper Livermore",
@@ -787,6 +1206,40 @@
     ],
     "reason": "Killed at Level 357 by We ro. Assisted by Tadin Swog, Metralha Ninja, Ocueistore Bombinha and Raulzikat Cuei Sete.",
     "recordedAt": "2026-11-28T03:52:13.258Z"
+  },
+  {
+    "id": "don jotaeme|2026-11-27T15:43:30Z",
+    "type": "pvp",
+    "character": "Don Jotaeme",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 423,
+    "time": "2026-11-27T15:43:30Z",
+    "killers": [
+      "Lady Quelibbra",
+      "Tryzek Zabo Cowboy",
+      "Gordaozovisk",
+      "Fixx Rubinete",
+      "Kajuferent Rilia",
+      "Don Jotaeme",
+      "Pulga Bombinha",
+      "Murillao Bombs",
+      "Thayran Assombrado",
+      "Chumaquer",
+      "Mchamineh",
+      "Gbe Essi Klusejro",
+      "Danvidel On Assombra",
+      "Sanasio",
+      "Terrour Ziggy",
+      "Wesclley",
+      "Fantasma Vitimada Sociedade",
+      "Goa Bebeca",
+      "Wineberiid",
+      "Telenovela Queen",
+      "Papirito"
+    ],
+    "reason": "Annihilated at Level 423 by Lady Quelibbra, Tryzek Zabo Cowboy, Gordaozovisk, Fixx Rubinete, Kajuferent Rilia, Don Jotaeme, Pulga Bombinha, Murillao Bombs, Thayran Assombrado, Chumaquer, Mchamineh, Gbe Essi Klusejro, Danvidel On Assombra, Sanasio, Terrour Ziggy, Wesclley, Fantasma Vitimada Sociedade, Goa Bebeca, Wineberiid, Telenovela Queen and Papirito. Assisted by Garra de Rato, Tadin Swog, Benzu Is Back, Druvolkz Aposentado, Metralha Ninja, Chaos Flaitt, Mxiiis and Raulzikat Cuei Sete.",
+    "recordedAt": "2026-11-28T12:28:04.957Z"
   },
   {
     "id": "predactor loles|2026-11-27T15:23:21Z",
@@ -804,6 +1257,20 @@
     "recordedAt": "2026-11-28T03:50:41.328Z"
   },
   {
+    "id": "killa skillz|2026-11-27T15:13:58Z",
+    "type": "pve",
+    "character": "Killa Skillz",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 778,
+    "time": "2026-11-27T15:13:58Z",
+    "killers": [
+      "lava creature"
+    ],
+    "reason": "Died at Level 778 by lava creature.",
+    "recordedAt": "2026-11-28T12:32:41.202Z"
+  },
+  {
     "id": "shev'sorcerer|2026-11-27T14:05:55Z",
     "type": "pvp",
     "character": "Shev'Sorcerer",
@@ -817,6 +1284,20 @@
     ],
     "reason": "Killed at Level 1153 by Shev'Sorcerer and brachiodemon.",
     "recordedAt": "2026-11-28T03:51:45.474Z"
+  },
+  {
+    "id": "dertser|2026-11-27T13:15:15Z",
+    "type": "pve",
+    "character": "Dertser",
+    "vocation": "Elite Knight",
+    "rank": "Member",
+    "level": 618,
+    "time": "2026-11-27T13:15:15Z",
+    "killers": [
+      "unstable spark"
+    ],
+    "reason": "Died at Level 618 by unstable spark.",
+    "recordedAt": "2026-11-28T12:27:51.508Z"
   },
   {
     "id": "shev'sorcerer|2026-11-27T10:50:36Z",
@@ -1963,6 +2444,21 @@
     "recordedAt": "2026-11-26T11:35:14.459Z"
   },
   {
+    "id": "los kamiz|2026-11-26T09:46:49Z",
+    "type": "pvp",
+    "character": "Los Kamiz",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 952,
+    "time": "2026-11-26T09:46:49Z",
+    "killers": [
+      "Los Kamiz",
+      "cloak of terror"
+    ],
+    "reason": "Killed at Level 952 by Los Kamiz and cloak of terror.",
+    "recordedAt": "2026-11-28T12:34:45.157Z"
+  },
+  {
     "id": "gusta jrambranight|2026-11-26T08:50:12Z",
     "type": "pve",
     "character": "Gusta Jrambranight",
@@ -1975,6 +2471,38 @@
     ],
     "reason": "Died at Level 119 by vile grandmaster.",
     "recordedAt": "2026-11-27T03:08:27.670Z"
+  },
+  {
+    "id": "kenpachi zaraki|2026-11-26T04:38:55Z",
+    "type": "pvp",
+    "character": "Kenpachi Zaraki",
+    "vocation": "Elder Druid",
+    "rank": "Member",
+    "level": 176,
+    "time": "2026-11-26T04:38:55Z",
+    "killers": [
+      "Masho Alfa Padruiknight",
+      "King Athila",
+      "Magnifik Clau Clau",
+      "Artorias Of Souls"
+    ],
+    "reason": "Killed at Level 176 by Masho Alfa Padruiknight, King Athila, Magnifik Clau Clau and Artorias Of Souls. Assisted by Fak Bomba Quatro.",
+    "recordedAt": "2026-11-28T12:32:40.986Z"
+  },
+  {
+    "id": "zapa is gangsta|2026-11-26T04:30:26Z",
+    "type": "pvp",
+    "character": "Zapa is Gangsta",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 764,
+    "time": "2026-11-26T04:30:26Z",
+    "killers": [
+      "Magnifik Clau Clau",
+      "young goanna"
+    ],
+    "reason": "Killed at Level 764 by Magnifik Clau Clau and young goanna. Assisted by Lord Lirryk.",
+    "recordedAt": "2026-11-28T12:49:23.468Z"
   },
   {
     "id": "neto on|2026-11-26T04:26:47Z",
@@ -3556,6 +4084,35 @@
     "recordedAt": "2026-11-25T19:36:22.085Z"
   },
   {
+    "id": "kaephas|2026-11-25T17:52:52Z",
+    "type": "pvp",
+    "character": "Kaephas",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 330,
+    "time": "2026-11-25T17:52:52Z",
+    "killers": [
+      "Cronic Fechadocom Dejair",
+      "Bakaj Lando",
+      "Thayran Assombrado",
+      "Mchamineh",
+      "Hierrowns",
+      "Lower Netdown",
+      "Weslotty Kamikaze",
+      "Kiing Andreziinho",
+      "Rabix Aloni",
+      "Lycanmare",
+      "Gabs Entediado",
+      "Telenovela Queen",
+      "Vaniix",
+      "Viliant",
+      "We ro",
+      "Diabel Bez Litosci"
+    ],
+    "reason": "Eliminated at Level 330 by Cronic Fechadocom Dejair, Bakaj Lando, Thayran Assombrado, Mchamineh, Hierrowns, Lower Netdown, Weslotty Kamikaze, Kiing Andreziinho, Rabix Aloni, Lycanmare, Gabs Entediado, Telenovela Queen, Vaniix, Viliant, We ro and Diabel Bez Litosci.",
+    "recordedAt": "2026-11-28T12:32:39.985Z"
+  },
+  {
     "id": "dwork|2026-11-25T17:52:28Z",
     "type": "pvp",
     "character": "Dwork",
@@ -4620,6 +5177,23 @@
     "recordedAt": "2026-11-25T19:34:05.553Z"
   },
   {
+    "id": "carcarion|2026-11-25T01:32:30Z",
+    "type": "pvp",
+    "character": "Carcarion",
+    "vocation": "Royal Paladin",
+    "rank": "Member",
+    "level": 829,
+    "time": "2026-11-25T01:32:30Z",
+    "killers": [
+      "Oblivionbo",
+      "Pune Edbombinhatres",
+      "Carcarion",
+      "energetic book"
+    ],
+    "reason": "Killed at Level 829 by Oblivionbo, Pune Edbombinhatres, Carcarion and energetic book.",
+    "recordedAt": "2026-11-28T12:26:47.857Z"
+  },
+  {
     "id": "biserker|2026-11-25T01:20:37Z",
     "type": "pve",
     "character": "Biserker",
@@ -4801,6 +5375,20 @@
     ],
     "reason": "Died at Level 753 by falcon paladin.",
     "recordedAt": "2026-11-25T09:15:12.444Z"
+  },
+  {
+    "id": "dieguiin moskitao|2026-11-24T17:10:06Z",
+    "type": "pve",
+    "character": "Dieguiin Moskitao",
+    "vocation": "Master Sorcerer",
+    "rank": "Member",
+    "level": 1099,
+    "time": "2026-11-24T17:10:06Z",
+    "killers": [
+      "dragolisk"
+    ],
+    "reason": "Died at Level 1099 by dragolisk.",
+    "recordedAt": "2026-11-28T12:27:52.205Z"
   },
   {
     "id": "ezarel galante|2026-11-24T16:56:18Z",
